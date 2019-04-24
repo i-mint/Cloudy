@@ -3965,14 +3965,15 @@ filechooser placessidebar.sidebar,
   filechooser placessidebar.sidebar row.sidebar-row,
   .nautilus-window placessidebar.sidebar row.sidebar-row {
     border: none;
-    color: rgba(255, 255, 255, 0.78); }
+    color: rgba(255, 255, 255, 0.56); }
     filechooser placessidebar.sidebar row.sidebar-row .sidebar-icon,
     .nautilus-window placessidebar.sidebar row.sidebar-row .sidebar-icon {
       color: rgba(255, 255, 255, 0.38); }
     filechooser placessidebar.sidebar row.sidebar-row.has-open-popup, filechooser placessidebar.sidebar row.sidebar-row:hover,
     .nautilus-window placessidebar.sidebar row.sidebar-row.has-open-popup,
     .nautilus-window placessidebar.sidebar row.sidebar-row:hover {
-      background-color: rgba(255, 255, 255, 0.12); }
+      background-color: rgba(255, 255, 255, 0.12);
+      color: rgba(255, 255, 255, 0.73); }
     filechooser placessidebar.sidebar row.sidebar-row:disabled, filechooser placessidebar.sidebar row.sidebar-row:disabled label, filechooser placessidebar.sidebar row.sidebar-row:disabled image,
     .nautilus-window placessidebar.sidebar row.sidebar-row:disabled,
     .nautilus-window placessidebar.sidebar row.sidebar-row:disabled label,
@@ -4034,39 +4035,42 @@ filechooser.maximized placessidebar.sidebar,
 .nautilus-window.maximized placessidebar.sidebar {
   background-color: #56648a; }
 
-.nemo-window .primary-toolbar toolitem stack box widget entry {
+.nemo-window .primary-toolbar widget entry {
   background-color: #5e6d97;
   color: #ffffff; }
 
-.nemo-window .nemo-window-pane .view, .nemo-window .nemo-window-pane iconview {
-  background-color: #FFFFFF;
-  color: #181c28; }
-.nemo-window .nemo-window-pane .view:selected, .nemo-window .nemo-window-pane iconview:selected {
-  background-color: #56648A;
-  color: #ffffff; }
-.nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview {
-  background-color: #ededed;
-  color: rgba(24, 28, 40, 0.34); }
-.nemo-window .nemo-inactive-pane .iconview {
-  background-color: #ededed;
-  color: rgba(24, 28, 40, 0.34); }
-.nemo-window .sidebar {
-  color: rgba(255, 255, 255, 0.78);
-  background-color: rgba(86, 100, 138, 0.95); }
-  .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar row {
-    background-color: transparent;
-    color: rgba(255, 255, 255, 0.78); }
-    .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar row.cell:selected {
-      background-color: #505d81;
-      color: #ffffff; }
-    .nemo-window .sidebar .view.cell:hover, .nemo-window .sidebar iconview.cell:hover, .nemo-window .sidebar row.cell:hover {
-      background-color: rgba(255, 255, 255, 0.12); }
-    .nemo-window .sidebar .view.expander, .nemo-window .sidebar iconview.expander, .nemo-window .sidebar row.expander {
-      color: rgba(156, 164, 187, 0.865); }
-      .nemo-window .sidebar .view.expander:hover, .nemo-window .sidebar iconview.expander:hover, .nemo-window .sidebar row.expander:hover {
-        color: rgba(255, 255, 255, 0.78); }
-  .nemo-window .sidebar separator {
-    background-color: transparent; }
+.nemo-window {
+  /*//1.1.1, delete 1.1.2
+  .nemo-window-pane {
+    .view {background-color: if($variant=='dark', lighten($base_color, 15%), $base_color); color: $fg_color;}
+    .view:selected {background-color: $selected_bg_color; color: $selected_fg_color;}
+  }*/ }
+  .nemo-window .nemo-window-pane scrolledwindow {
+    background-color: #FFFFFF;
+    color: #181c28; }
+  .nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview {
+    background-color: rgba(86, 100, 138, 0.95);
+    color: rgba(24, 28, 40, 0.34); }
+  .nemo-window .nemo-inactive-pane .iconview {
+    background-color: rgba(86, 100, 138, 0.95);
+    color: rgba(24, 28, 40, 0.34); }
+  .nemo-window .sidebar {
+    color: rgba(255, 255, 255, 0.78);
+    background-color: rgba(86, 100, 138, 0.95); }
+    .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar row {
+      background-color: transparent;
+      color: rgba(255, 255, 255, 0.78); }
+      .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar row.cell:selected {
+        background-color: #505d81;
+        color: #ffffff; }
+      .nemo-window .sidebar .view.cell:hover, .nemo-window .sidebar iconview.cell:hover, .nemo-window .sidebar row.cell:hover {
+        background-color: rgba(255, 255, 255, 0.12); }
+      .nemo-window .sidebar .view.expander, .nemo-window .sidebar iconview.expander, .nemo-window .sidebar row.expander {
+        color: rgba(156, 164, 187, 0.865); }
+        .nemo-window .sidebar .view.expander:hover, .nemo-window .sidebar iconview.expander:hover, .nemo-window .sidebar row.expander:hover {
+          color: rgba(255, 255, 255, 0.78); }
+    .nemo-window .sidebar separator {
+      background-color: transparent; }
 
 .caja-side-pane,
 .caja-side-pane > notebook > stack > widget > box,
