@@ -2291,8 +2291,6 @@ frame > border.flat,
 
 scrolledwindow viewport.frame {
   border-style: none; }
-scrolledwindow:backdrop {
-  background-color: #040506; }
 scrolledwindow .view:backdrop, scrolledwindow iconview:backdrop {
   color: rgba(236, 240, 244, 0.78); }
 scrolledwindow overshoot.top {
@@ -4092,6 +4090,12 @@ filechooser placessidebar.sidebar,
 filechooser.maximized placessidebar.sidebar,
 .nautilus-window.maximized placessidebar.sidebar {
   background-color: #2b3143; }
+filechooser .nautilus-desktop,
+.nautilus-window .nautilus-desktop {
+  color: #e6e6e6; }
+  filechooser .nautilus-desktop:backdrop,
+  .nautilus-window .nautilus-desktop:backdrop {
+    color: rgba(230, 230, 230, 0.78); }
 
 .nemo-window .primary-toolbar widget entry {
   background-color: #353c53;
