@@ -904,9 +904,10 @@ StScrollBar {
     background-color: rgba(0, 0, 0, 0.15);
     border-width: 0; }
   .calendar-day-base.calendar-day-heading {
-    color: rgba(236, 240, 244, 0.85);
     margin-top: 1em;
-    font-size: 70%; }
+    font-size: 70%;
+    color: rgba(236, 240, 244, 0.89);
+    border-bottom: 2px solid rgba(43, 49, 67, 0.95); }
 
 .calendar-day {
   border-width: 0;
@@ -951,8 +952,8 @@ StScrollBar {
   border-radius: 2px;
   padding: 0.5em 0 0;
   margin: 6px;
-  background-color: rgba(236, 240, 244, 0.3);
-  color: #1A2026; }
+  background-color: #495372;
+  color: rgba(255, 255, 255, 0.78); }
 
 .message-list {
   width: 31.5em; }
