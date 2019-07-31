@@ -14,7 +14,7 @@
    viewBox="0 0 27 27"
    id="svg4196"
    version="1.1"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    sodipodi:docname="panel.svg">
   <defs
      id="defs4198" />
@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="11.313708"
-     inkscape:cx="7.4676788"
-     inkscape:cy="4.1118483"
+     inkscape:zoom="15.999999"
+     inkscape:cx="18.011483"
+     inkscape:cy="5.4788611"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -36,9 +36,9 @@
      inkscape:bbox-paths="true"
      inkscape:bbox-nodes="true"
      inkscape:snap-bbox-edge-midpoints="true"
-     inkscape:window-width="1326"
+     inkscape:window-width="1327"
      inkscape:window-height="713"
-     inkscape:window-x="40"
+     inkscape:window-x="39"
      inkscape:window-y="27"
      inkscape:window-maximized="1">
     <inkscape:grid
@@ -63,14 +63,14 @@
      id="layer1"
      transform="translate(0,-1025.3622)">
     <rect
-       style="display:inline;opacity:0.95;fill:#2b3143;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="display:inline;opacity:0.95;fill:#222736;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4713"
        width="27"
        height="26"
        x="0"
        y="1025.3622" />
     <rect
-       style="display:inline;opacity:0.9;fill:#2b3143;fill-opacity:0.95294118;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="display:inline;opacity:0.9;fill:#222736;fill-opacity:0.95294118;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4713-4"
        width="27"
        height="1"

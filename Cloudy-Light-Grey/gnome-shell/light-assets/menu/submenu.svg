@@ -14,7 +14,7 @@
    id="svg3783"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="submenu-open.svg"
+   sodipodi:docname="submenu.svg"
    inkscape:export-filename="/home/steffen/.local/share/themes/Vertex_Shell/gnome-shell/menu.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
@@ -94,16 +94,16 @@
          width="28.999735"
          height="18"
          x="1058.3102"
-         y="8.9349957"
-         transform="matrix(0,1,1,0,0,0)" />
+         y="-26.934996"
+         transform="matrix(0,1,-1,0,0,0)" />
       <rect
          style="opacity:0.1;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="rect3883"
          width="28.999802"
          height="1"
          x="1058.3102"
-         y="25.93499"
-         transform="matrix(0,1,1,0,0,0)" />
+         y="-9.9350014"
+         transform="matrix(0,1,-1,0,0,0)" />
     </g>
   </g>
 </svg>

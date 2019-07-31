@@ -14,7 +14,7 @@
    viewBox="0 0 48 48.000001"
    id="svg4793"
    version="1.1"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    sodipodi:docname="dash-right.svg">
   <defs
      id="defs4795" />
@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="16"
-     inkscape:cx="13.77827"
-     inkscape:cy="9.2422011"
+     inkscape:zoom="5.6568543"
+     inkscape:cx="21.704775"
+     inkscape:cy="18.745339"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -36,9 +36,9 @@
      inkscape:bbox-paths="true"
      inkscape:bbox-nodes="true"
      inkscape:snap-bbox-edge-midpoints="true"
-     inkscape:window-width="1326"
+     inkscape:window-width="1327"
      inkscape:window-height="713"
-     inkscape:window-x="40"
+     inkscape:window-x="39"
      inkscape:window-y="27"
      inkscape:window-maximized="1">
     <inkscape:grid
@@ -69,14 +69,14 @@
          id="rect4749-1"
          transform="translate(0,1004.3622)"
          d="m 0,0 0,1 45,0 c 1.108,0 2,0.892 2,2 l 0,42 c 0,1.108 -0.892,2 -2,2 l -45,0 0,1 46,0 c 1.108,0 2,-0.892 2,-2 L 48,2 C 48,0.892 47.108,0 46,0 L 0,0 Z"
-         style="display:inline;opacity:0.81000001;fill:#2b3143;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         style="display:inline;opacity:0.81000001;fill:#222736;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          sodipodi:nodetypes="csscccc"
          inkscape:connector-curvature="0"
          id="rect4749-48"
          d="m 45,1005.3622 c 1.108,0 2,0.892 2,2 l 0,42 c 0,1.108 -0.892,2 -2,2 l -45,0 0,-46 z"
-         style="display:inline;opacity:0.95;fill:#2b3143;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+         style="display:inline;opacity:0.95;fill:#222736;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     </g>
   </g>
 </svg>

@@ -14,7 +14,7 @@
    id="svg3783"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="submenu-open.svg"
+   sodipodi:docname="submenu.svg"
    inkscape:export-filename="/home/steffen/.local/share/themes/Vertex_Shell/gnome-shell/menu.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
@@ -76,7 +76,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -102,7 +102,7 @@
          width="28.999802"
          height="1"
          x="1058.3102"
-         y="-26.934996"
+         y="-9.9350014"
          transform="matrix(0,1,-1,0,0,0)" />
     </g>
   </g>
