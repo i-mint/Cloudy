@@ -1276,21 +1276,23 @@ headerbar spinbutton:not(.vertical) > entry + button:not(:active):hover {
 .primary-toolbar scale:backdrop, headerbar scale:backdrop {
   opacity: 0.75; }
 .primary-toolbar scale slider, headerbar scale slider {
-  background-color: #e2e3e4;
-  border-color: rgba(255, 255, 255, 0.3); }
+  background-color: whitesmoke;
+  border-color: #ebebeb; }
   .primary-toolbar scale slider:hover, headerbar scale slider:hover {
-    background-color: #eff0f0;
-    border-color: rgba(255, 255, 255, 0.3); }
+    background-color: white;
+    border-color: #ebebeb; }
   .primary-toolbar scale slider:active, headerbar scale slider:active {
     background-color: #56648A;
     border-color: #56648A; }
   .primary-toolbar scale slider:disabled, headerbar scale slider:disabled {
-    background-color: rgba(187, 192, 203, 0.985);
-    border-color: rgba(255, 255, 255, 0.3); }
+    background-color: rgba(201, 204, 215, 0.985);
+    border-color: #ebebeb; }
 .primary-toolbar scale trough, headerbar scale trough {
   background-color: rgba(255, 255, 255, 0.15); }
   .primary-toolbar scale trough:disabled, headerbar scale trough:disabled {
     background-color: rgba(255, 255, 255, 0.1); }
+.primary-toolbar scale .top, headerbar scale .top {
+  background-color: rgba(255, 255, 255, 0.15); }
 
 .path-bar button.text-button, .path-bar button.image-button, .path-bar button {
   padding-left: 6px;
