@@ -4464,3 +4464,16 @@ filechooser placessidebar.sidebar scrollbar,
 .budgie-panel .workspace-add-button {
   background-color: rgba(12, 13, 18, 0.95);
   border-color: rgba(12, 13, 18, 0.95); }
+
+.budgie-settings-window .sidebar row label {
+  color: rgba(236, 240, 244, 0.95); }
+.budgie-settings-window .sidebar row:hover {
+  background-color: rgba(43, 49, 67, 0.56); }
+.budgie-settings-window .sidebar row:hover label {
+  color: #ecf0f4; }
+.budgie-settings-window .sidebar row:selected {
+  background-color: #2B3143; }
+.budgie-settings-window .sidebar row:selected label {
+  color: #ffffff; }
+.budgie-settings-window .sidebar row:selected:hover {
+  background-color: rgba(43, 49, 67, 0.78); }
