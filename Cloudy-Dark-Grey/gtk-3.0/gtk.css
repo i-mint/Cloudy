@@ -1670,11 +1670,11 @@ notebook {
         min-height: 22px;
         min-width: 16px;
         padding: 0;
-        color: #b1b1b1; }
+        color: rgba(255, 255, 255, 0.34); }
         notebook > header > tabs > tab button.flat:hover, notebook > header > tabs > tab button.sidebar-button:hover {
-          color: #ff4d4d; }
+          color: #d7787d; }
         notebook > header > tabs > tab button.flat:active, notebook > header > tabs > tab button.sidebar-button:active, notebook > header > tabs > tab button.flat:active:hover, notebook > header > tabs > tab button.sidebar-button:active:hover {
-          color: #373737; }
+          color: #be3841; }
 
 scrollbar {
   background-color: #080808;
