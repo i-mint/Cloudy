@@ -4331,6 +4331,10 @@ filechooser headerbar widget stack box.path-bar-box,
         color: rgba(173, 173, 173, 0.865); }
         .nemo-window .sidebar .view.expander:hover, .nemo-window .sidebar iconview.expander:hover, .nemo-window .sidebar row.expander:hover {
           color: rgba(255, 255, 255, 0.78); }
+      .nemo-window .sidebar .view:backdrop, .nemo-window .sidebar iconview:backdrop, .nemo-window .sidebar .view:backdrop.cell:hover, .nemo-window .sidebar iconview:backdrop.cell:hover, .nemo-window .sidebar row:backdrop, .nemo-window .sidebar row:backdrop.cell:hover {
+        color: rgba(255, 255, 255, 0.56); }
+        .nemo-window .sidebar .view:backdrop.cell:selected, .nemo-window .sidebar iconview:backdrop.cell:selected, .nemo-window .sidebar .view:backdrop.cell:selected:hover, .nemo-window .sidebar iconview:backdrop.cell:selected:hover, .nemo-window .sidebar .view:backdrop.cell:hover.cell:selected, .nemo-window .sidebar iconview:backdrop.cell:hover.cell:selected, .nemo-window .sidebar .view:backdrop.cell:hover.cell:selected:hover, .nemo-window .sidebar iconview:backdrop.cell:hover.cell:selected:hover, .nemo-window .sidebar row:backdrop.cell:selected, .nemo-window .sidebar row:backdrop.cell:selected:hover, .nemo-window .sidebar row:backdrop.cell:hover.cell:selected, .nemo-window .sidebar row:backdrop.cell:hover.cell:selected:hover {
+          color: rgba(255, 255, 255, 0.78); }
     .nemo-window .sidebar separator {
       background-color: transparent; }
 
