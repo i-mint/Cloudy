@@ -33,7 +33,7 @@ stage {
   text-shadow: 0 1px rgba(255, 255, 255, 0);
   color: #181c28;
   background-color: #e2e3e4;
-  border: 1px solid #cfd6e6;
+  border: 1px solid #485474;
   box-shadow: inset 0 1px rgba(226, 227, 228, 0.05); }
   .button:focus, .notification-banner .notification-button:focus, .hotplug-notification-item:focus {
     text-shadow: 0 1px rgba(255, 255, 255, 0);
@@ -45,7 +45,7 @@ stage {
     text-shadow: 0 1px rgba(255, 255, 255, 0);
     color: #181c28;
     background-color: #eff0f0;
-    border: 1px solid #cfd6e6;
+    border: 1px solid #485474;
     box-shadow: inset 0 1px rgba(239, 240, 240, 0.05); }
   .button:hover:focus, .notification-banner .notification-button:hover:focus, .hotplug-notification-item:hover:focus {
     text-shadow: 0 1px rgba(255, 255, 255, 0);
@@ -62,36 +62,39 @@ stage {
   .button:insensitive, .notification-banner .notification-button:insensitive, .hotplug-notification-item:insensitive {
     text-shadow: 0 1px rgba(255, 255, 255, 0);
     color: rgba(24, 28, 40, 0.55);
-    border: 1px solid rgba(207, 214, 230, 0.55);
+    border: 1px solid rgba(72, 84, 116, 0.55);
     background-color: rgba(226, 227, 228, 0.55);
     box-shadow: inset 0 1px rgba(226, 227, 228, 0.05); }
 
 StEntry {
   padding: 7px;
   caret-size: 1px;
-  caret-color: #181c28;
+  caret-color: #ffffff;
   selection-background-color: #56648A;
   selected-color: #ffffff;
   transition-duration: 300ms;
   border-radius: 3px;
-  color: #181c28;
-  background-color: #FFFFFF;
-  border: 1px solid #cfd6e6;
-  box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.05); }
+  color: rgba(255, 255, 255, 0.56);
+  background-color: #56648A;
+  border: 1px solid #485474;
+  box-shadow: inset 0 2px 4px rgba(86, 100, 138, 0.05); }
   StEntry:focus, StEntry:hover {
-    color: #181c28;
-    background-color: #FFFFFF;
+    color: #ffffff;
+    background-color: #56648A;
     border: 1px solid #56648A;
-    box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.05); }
+    box-shadow: inset 0 2px 4px rgba(86, 100, 138, 0.05); }
   StEntry:insensitive {
     color: rgba(24, 28, 40, 0.55);
-    background-color: #f0f0f1;
-    border-color: 1px solid #d5dae3;
-    box-shadow: inset 0 2px 4px rgba(240, 240, 241, 0.05); }
+    background-color: #939bb0;
+    border-color: 1px solid #8b92a4;
+    box-shadow: inset 0 2px 4px rgba(147, 155, 176, 0.05); }
   StEntry StIcon.capslock-warning {
     icon-size: 16px;
     warning-color: #F27835;
     padding: 0 4px; }
+  StEntry StLabel.hint-text {
+    margin-left: 2px;
+    color: rgba(255, 255, 255, 0.34); }
 
 StScrollView.vfade {
   -st-vfade-offset: 0px; }
@@ -133,6 +136,7 @@ StScrollBar {
   -slider-active-border-color: rgba(0, 0, 0, 0);
   -slider-border-width: 0;
   -slider-handle-radius: 7px;
+  -slider-handle-border-color: #56648A;
   height: 18px;
   border: 0 solid transparent;
   border-right-width: 1px;
@@ -703,6 +707,16 @@ StScrollBar {
       color: #2b3248; }
       .unlock-screen #panel .panel-button:focus, .unlock-screen #panel .panel-button:hover, .unlock-screen #panel .panel-button:active, .login-screen #panel .panel-button:focus, .login-screen #panel .panel-button:hover, .login-screen #panel .panel-button:active, .lock-screen #panel .panel-button:focus, .lock-screen #panel .panel-button:hover, .lock-screen #panel .panel-button:active {
         color: #2b3248; }
+  #panel .panel-button.clock-display .clock {
+    color: white; }
+  #panel .panel-button.clock-display:active, #panel .panel-button.clock-display:overview, #panel .panel-button.clock-display:focus, #panel .panel-button.clock-display:checked {
+    box-shadow: none; }
+    #panel .panel-button.clock-display:active .clock, #panel .panel-button.clock-display:overview .clock, #panel .panel-button.clock-display:focus .clock, #panel .panel-button.clock-display:checked .clock {
+      color: #ffffff;
+      background-color: #56648A;
+      box-shadow: none;
+      border-bottom-width: 1px;
+      border-color: black; }
   #panel #panelActivities.panel-button {
     -natural-hpadding: 12px; }
   #panel .panel-status-indicators-box,
@@ -781,7 +795,9 @@ StScrollBar {
   padding: 0.75em 1.0em; }
 
 .calendar {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  background-color: transparent;
+  border-color: transparent; }
 
 .calendar,
 .datemenu-today-button,
@@ -829,7 +845,7 @@ StScrollBar {
     text-shadow: 0 1px rgba(255, 255, 255, 0);
     color: #181c28;
     background-color: #eff0f0;
-    border: 1px solid #cfd6e6;
+    border: 1px solid #485474;
     box-shadow: inset 0 1px rgba(239, 240, 240, 0.05); }
   .datemenu-today-button:active,
   .world-clocks-button:active,
@@ -861,6 +877,73 @@ StScrollBar {
 
 .weather-box {
   spacing: 0.4em; }
+
+.world-clocks-button {
+  color: rgba(24, 28, 40, 0.56);
+  background-color: transparent;
+  border-radius: 4px;
+  padding: 2px; }
+  .world-clocks-button:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+    border-color: rgba(86, 100, 138, 0.23);
+    padding: 2px; }
+  .world-clocks-button:active {
+    background-color: rgba(0, 0, 0, 0.08); }
+    .world-clocks-button:active .world-clocks-header {
+      color: #181c28; }
+  .world-clocks-button .world-clocks-header {
+    color: #181c28;
+    font-weight: bold;
+    background-color: transparent;
+    padding: 0px; }
+  .world-clocks-button .world-clocks-grid {
+    color: rgba(24, 28, 40, 0.56);
+    background-color: transparent;
+    padding-top: 0px; }
+  .world-clocks-button .world-clocks-city {
+    color: rgba(24, 28, 40, 0.56);
+    background-color: transparent;
+    padding-top: 4px; }
+  .world-clocks-button .world-clocks-time {
+    color: rgba(24, 28, 40, 0.56);
+    background-color: transparent;
+    padding-top: 4px; }
+  .world-clocks-button .world-clocks-timezone {
+    color: rgba(24, 28, 40, 0.56);
+    background-color: transparent;
+    padding-top: 0px; }
+
+.weather-button {
+  color: rgba(24, 28, 40, 0.56);
+  background-color: transparent;
+  border-radius: 4px;
+  padding: 2px; }
+  .weather-button:hover {
+    color: rgba(24, 28, 40, 0.56);
+    background-color: rgba(0, 0, 0, 0.06);
+    border-color: rgba(86, 100, 138, 0.23);
+    padding: 2px; }
+  .weather-button:active {
+    color: rgba(24, 28, 40, 0.56);
+    background-color: rgba(0, 0, 0, 0.08); }
+    .weather-button:active .weather-header {
+      color: #181c28; }
+  .weather-button .weather-box {
+    background-color: transparent; }
+  .weather-button .weather-header-box {
+    background-color: transparent; }
+  .weather-button .weather-header {
+    background-color: transparent;
+    color: #181c28; }
+    .weather-button .weather-header.location {
+      background-color: transparent;
+      color: #181c28; }
+  .weather-button .weather-grid {
+    background-color: transparent;
+    color: rgba(24, 28, 40, 0.56); }
+  .weather-button .weather-forecast-time {
+    background-color: transparent;
+    color: rgba(24, 28, 40, 0.56); }
 
 .calendar-month-label {
   color: #181c28;
@@ -1078,17 +1161,23 @@ StScrollBar {
   icon-size: 16px; }
 
 .window-close {
+  border-image: url("common-assets/misc/close.svg");
   background-image: url("common-assets/misc/close.svg");
+  background-color: transparent;
   background-size: 26px;
   height: 26px;
   width: 26px; }
   .window-close:hover {
+    border-image: url("common-assets/misc/close-hover.svg");
     background-image: url("common-assets/misc/close-hover.svg");
+    background-color: transparent;
     background-size: 26px;
     height: 26px;
     width: 26px; }
   .window-close:active {
+    border-image: url("common-assets/misc/close-active.svg");
     background-image: url("common-assets/misc/close-active.svg");
+    background-color: transparent;
     background-size: 26px;
     height: 26px;
     width: 26px; }
@@ -1173,18 +1262,21 @@ StScrollBar {
   width: 320px;
   padding: 7px 9px;
   border-radius: 20px;
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  background-color: rgba(255, 255, 255, 0.9); }
+  color: rgba(255, 255, 255, 0.56);
+  border: #485474;
+  background-color: rgba(86, 100, 138, 0.9); }
   .search-entry:focus {
-    padding: 7px 9px; }
+    padding: 7px 9px;
+    color: rgba(255, 255, 255, 0.56); }
   .search-entry .search-entry-icon {
     icon-size: 16px;
     padding: 0 4px;
-    color: #181c28; }
+    color: rgba(255, 255, 255, 0.56); }
   .search-entry:hover, .search-entry:focus {
     color: #ffffff;
     caret-color: #ffffff;
     background-color: #56648A;
+    border: #485474;
     selection-background-color: #ffffff;
     selected-color: #56648A; }
     .search-entry:hover .search-entry-icon, .search-entry:focus .search-entry-icon {
@@ -1741,13 +1833,13 @@ StScrollBar {
       text-shadow: 0 1px rgba(255, 255, 255, 0);
       color: #181c28;
       background-color: #e2e3e4;
-      border: 1px solid #cfd6e6;
+      border: 1px solid #485474;
       box-shadow: inset 0 1px rgba(226, 227, 228, 0.05); }
       .login-dialog .modal-dialog-button:default:hover, .login-dialog .modal-dialog-button:default:focus {
         text-shadow: 0 1px rgba(255, 255, 255, 0);
         color: #181c28;
         background-color: #eff0f0;
-        border: 1px solid #cfd6e6;
+        border: 1px solid #485474;
         box-shadow: inset 0 1px rgba(239, 240, 240, 0.05); }
       .login-dialog .modal-dialog-button:default:active {
         text-shadow: 0 1px rgba(255, 255, 255, 0);
@@ -1758,7 +1850,7 @@ StScrollBar {
       .login-dialog .modal-dialog-button:default:insensitive {
         text-shadow: 0 1px rgba(255, 255, 255, 0);
         color: rgba(24, 28, 40, 0.55);
-        border: 1px solid rgba(207, 214, 230, 0.55);
+        border: 1px solid rgba(72, 84, 116, 0.55);
         background-color: rgba(226, 227, 228, 0.55);
         box-shadow: inset 0 1px rgba(226, 227, 228, 0.05); }
 
