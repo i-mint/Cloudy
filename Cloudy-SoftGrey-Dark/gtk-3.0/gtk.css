@@ -1717,7 +1717,7 @@ notebook {
       box-shadow: inset 1px 0 #121212; }
     notebook > header > tabs > tab {
       background-color: rgba(48, 48, 48, 0.34);
-      color: rgba(255, 255, 255, 0.56); }
+      color: rgba(255, 255, 255, 0.67); }
       notebook > header > tabs > tab:backdrop {
         background-color: rgba(48, 48, 48, 0.12);
         color: rgba(255, 255, 255, 0.34); }
@@ -1726,15 +1726,15 @@ notebook {
         color: #ffffff;
         border-color: #121212; }
         notebook > header > tabs > tab:hover:not(:checked):backdrop {
-          background-color: rgba(48, 48, 48, 0.34);
-          color: rgba(255, 255, 255, 0.78); }
+          background-color: rgba(48, 48, 48, 0.45);
+          color: rgba(255, 255, 255, 0.67); }
       notebook > header > tabs > tab:checked {
         background-color: rgba(48, 48, 48, 0.78);
         color: #ffffff;
         font-weight: bold;
         border-color: #121212; }
         notebook > header > tabs > tab:checked:backdrop {
-          background-color: rgba(48, 48, 48, 0.56);
+          background-color: rgba(48, 48, 48, 0.67);
           color: rgba(255, 255, 255, 0.67); }
       notebook > header > tabs > tab button.flat, notebook > header > tabs > tab button.sidebar-button {
         min-height: 22px;

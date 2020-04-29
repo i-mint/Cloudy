@@ -1719,17 +1719,17 @@ notebook {
     notebook > header.right > tabs > tab:hover:not(:checked) {
       box-shadow: inset 1px 0 #c5c5c5; }
     notebook > header > tabs > tab {
-      background-color: rgba(77, 77, 77, 0.34);
-      color: rgba(255, 255, 255, 0.56); }
+      background-color: rgba(77, 77, 77, 0.56);
+      color: rgba(255, 255, 255, 0.67); }
       notebook > header > tabs > tab:backdrop {
-        background-color: rgba(77, 77, 77, 0.12);
-        color: rgba(255, 255, 255, 0.56); }
+        background-color: rgba(77, 77, 77, 0.34);
+        color: rgba(255, 255, 255, 0.45); }
       notebook > header > tabs > tab:hover:not(:checked) {
-        background-color: rgba(77, 77, 77, 0.56);
+        background-color: rgba(77, 77, 77, 0.67);
         color: #ffffff;
         border-color: #c5c5c5; }
         notebook > header > tabs > tab:hover:not(:checked):backdrop {
-          background-color: rgba(77, 77, 77, 0.34);
+          background-color: rgba(77, 77, 77, 0.45);
           color: rgba(255, 255, 255, 0.78); }
       notebook > header > tabs > tab:checked {
         background-color: rgba(77, 77, 77, 0.78);

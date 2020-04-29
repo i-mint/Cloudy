@@ -1722,14 +1722,14 @@ notebook {
       background-color: rgba(89, 89, 89, 0.56);
       color: rgba(255, 255, 255, 0.78); }
       notebook > header > tabs > tab:backdrop {
-        background-color: rgba(89, 89, 89, 0.12);
-        color: rgba(255, 255, 255, 0.56); }
+        background-color: rgba(89, 89, 89, 0.34);
+        color: rgba(255, 255, 255, 0.45); }
       notebook > header > tabs > tab:hover:not(:checked) {
         background-color: rgba(89, 89, 89, 0.78);
         color: #ffffff;
         border-color: #d1d1d1; }
         notebook > header > tabs > tab:hover:not(:checked):backdrop {
-          background-color: rgba(89, 89, 89, 0.34);
+          background-color: rgba(89, 89, 89, 0.67);
           color: rgba(255, 255, 255, 0.78); }
       notebook > header > tabs > tab:checked {
         background-color: rgba(89, 89, 89, 0.89);
@@ -1737,7 +1737,7 @@ notebook {
         font-weight: bold;
         border-color: #d1d1d1; }
         notebook > header > tabs > tab:checked:backdrop {
-          background-color: rgba(89, 89, 89, 0.56);
+          background-color: rgba(89, 89, 89, 0.78);
           color: rgba(255, 255, 255, 0.89); }
       notebook > header > tabs > tab button.flat, notebook > header > tabs > tab button.sidebar-button {
         min-height: 22px;
