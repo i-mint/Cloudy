@@ -4092,7 +4092,8 @@ filechooser.csd.background, filechooser placessidebar list,
 filechooser placessidebar.sidebar,
 .nautilus-window placessidebar.sidebar {
   background-color: rgba(28, 32, 43, 0.95);
-  box-shadow: inset 37px 0 0 0 #2B3143; }
+  box-shadow: inset 37px 0 0 0 #2B3143;
+  margin-top: -4px; }
   filechooser placessidebar.sidebar row.sidebar-row,
   .nautilus-window placessidebar.sidebar row.sidebar-row {
     border: none;
