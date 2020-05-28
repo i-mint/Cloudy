@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -12,7 +10,7 @@
    sodipodi:docname="calendar-arrow-left.svg"
    height="16"
    id="svg7384"
-   inkscape:version="0.91 r13725"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
    version="1.1"
    width="16">
   <metadata
@@ -33,8 +31,8 @@
      bordercolor="#666666"
      borderopacity="1"
      inkscape:current-layer="layer12"
-     inkscape:cx="-9.0656635"
-     inkscape:cy="-4.6881295"
+     inkscape:cx="10.215418"
+     inkscape:cy="7.797331"
      gridtolerance="10"
      inkscape:guide-bbox="true"
      guidetolerance="10"
@@ -55,21 +53,22 @@
      inkscape:snap-nodes="true"
      inkscape:snap-others="false"
      inkscape:snap-to-guides="true"
-     inkscape:window-height="720"
+     inkscape:window-height="713"
      inkscape:window-maximized="1"
-     inkscape:window-width="1366"
-     inkscape:window-x="0"
-     inkscape:window-y="25"
-     inkscape:zoom="5.6568543">
+     inkscape:window-width="1313"
+     inkscape:window-x="53"
+     inkscape:window-y="27"
+     inkscape:zoom="22.627417"
+     inkscape:document-rotation="0">
     <inkscape:grid
        empspacing="2"
        enabled="true"
        id="grid4866"
-       originx="141px"
-       originy="530px"
+       originx="141"
+       originy="530"
        snapvisiblegridlinesonly="true"
-       spacingx="1px"
-       spacingy="1px"
+       spacingx="1"
+       spacingy="1"
        type="xygrid"
        visible="true" />
     <inkscape:grid
@@ -80,11 +79,11 @@
        enabled="true"
        id="grid5968"
        opacity="0.1254902"
-       originx="141px"
-       originy="530px"
+       originx="141"
+       originy="530"
        snapvisiblegridlinesonly="true"
-       spacingx="0.5px"
-       spacingy="0.5px"
+       spacingx="0.5"
+       spacingy="0.5"
        type="xygrid"
        visible="true" />
   </sodipodi:namedview>
@@ -146,13 +145,13 @@
        inkscape:connector-curvature="0"
        d="m 110.875,749 a 1.0001,1.0001 0 0 0 -0.59375,0.28125 l -5,5 -0.6875,0.71875 0.6875,0.71875 5,5 a 1.016466,1.016466 0 1 0 1.4375,-1.4375 L 107.4375,755 l 4.28125,-4.28125 A 1.0001,1.0001 0 0 0 110.875,749 z"
        id="path6040"
-       style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#a1a1a1;fill-opacity:1;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans" />
+       style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#757575;fill-opacity:1;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans" />
     <rect
        height="1"
        id="rect6046"
        rx="0"
        ry="1"
-       style="fill:#a1a1a1;fill-opacity:1;stroke:none"
+       style="fill:#757575;fill-opacity:1;stroke:none"
        width="1"
        x="111.0002"
        y="749" />
@@ -161,7 +160,7 @@
        id="rect6050"
        rx="0"
        ry="1"
-       style="fill:#a1a1a1;fill-opacity:1;stroke:none"
+       style="fill:#757575;fill-opacity:1;stroke:none"
        width="1"
        x="111.0002"
        y="760" />
