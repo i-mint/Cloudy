@@ -172,13 +172,15 @@ entry {
   caret-color: currentColor;
   border-radius: 3px;
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  color: #181c28;
-  border-color: #dfe0e2;
-  background-color: #FFFFFF; }
+  color: rgba(255, 255, 255, 0.58);
+  border-color: #5e6d97;
+  background-color: #7280A7; }
   entry.search {
     border-radius: 4px; }
+  entry image, entry image:hover {
+    color: inherit; }
   entry image {
-    color: #464953; }
+    color: rgba(255, 255, 255, 0.58); }
     entry image.left {
       padding-left: 0;
       padding-right: 5px; }
@@ -193,13 +195,15 @@ entry {
     border-radius: 0; }
   entry:focus {
     background-clip: border-box;
-    color: #181c28;
-    border-color: #56648A;
-    background-color: #FFFFFF; }
+    color: #ffffff;
+    border-color: #5e6d97;
+    background-color: #7886ab; }
+    entry:focus image, entry:focus image:hover {
+      color: inherit; }
   entry:disabled {
     color: rgba(24, 28, 40, 0.55);
     border-color: rgba(223, 224, 226, 0.55);
-    background-color: rgba(255, 255, 255, 0.55); }
+    background-color: rgba(114, 128, 167, 0.55); }
   entry.warning {
     color: white;
     border-color: #F27835;
@@ -914,6 +918,16 @@ searchbar {
   border-color: #cfd1d3;
   border-width: 0 0 1px;
   padding: 3px; }
+  searchbar entry.search {
+    background-color: #FFFFFF;
+    color: rgba(24, 28, 40, 0.58); }
+    searchbar entry.search image, searchbar entry.search image:hover {
+      color: inherit; }
+    searchbar entry.search:focus {
+      background-color: #fafafa;
+      color: #181c28; }
+      searchbar entry.search:focus image, searchbar entry.search:focus image:hover {
+        color: inherit; }
 
 actionbar {
   padding: 6px;
@@ -1012,7 +1026,7 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
     opacity: 0.6; }
 
 .primary-toolbar entry, headerbar entry {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.48);
   border-color: rgba(98, 114, 157, 0.29);
   background-color: rgba(65, 75, 104, 0.29); }
   .primary-toolbar entry image, headerbar entry image, .primary-toolbar entry image:hover, headerbar entry image:hover {
@@ -1021,9 +1035,11 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
     opacity: 0.85; }
   .primary-toolbar entry:focus, headerbar entry:focus {
     color: #ffffff;
-    border-color: #56648A;
+    border-color: rgba(98, 114, 157, 0.29);
     background-color: #56648A;
     background-clip: border-box; }
+    .primary-toolbar entry:focus image, headerbar entry:focus image, .primary-toolbar entry:focus image:hover, headerbar entry:focus image:hover {
+      color: inherit; }
     .primary-toolbar entry:focus image, headerbar entry:focus image {
       color: #ffffff; }
   .primary-toolbar entry:disabled, headerbar entry:disabled {
@@ -1289,16 +1305,18 @@ headerbar spinbutton:not(.vertical) > entry + button:not(:active):hover {
 .primary-toolbar combobox:disabled, headerbar combobox:disabled {
   color: rgba(255, 255, 255, 0.2); }
 .primary-toolbar combobox > .linked > button.combo, headerbar combobox > .linked > button.combo {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.48);
   border-color: rgba(98, 114, 157, 0.29);
   background-color: rgba(65, 75, 104, 0.29); }
   .primary-toolbar combobox > .linked > button.combo image, headerbar combobox > .linked > button.combo image, .primary-toolbar combobox > .linked > button.combo image:hover, headerbar combobox > .linked > button.combo image:hover {
     color: inherit; }
   .primary-toolbar combobox > .linked > button.combo:hover, headerbar combobox > .linked > button.combo:hover {
     color: #ffffff;
-    border-color: #56648A;
+    border-color: rgba(98, 114, 157, 0.29);
     background-color: #56648A;
     box-shadow: none; }
+    .primary-toolbar combobox > .linked > button.combo:hover image, headerbar combobox > .linked > button.combo:hover image, .primary-toolbar combobox > .linked > button.combo:hover image:hover, headerbar combobox > .linked > button.combo:hover image:hover {
+      color: inherit; }
   .primary-toolbar combobox > .linked > button.combo:disabled, headerbar combobox > .linked > button.combo:disabled {
     color: rgba(255, 255, 255, 0.35);
     border-color: rgba(98, 114, 157, 0.29);
@@ -1811,13 +1829,13 @@ scrollbar {
     -GtkScrollbar-has-backward-stepper: false;
     -GtkScrollbar-has-forward-stepper: false; }
   scrollbar.top {
-    border-bottom: 1px solid #cfd1d3; }
+    border-bottom: 0px solid #cfd1d3; }
   scrollbar.bottom {
-    border-top: 1px solid #cfd1d3; }
+    border-top: 0px solid #cfd1d3; }
   scrollbar.left {
-    border-right: 1px solid #cfd1d3; }
+    border-right: 0px solid #cfd1d3; }
   scrollbar.right {
-    border-left: 1px solid #cfd1d3; }
+    border-left: 0px solid #cfd1d3; }
   scrollbar button {
     border: none; }
   scrollbar.vertical button.down {
@@ -1835,11 +1853,11 @@ scrollbar {
     border: 4px solid transparent;
     border-radius: 8px;
     background-clip: padding-box;
-    background-color: #94969c; }
+    background-color: #606b8a; }
     scrollbar slider:hover {
-      background-color: #a9abaf; }
+      background-color: #74809e; }
     scrollbar slider:hover:active {
-      background-color: #56648A; }
+      background-color: #8c96af; }
     scrollbar slider:disabled {
       background-color: transparent; }
   scrollbar.fine-tune slider {
@@ -1850,14 +1868,14 @@ scrollbar {
   scrollbar.fine-tune.vertical slider {
     border-width: 4px 5px; }
   scrollbar.overlay-indicator:not(.dragging):not(.hovering) {
-    opacity: 0.4;
+    opacity: 0.66;
     border-color: transparent;
     background-color: transparent; }
     scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider {
       margin: 0;
       min-width: 4px;
       min-height: 4px;
-      background-color: #565962;
+      background-color: #40485d;
       border: 1px solid rgba(255, 255, 255, 0.6); }
     scrollbar.overlay-indicator:not(.dragging):not(.hovering).horizontal slider {
       margin: 0 2px;
@@ -2279,7 +2297,7 @@ scale {
       background-color: #56648A;
       border-color: #56648A; }
     scale slider:disabled {
-      background-color: #f4f5f5;
+      background-color: #a7afc5;
       border-color: rgba(156, 161, 165, 0.3); }
     menuitem:hover scale slider, row:selected scale slider, infobar scale slider {
       background-clip: border-box;
@@ -3169,9 +3187,11 @@ terminal-window notebook > header.top,
 .nemo-window .nemo-window-pane widget.entry {
   border: 1px solid;
   border-radius: 3px;
-  color: #181c28;
-  border-color: #56648A;
-  background-color: #FFFFFF; }
+  color: #ffffff;
+  border-color: #5e6d97;
+  background-color: #7886ab; }
+  .nemo-window .nemo-window-pane widget.entry image, .nemo-window .nemo-window-pane widget.entry image:hover {
+    color: inherit; }
 .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button {
   border-color: rgba(255, 255, 255, 0.1);
   background-color: #6e7da5;
@@ -3621,15 +3641,17 @@ panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel butto
   border-radius: 3px;
   padding-left: 4px;
   padding-right: 4px;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.48);
   border-color: rgba(98, 114, 157, 0.29);
   background-color: rgba(65, 75, 104, 0.29); }
   .marlin-pathbar.pathbar image, .marlin-pathbar.pathbar image:hover {
     color: inherit; }
   .marlin-pathbar.pathbar:focus {
     color: #ffffff;
-    border-color: #56648A;
+    border-color: rgba(98, 114, 157, 0.29);
     background-color: #56648A; }
+    .marlin-pathbar.pathbar:focus image, .marlin-pathbar.pathbar:focus image:hover {
+      color: inherit; }
   .marlin-pathbar.pathbar:disabled {
     color: rgba(255, 255, 255, 0.35);
     border-color: rgba(98, 114, 157, 0.29);
@@ -4393,43 +4415,34 @@ filechooser headerbar widget stack box.path-bar-box,
   background-color: #5e6d97;
   color: #ffffff; }
 
-.nemo-window {
-  /*//1.1.1, delete 1.1.2
-  .nemo-window-pane {
-    .view {background-color: if($variant=='dark', lighten($base_color, 15%), $base_color); color: $fg_color;}
-    .view:selected {background-color: $selected_bg_color; color: $selected_fg_color;}
-  }*/ }
-  .nemo-window .nemo-window-pane scrolledwindow {
-    background-color: #FFFFFF;
-    color: #181c28; }
-  .nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview {
-    background-color: rgba(114, 128, 167, 0.95);
-    color: rgba(24, 28, 40, 0.34); }
-  .nemo-window .nemo-inactive-pane .iconview {
-    background-color: rgba(114, 128, 167, 0.95);
-    color: rgba(24, 28, 40, 0.34); }
-  .nemo-window .sidebar {
-    color: rgba(255, 255, 255, 0.78);
-    background-color: rgba(114, 128, 167, 0.95); }
-    .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar row {
-      background-color: transparent;
+.nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview {
+  background-color: whitesmoke;
+  color: rgba(24, 28, 40, 0.34); }
+.nemo-window .nemo-inactive-pane .iconview {
+  background-color: whitesmoke;
+  color: rgba(24, 28, 40, 0.34); }
+.nemo-window .sidebar {
+  color: rgba(255, 255, 255, 0.78);
+  background-color: rgba(114, 128, 167, 0.95); }
+  .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar row {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.78); }
+    .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar .view.cell:selected:hover, .nemo-window .sidebar iconview.cell:selected:hover, .nemo-window .sidebar row.cell:selected, .nemo-window .sidebar row.cell:selected:hover {
+      background-color: #5c6b93;
+      color: #ffffff; }
+    .nemo-window .sidebar .view.cell:hover, .nemo-window .sidebar iconview.cell:hover, .nemo-window .sidebar row.cell:hover {
+      background-color: rgba(86, 100, 138, 0.56);
       color: rgba(255, 255, 255, 0.78); }
-      .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar .view.cell:selected:hover, .nemo-window .sidebar iconview.cell:selected:hover, .nemo-window .sidebar row.cell:selected, .nemo-window .sidebar row.cell:selected:hover {
-        background-color: #5c6b93;
-        color: #ffffff; }
-      .nemo-window .sidebar .view.cell:hover, .nemo-window .sidebar iconview.cell:hover, .nemo-window .sidebar row.cell:hover {
-        background-color: rgba(86, 100, 138, 0.56);
+    .nemo-window .sidebar .view.expander, .nemo-window .sidebar iconview.expander, .nemo-window .sidebar row.expander {
+      color: rgba(173, 181, 204, 0.865); }
+      .nemo-window .sidebar .view.expander:hover, .nemo-window .sidebar iconview.expander:hover, .nemo-window .sidebar row.expander:hover {
         color: rgba(255, 255, 255, 0.78); }
-      .nemo-window .sidebar .view.expander, .nemo-window .sidebar iconview.expander, .nemo-window .sidebar row.expander {
-        color: rgba(173, 181, 204, 0.865); }
-        .nemo-window .sidebar .view.expander:hover, .nemo-window .sidebar iconview.expander:hover, .nemo-window .sidebar row.expander:hover {
-          color: rgba(255, 255, 255, 0.78); }
-      .nemo-window .sidebar .view:backdrop, .nemo-window .sidebar iconview:backdrop, .nemo-window .sidebar .view:backdrop.cell:hover, .nemo-window .sidebar iconview:backdrop.cell:hover, .nemo-window .sidebar row:backdrop, .nemo-window .sidebar row:backdrop.cell:hover {
-        color: rgba(255, 255, 255, 0.56); }
-        .nemo-window .sidebar .view:backdrop.cell:selected, .nemo-window .sidebar iconview:backdrop.cell:selected, .nemo-window .sidebar .view:backdrop.cell:selected:hover, .nemo-window .sidebar iconview:backdrop.cell:selected:hover, .nemo-window .sidebar .view:backdrop.cell:hover.cell:selected, .nemo-window .sidebar iconview:backdrop.cell:hover.cell:selected, .nemo-window .sidebar .view:backdrop.cell:hover.cell:selected:hover, .nemo-window .sidebar iconview:backdrop.cell:hover.cell:selected:hover, .nemo-window .sidebar row:backdrop.cell:selected, .nemo-window .sidebar row:backdrop.cell:selected:hover, .nemo-window .sidebar row:backdrop.cell:hover.cell:selected, .nemo-window .sidebar row:backdrop.cell:hover.cell:selected:hover {
-          color: rgba(255, 255, 255, 0.78); }
-    .nemo-window .sidebar separator {
-      background-color: transparent; }
+    .nemo-window .sidebar .view:backdrop, .nemo-window .sidebar iconview:backdrop, .nemo-window .sidebar .view:backdrop.cell:hover, .nemo-window .sidebar iconview:backdrop.cell:hover, .nemo-window .sidebar row:backdrop, .nemo-window .sidebar row:backdrop.cell:hover {
+      color: rgba(255, 255, 255, 0.56); }
+      .nemo-window .sidebar .view:backdrop.cell:selected, .nemo-window .sidebar iconview:backdrop.cell:selected, .nemo-window .sidebar .view:backdrop.cell:selected:hover, .nemo-window .sidebar iconview:backdrop.cell:selected:hover, .nemo-window .sidebar .view:backdrop.cell:hover.cell:selected, .nemo-window .sidebar iconview:backdrop.cell:hover.cell:selected, .nemo-window .sidebar .view:backdrop.cell:hover.cell:selected:hover, .nemo-window .sidebar iconview:backdrop.cell:hover.cell:selected:hover, .nemo-window .sidebar row:backdrop.cell:selected, .nemo-window .sidebar row:backdrop.cell:selected:hover, .nemo-window .sidebar row:backdrop.cell:hover.cell:selected, .nemo-window .sidebar row:backdrop.cell:hover.cell:selected:hover {
+        color: rgba(255, 255, 255, 0.78); }
+  .nemo-window .sidebar separator {
+    background-color: transparent; }
 
 .caja-side-pane,
 .caja-side-pane > notebook > stack > widget > box,

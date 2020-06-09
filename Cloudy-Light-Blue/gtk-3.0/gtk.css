@@ -1,57 +1,3 @@
-filechooser actionbar button {
-  color: rgba(255, 255, 255, 0.78);
-  border-color: rgba(63, 73, 100, 0.35);
-  background-color: rgba(148, 159, 188, 0.35); }
-  .caja-side-pane > box button:hover:not(:active), filechooser actionbar button:hover {
-    color: rgba(255, 255, 255, 0.78);
-    border-color: rgba(63, 73, 100, 0.35);
-    background-color: rgba(170, 179, 202, 0.45); }
-  filechooser actionbar button:active, filechooser actionbar button:checked {
-    color: #ffffff;
-    border-color: rgba(63, 73, 100, 0.35);
-    background-color: #56648A; }
-  filechooser actionbar button:disabled {
-    color: rgba(122, 133, 163, 0.934);
-    border-color: rgba(63, 73, 100, 0.35);
-    background-color: rgba(148, 159, 188, 0.2); }
-
-filechooser actionbar entry {
-  color: rgba(255, 255, 255, 0.78);
-  border-color: rgba(63, 73, 100, 0.35);
-  background-color: rgba(148, 159, 188, 0.35); }
-  filechooser actionbar entry image, filechooser actionbar entry image:hover {
-    color: inherit; }
-  filechooser actionbar entry:focus {
-    color: #ffffff;
-    border-color: rgba(63, 73, 100, 0.35);
-    background-color: #56648A; }
-  filechooser actionbar entry:disabled {
-    color: rgba(255, 255, 255, 0.33);
-    background-color: rgba(148, 159, 188, 0.2); }
-
-filechooser placessidebar.sidebar scrollbar,
-.nautilus-window placessidebar.sidebar scrollbar, .nemo-window .sidebar scrollbar, .caja-side-pane scrollbar {
-  border-color: rgba(76, 89, 122, 0.95); }
-  filechooser placessidebar.sidebar scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider,
-  .nautilus-window placessidebar.sidebar scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider, .nemo-window .sidebar scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider, .caja-side-pane scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider {
-    background-color: #c4c4c4;
-    border: 1px solid rgba(0, 0, 0, 0.3); }
-  filechooser placessidebar.sidebar scrollbar slider,
-  .nautilus-window placessidebar.sidebar scrollbar slider, .nemo-window .sidebar scrollbar slider, .caja-side-pane scrollbar slider {
-    background-color: #56648A; }
-    filechooser placessidebar.sidebar scrollbar slider:hover,
-    .nautilus-window placessidebar.sidebar scrollbar slider:hover, .nemo-window .sidebar scrollbar slider:hover, .caja-side-pane scrollbar slider:hover {
-      background-color: #66718e; }
-    filechooser placessidebar.sidebar scrollbar slider:hover:active,
-    .nautilus-window placessidebar.sidebar scrollbar slider:hover:active, .nemo-window .sidebar scrollbar slider:hover:active, .caja-side-pane scrollbar slider:hover:active {
-      background-color: #76819d; }
-    filechooser placessidebar.sidebar scrollbar slider:disabled,
-    .nautilus-window placessidebar.sidebar scrollbar slider:disabled, .nemo-window .sidebar scrollbar slider:disabled, .caja-side-pane scrollbar slider:disabled {
-      background-color: transparent; }
-  filechooser placessidebar.sidebar scrollbar trough,
-  .nautilus-window placessidebar.sidebar scrollbar trough, .nemo-window .sidebar scrollbar trough, .caja-side-pane scrollbar trough {
-    background-color: rgba(72, 84, 116, 0.95); }
-
 * {
   background-clip: padding-box;
   -GtkToolButton-icon-spacing: 4;
@@ -172,13 +118,15 @@ entry {
   caret-color: currentColor;
   border-radius: 3px;
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  color: #181c28;
-  border-color: #d5d6d8;
-  background-color: #DDDEDF; }
+  color: rgba(24, 28, 40, 0.54);
+  border-color: #c3c5c6;
+  background-color: #d8d9da; }
   entry.search {
     border-radius: 4px; }
+  entry image, entry image:hover {
+    color: inherit; }
   entry image {
-    color: #464953; }
+    color: rgba(24, 28, 40, 0.54); }
     entry image.left {
       padding-left: 0;
       padding-right: 5px; }
@@ -194,12 +142,14 @@ entry {
   entry:focus {
     background-clip: border-box;
     color: #181c28;
-    border-color: #56648A;
-    background-color: #DDDEDF; }
+    border-color: #c3c5c6;
+    background-color: #d2d4d5; }
+    entry:focus image, entry:focus image:hover {
+      color: inherit; }
   entry:disabled {
     color: rgba(24, 28, 40, 0.55);
     border-color: rgba(213, 214, 216, 0.55);
-    background-color: rgba(221, 222, 223, 0.55); }
+    background-color: rgba(216, 217, 218, 0.55); }
   entry.warning {
     color: white;
     border-color: #F27835;
@@ -914,6 +864,10 @@ searchbar {
   border-color: #c5c7c9;
   border-width: 0 0 1px;
   padding: 3px; }
+  searchbar entry.search {
+    background-color: #FFFFFF; }
+    searchbar entry.search:focus {
+      background-color: #fafafa; }
 
 actionbar {
   padding: 6px;
@@ -1012,7 +966,7 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
     opacity: 0.6; }
 
 .primary-toolbar entry, headerbar entry {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.34);
   border-color: transparent;
   background-color: rgba(86, 100, 138, 0.95); }
   .primary-toolbar entry image, headerbar entry image, .primary-toolbar entry image:hover, headerbar entry image:hover {
@@ -1024,6 +978,8 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
     border-color: #505d81;
     background-color: #505d81;
     background-clip: border-box; }
+    .primary-toolbar entry:focus image, headerbar entry:focus image, .primary-toolbar entry:focus image:hover, headerbar entry:focus image:hover {
+      color: inherit; }
     .primary-toolbar entry:focus image, headerbar entry:focus image {
       color: #ffffff; }
   .primary-toolbar entry:disabled, headerbar entry:disabled {
@@ -1289,7 +1245,7 @@ headerbar spinbutton:not(.vertical) > entry + button:not(:active):hover {
 .primary-toolbar combobox:disabled, headerbar combobox:disabled {
   color: rgba(255, 255, 255, 0.2); }
 .primary-toolbar combobox > .linked > button.combo, headerbar combobox > .linked > button.combo {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.34);
   border-color: transparent;
   background-color: rgba(86, 100, 138, 0.95); }
   .primary-toolbar combobox > .linked > button.combo image, headerbar combobox > .linked > button.combo image, .primary-toolbar combobox > .linked > button.combo image:hover, headerbar combobox > .linked > button.combo image:hover {
@@ -1299,6 +1255,8 @@ headerbar spinbutton:not(.vertical) > entry + button:not(:active):hover {
     border-color: #505d81;
     background-color: #505d81;
     box-shadow: none; }
+    .primary-toolbar combobox > .linked > button.combo:hover image, headerbar combobox > .linked > button.combo:hover image, .primary-toolbar combobox > .linked > button.combo:hover image:hover, headerbar combobox > .linked > button.combo:hover image:hover {
+      color: inherit; }
   .primary-toolbar combobox > .linked > button.combo:disabled, headerbar combobox > .linked > button.combo:disabled {
     color: rgba(255, 255, 255, 0.35);
     border-color: #505d81;
@@ -1810,13 +1768,13 @@ scrollbar {
     -GtkScrollbar-has-backward-stepper: false;
     -GtkScrollbar-has-forward-stepper: false; }
   scrollbar.top {
-    border-bottom: 1px solid #c5c7c9; }
+    border-bottom: 0px solid #c5c7c9; }
   scrollbar.bottom {
-    border-top: 1px solid #c5c7c9; }
+    border-top: 0px solid #c5c7c9; }
   scrollbar.left {
-    border-right: 1px solid #c5c7c9; }
+    border-right: 0px solid #c5c7c9; }
   scrollbar.right {
-    border-left: 1px solid #c5c7c9; }
+    border-left: 0px solid #c5c7c9; }
   scrollbar button {
     border: none; }
   scrollbar.vertical button.down {
@@ -1834,11 +1792,11 @@ scrollbar {
     border: 4px solid transparent;
     border-radius: 8px;
     background-clip: padding-box;
-    background-color: #8e9096; }
+    background-color: #606b8a; }
     scrollbar slider:hover {
-      background-color: #a2a4a8; }
+      background-color: #74809e; }
     scrollbar slider:hover:active {
-      background-color: #56648A; }
+      background-color: #8c96af; }
     scrollbar slider:disabled {
       background-color: transparent; }
   scrollbar.fine-tune slider {
@@ -1849,14 +1807,14 @@ scrollbar {
   scrollbar.fine-tune.vertical slider {
     border-width: 4px 5px; }
   scrollbar.overlay-indicator:not(.dragging):not(.hovering) {
-    opacity: 0.4;
+    opacity: 0.66;
     border-color: transparent;
     background-color: transparent; }
     scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider {
       margin: 0;
       min-width: 4px;
       min-height: 4px;
-      background-color: #53565f;
+      background-color: #40485d;
       border: 1px solid rgba(255, 255, 255, 0.6); }
     scrollbar.overlay-indicator:not(.dragging):not(.hovering).horizontal slider {
       margin: 0 2px;
@@ -2278,7 +2236,7 @@ scale {
       background-color: #56648A;
       border-color: #56648A; }
     scale slider:disabled {
-      background-color: #dddedf;
+      background-color: #dadbdc;
       border-color: rgba(147, 151, 154, 0.3); }
     menuitem:hover scale slider, row:selected scale slider, infobar scale slider {
       background-clip: border-box;
@@ -3166,8 +3124,10 @@ terminal-window notebook > header.top,
   border: 1px solid;
   border-radius: 3px;
   color: #181c28;
-  border-color: #56648A;
-  background-color: #DDDEDF; }
+  border-color: #c3c5c6;
+  background-color: #d2d4d5; }
+  .nemo-window .nemo-window-pane widget.entry image, .nemo-window .nemo-window-pane widget.entry image:hover {
+    color: inherit; }
 .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button {
   border-color: rgba(255, 255, 255, 0.1);
   background-color: #6e7da5;
@@ -3617,7 +3577,7 @@ panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel butto
   border-radius: 3px;
   padding-left: 4px;
   padding-right: 4px;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.34);
   border-color: transparent;
   background-color: rgba(86, 100, 138, 0.95); }
   .marlin-pathbar.pathbar image, .marlin-pathbar.pathbar image:hover {
@@ -3626,6 +3586,8 @@ panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel butto
     color: #ffffff;
     border-color: #505d81;
     background-color: #505d81; }
+    .marlin-pathbar.pathbar:focus image, .marlin-pathbar.pathbar:focus image:hover {
+      color: inherit; }
   .marlin-pathbar.pathbar:disabled {
     color: rgba(255, 255, 255, 0.35);
     border-color: #505d81;
@@ -4370,14 +4332,11 @@ filechooser headerbar widget stack box.path-bar-box,
   background-color: #5e6d97;
   color: #ffffff; }
 
-.nemo-window .nemo-window-pane scrolledwindow {
-  background-color: #FFFFFF;
-  color: #181c28; }
 .nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview {
-  background-color: rgba(86, 100, 138, 0.95);
+  background-color: whitesmoke;
   color: rgba(24, 28, 40, 0.34); }
 .nemo-window .nemo-inactive-pane .iconview {
-  background-color: rgba(86, 100, 138, 0.95);
+  background-color: whitesmoke;
   color: rgba(24, 28, 40, 0.34); }
 .nemo-window .sidebar {
   color: rgba(255, 255, 255, 0.78);
@@ -4461,6 +4420,60 @@ filechooser actionbar {
       background-color: #56648A; }
     .gedit-document-panel row:hover:not(:selected) button:active {
       color: rgba(255, 255, 255, 0.78); }
+
+filechooser actionbar button {
+  color: rgba(255, 255, 255, 0.78);
+  border-color: rgba(63, 73, 100, 0.35);
+  background-color: rgba(148, 159, 188, 0.35); }
+  .caja-side-pane > box button:hover:not(:active), filechooser actionbar button:hover {
+    color: rgba(255, 255, 255, 0.78);
+    border-color: rgba(63, 73, 100, 0.35);
+    background-color: rgba(170, 179, 202, 0.45); }
+  filechooser actionbar button:active, filechooser actionbar button:checked {
+    color: #ffffff;
+    border-color: rgba(63, 73, 100, 0.35);
+    background-color: #56648A; }
+  filechooser actionbar button:disabled {
+    color: rgba(122, 133, 163, 0.934);
+    border-color: rgba(63, 73, 100, 0.35);
+    background-color: rgba(148, 159, 188, 0.2); }
+
+filechooser actionbar entry {
+  color: rgba(255, 255, 255, 0.78);
+  border-color: rgba(63, 73, 100, 0.35);
+  background-color: rgba(148, 159, 188, 0.35); }
+  filechooser actionbar entry image, filechooser actionbar entry image:hover {
+    color: inherit; }
+  filechooser actionbar entry:focus {
+    color: #ffffff;
+    border-color: rgba(63, 73, 100, 0.35);
+    background-color: #56648A; }
+  filechooser actionbar entry:disabled {
+    color: rgba(255, 255, 255, 0.33);
+    background-color: rgba(148, 159, 188, 0.2); }
+
+filechooser placessidebar.sidebar scrollbar,
+.nautilus-window placessidebar.sidebar scrollbar, .nemo-window .sidebar scrollbar, .caja-side-pane scrollbar {
+  border-color: rgba(76, 89, 122, 0.95); }
+  filechooser placessidebar.sidebar scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider,
+  .nautilus-window placessidebar.sidebar scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider, .nemo-window .sidebar scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider, .caja-side-pane scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider {
+    background-color: #c4c4c4;
+    border: 1px solid rgba(0, 0, 0, 0.3); }
+  filechooser placessidebar.sidebar scrollbar slider,
+  .nautilus-window placessidebar.sidebar scrollbar slider, .nemo-window .sidebar scrollbar slider, .caja-side-pane scrollbar slider {
+    background-color: #56648A; }
+    filechooser placessidebar.sidebar scrollbar slider:hover,
+    .nautilus-window placessidebar.sidebar scrollbar slider:hover, .nemo-window .sidebar scrollbar slider:hover, .caja-side-pane scrollbar slider:hover {
+      background-color: #66718e; }
+    filechooser placessidebar.sidebar scrollbar slider:hover:active,
+    .nautilus-window placessidebar.sidebar scrollbar slider:hover:active, .nemo-window .sidebar scrollbar slider:hover:active, .caja-side-pane scrollbar slider:hover:active {
+      background-color: #76819d; }
+    filechooser placessidebar.sidebar scrollbar slider:disabled,
+    .nautilus-window placessidebar.sidebar scrollbar slider:disabled, .nemo-window .sidebar scrollbar slider:disabled, .caja-side-pane scrollbar slider:disabled {
+      background-color: transparent; }
+  filechooser placessidebar.sidebar scrollbar trough,
+  .nautilus-window placessidebar.sidebar scrollbar trough, .nemo-window .sidebar scrollbar trough, .caja-side-pane scrollbar trough {
+    background-color: rgba(72, 84, 116, 0.95); }
 
 @define-color theme_fg_color #181c28;
 @define-color theme_text_color #181c28;
