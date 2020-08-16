@@ -1074,12 +1074,12 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
   .primary-toolbar button:backdrop, headerbar button:backdrop {
     opacity: 0.7; }
   .primary-toolbar button:hover, headerbar button:hover {
-    border-color: rgba(0, 0, 0, 0.37);
-    background-color: #4a4a4a;
+    border-color: transparent;
+    background-color: #3a3a3a;
     color: rgba(255, 255, 255, 0.56); }
   .primary-toolbar button:active, headerbar button:active, .primary-toolbar button:checked, headerbar button:checked {
     color: #ffffff;
-    border-color: transparent;
+    border-color: #303030;
     background-color: #303030;
     background-clip: padding-box; }
   .primary-toolbar button:disabled, headerbar button:disabled {
@@ -1113,8 +1113,8 @@ headerbar .linked:not(.vertical):not(.path-bar) > button:not(:checked):not(:acti
 .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button,
 .primary-toolbar .linked:not(.vertical).path-bar > button,
 headerbar .linked:not(.vertical).path-bar > button {
-  border-color: rgba(0, 0, 0, 0.37);
-  background-color: #4a4a4a;
+  border-color: transparent;
+  background-color: #3a3a3a;
   color: rgba(255, 255, 255, 0.56); }
   .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover,
   .primary-toolbar .linked:not(.vertical).path-bar > button:hover,
@@ -1252,14 +1252,14 @@ headerbar button.destructive-action:backdrop {
   color: #ffffff;
   caret-color: #ffffff; }
 .primary-toolbar spinbutton:not(.vertical) button, headerbar spinbutton:not(.vertical) button, .primary-toolbar spinbutton:not(.vertical) button:disabled, headerbar spinbutton:not(.vertical) button:disabled {
-  border-color: rgba(0, 0, 0, 0.37);
-  background-color: #4a4a4a;
+  border-color: transparent;
+  background-color: #3a3a3a;
   color: rgba(255, 255, 255, 0.56); }
 .primary-toolbar spinbutton:not(.vertical) button:hover, headerbar spinbutton:not(.vertical) button:hover {
   background-color: rgba(125, 125, 125, 0.37); }
 .primary-toolbar spinbutton:not(.vertical) button:active, headerbar spinbutton:not(.vertical) button:active, .primary-toolbar spinbutton:not(.vertical) button:checked, headerbar spinbutton:not(.vertical) button:checked {
   color: #ffffff;
-  border-color: transparent;
+  border-color: #303030;
   background-color: #303030; }
 .primary-toolbar spinbutton:not(.vertical) button:disabled, headerbar spinbutton:not(.vertical) button:disabled {
   color: rgba(255, 255, 255, 0.4); }
@@ -2942,14 +2942,14 @@ headerbar button.titlebutton,
   background-color: rgba(31, 31, 31, 0); }
   headerbar button.titlebutton:hover,
   .titlebar button.titlebutton:hover {
-    border-color: rgba(0, 0, 0, 0.37);
-    background-color: #4a4a4a;
+    border-color: transparent;
+    background-color: #3a3a3a;
     color: rgba(255, 255, 255, 0.56); }
   headerbar button.titlebutton:active, headerbar button.titlebutton:checked,
   .titlebar button.titlebutton:active,
   .titlebar button.titlebutton:checked {
     color: #ffffff;
-    border-color: transparent;
+    border-color: #303030;
     background-color: #303030; }
   headerbar button.titlebutton.close, headerbar button.titlebutton.maximize, headerbar button.titlebutton.minimize,
   .titlebar button.titlebutton.close,
@@ -3153,12 +3153,12 @@ terminal-window notebook > header.top,
 
 @keyframes needs_attention_keyframes {
   0% {
-    border-color: rgba(0, 0, 0, 0.37);
-    background-color: #4a4a4a;
+    border-color: transparent;
+    background-color: #3a3a3a;
     color: rgba(255, 255, 255, 0.56); }
   100% {
     color: #ffffff;
-    border-color: transparent;
+    border-color: #303030;
     background-color: #303030; } }
 .nautilus-operations-button-needs-attention {
   animation: needs_attention_keyframes 2s ease-in-out; }
@@ -3190,8 +3190,8 @@ terminal-window notebook > header.top,
   .nemo-window .nemo-window-pane widget.entry image, .nemo-window .nemo-window-pane widget.entry image:hover {
     color: inherit; }
 .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button {
-  border-color: rgba(0, 0, 0, 0.37);
-  background-color: #4a4a4a;
+  border-color: transparent;
+  background-color: #3a3a3a;
   color: rgba(255, 255, 255, 0.56); }
   .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:not(:last-child):not(:only-child) {
     margin: 0 0 1px 0; }
@@ -4289,8 +4289,8 @@ filechooser .nautilus-desktop,
     color: rgba(230, 230, 230, 0.78); }
 filechooser headerbar widget stack box.path-bar-box,
 .nautilus-window headerbar widget stack box.path-bar-box {
-  border-color: rgba(0, 0, 0, 0.37);
-  background-color: #4a4a4a;
+  border-color: transparent;
+  background-color: #3a3a3a;
   color: rgba(255, 255, 255, 0.56);
   background-color: #303030;
   color: rgba(255, 255, 255, 0.56); }

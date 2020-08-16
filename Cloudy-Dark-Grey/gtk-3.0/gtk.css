@@ -1073,8 +1073,8 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
     color: rgba(255, 255, 255, 0.56); }
   .primary-toolbar button:active, headerbar button:active, .primary-toolbar button:checked, headerbar button:checked {
     color: #ffffff;
-    border-color: transparent;
-    background-color: #373737;
+    border-color: #565656;
+    background-color: #5b5b5b;
     background-clip: padding-box; }
   .primary-toolbar button:disabled, headerbar button:disabled {
     background-color: rgba(55, 55, 55, 0);
@@ -1253,8 +1253,8 @@ headerbar button.destructive-action:backdrop {
   background-color: rgba(149, 149, 149, 0.37); }
 .primary-toolbar spinbutton:not(.vertical) button:active, headerbar spinbutton:not(.vertical) button:active, .primary-toolbar spinbutton:not(.vertical) button:checked, headerbar spinbutton:not(.vertical) button:checked {
   color: #ffffff;
-  border-color: transparent;
-  background-color: #373737; }
+  border-color: #565656;
+  background-color: #5b5b5b; }
 .primary-toolbar spinbutton:not(.vertical) button:disabled, headerbar spinbutton:not(.vertical) button:disabled {
   color: rgba(255, 255, 255, 0.4); }
 .primary-toolbar spinbutton:not(.vertical) > button + button, headerbar spinbutton:not(.vertical) > button + button {
@@ -2943,8 +2943,8 @@ headerbar button.titlebutton,
   .titlebar button.titlebutton:active,
   .titlebar button.titlebutton:checked {
     color: #ffffff;
-    border-color: transparent;
-    background-color: #373737; }
+    border-color: #565656;
+    background-color: #5b5b5b; }
   headerbar button.titlebutton.close, headerbar button.titlebutton.maximize, headerbar button.titlebutton.minimize,
   .titlebar button.titlebutton.close,
   .titlebar button.titlebutton.maximize,
@@ -3149,8 +3149,8 @@ terminal-window notebook > header.top,
     color: rgba(255, 255, 255, 0.56); }
   100% {
     color: #ffffff;
-    border-color: transparent;
-    background-color: #373737; } }
+    border-color: #565656;
+    background-color: #5b5b5b; } }
 .nautilus-operations-button-needs-attention {
   animation: needs_attention_keyframes 2s ease-in-out; }
 

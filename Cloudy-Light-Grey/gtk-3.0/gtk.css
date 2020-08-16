@@ -1072,8 +1072,8 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
     color: rgba(255, 255, 255, 0.56); }
   .primary-toolbar button:active, headerbar button:active, .primary-toolbar button:checked, headerbar button:checked {
     color: #ffffff;
-    border-color: #4D4D4D;
-    background-color: #4D4D4D;
+    border-color: #6c6c6c;
+    background-color: #717171;
     background-clip: border-box; }
   .primary-toolbar button:disabled, headerbar button:disabled {
     background-color: rgba(77, 77, 77, 0);
@@ -1252,8 +1252,8 @@ headerbar button.destructive-action:backdrop {
   background-color: rgba(255, 255, 255, 0.9); }
 .primary-toolbar spinbutton:not(.vertical) button:active, headerbar spinbutton:not(.vertical) button:active, .primary-toolbar spinbutton:not(.vertical) button:checked, headerbar spinbutton:not(.vertical) button:checked {
   color: #ffffff;
-  border-color: #4D4D4D;
-  background-color: #4D4D4D; }
+  border-color: #6c6c6c;
+  background-color: #717171; }
 .primary-toolbar spinbutton:not(.vertical) button:disabled, headerbar spinbutton:not(.vertical) button:disabled {
   color: rgba(255, 255, 255, 0.4); }
 .primary-toolbar spinbutton:not(.vertical) > button + button, headerbar spinbutton:not(.vertical) > button + button {
@@ -2946,8 +2946,8 @@ headerbar button.titlebutton,
   .titlebar button.titlebutton:active,
   .titlebar button.titlebutton:checked {
     color: #ffffff;
-    border-color: #4D4D4D;
-    background-color: #4D4D4D; }
+    border-color: #6c6c6c;
+    background-color: #717171; }
   headerbar button.titlebutton.close, headerbar button.titlebutton.maximize, headerbar button.titlebutton.minimize,
   .titlebar button.titlebutton.close,
   .titlebar button.titlebutton.maximize,
@@ -3152,8 +3152,8 @@ terminal-window notebook > header.top,
     color: rgba(255, 255, 255, 0.56); }
   100% {
     color: #ffffff;
-    border-color: #4D4D4D;
-    background-color: #4D4D4D; } }
+    border-color: #6c6c6c;
+    background-color: #717171; } }
 .nautilus-operations-button-needs-attention {
   animation: needs_attention_keyframes 2s ease-in-out; }
 
