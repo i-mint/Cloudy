@@ -295,6 +295,8 @@ button {
   color: #f9f9f9;
   border-color: #1d1d1d;
   background-color: #101010; }
+  button:backdrop {
+    color: rgba(249, 249, 249, 0.67); }
   button separator {
     margin: 4px 1px; }
   button.flat, button.sidebar-button {
@@ -318,6 +320,8 @@ button {
     background-color: #373737;
     background-clip: padding-box;
     transition-duration: 50ms; }
+    button:active:backdrop, button:checked:backdrop {
+      color: rgba(255, 255, 255, 0.67); }
     button:active:not(:disabled) label:disabled, button:checked:not(:disabled) label:disabled {
       color: inherit;
       opacity: 0.6; }
@@ -518,6 +522,8 @@ button {
   color: #f9f9f9;
   border-color: #1d1d1d;
   background-color: #101010; }
+  .inline-toolbar toolbutton > button:backdrop {
+    color: rgba(249, 249, 249, 0.67); }
   .inline-toolbar toolbutton > button:hover {
     color: #f9f9f9;
     border-color: #1d1d1d;
@@ -526,6 +532,8 @@ button {
     color: #ffffff;
     border-color: #1d1d1d;
     background-color: #373737; }
+    .inline-toolbar toolbutton > button:active:backdrop, .inline-toolbar toolbutton > button:checked:backdrop {
+      color: rgba(255, 255, 255, 0.67); }
   .inline-toolbar toolbutton > button:disabled {
     border-color: rgba(29, 29, 29, 0.55);
     background-color: rgba(16, 16, 16, 0.55); }
@@ -2823,6 +2831,8 @@ colorswatch#add-color-button {
   color: #f9f9f9;
   border-color: #1d1d1d;
   background-color: #101010; }
+  colorswatch#add-color-button:backdrop {
+    color: rgba(249, 249, 249, 0.67); }
   colorswatch#add-color-button:hover {
     color: #f9f9f9;
     border-color: #1d1d1d;
@@ -3712,11 +3722,17 @@ panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel butto
   .thunar .sidebar .view.cell:hover, .thunar .sidebar iconview.cell:hover, .thunar .sidebar .view.cell:active, .thunar .sidebar iconview.cell:active {
     background-color: #464646;
     color: #ffffff; }
+  .thunar .sidebar .view.cell:selected:backdrop, .thunar .sidebar iconview.cell:selected:backdrop {
+    color: rgba(255, 255, 255, 0.67); }
+  .thunar .sidebar .view:backdrop, .thunar .sidebar iconview:backdrop, .thunar .sidebar .view.cell:backdrop, .thunar .sidebar iconview.cell:backdrop {
+    color: rgba(255, 255, 255, 0.45); }
 .thunar notebook .view, .thunar notebook iconview {
   background-color: #0B0B0B;
   color: #f9f9f9; }
   .thunar notebook .view .rubberband, .thunar notebook iconview .rubberband {
     background-color: rgba(106, 106, 106, 0.23); }
+  .thunar notebook .view:backdrop, .thunar notebook iconview:backdrop {
+    color: rgba(249, 249, 249, 0.67); }
 .thunar notebook tabs > tab button.flat image, .thunar notebook tabs > tab button.sidebar-button image {
   background-color: transparent;
   border: 0.5px solid transparent;
@@ -3729,6 +3745,43 @@ panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel butto
   background-color: #585858;
   border: 0.5px solid #484848;
   border-radius: 2px; }
+
+#whiskermenu-window {
+  background-color: #3e3e3e;
+  color: #f9f9f9; }
+  #whiskermenu-window stack {
+    background-color: #3e3e3e;
+    color: #f9f9f9; }
+  #whiskermenu-window .view, #whiskermenu-window iconview {
+    background-color: #0B0B0B;
+    color: #f9f9f9; }
+    #whiskermenu-window .view:selected, #whiskermenu-window iconview:selected {
+      background-color: #373737;
+      color: #ffffff; }
+  #whiskermenu-window button {
+    margin-right: 9px;
+    background-color: #3e3e3e;
+    color: #f9f9f9;
+    border: none; }
+    #whiskermenu-window button:hover {
+      background-color: #555555;
+      color: inherit; }
+    #whiskermenu-window button:active, #whiskermenu-window button:checked {
+      background-color: #626262;
+      color: #ffffff; }
+  #whiskermenu-window entry:focus, #whiskermenu-window entry.search {
+    color: #f9f9f9;
+    border-color: #393939;
+    background-color: #363636;
+    box-shadow: inset 0px 0 #373737, inset 0px 0 #373737, inset 0 0px #373737, inset 0 0px #373737; }
+    #whiskermenu-window entry:focus image, #whiskermenu-window entry:focus image:hover, #whiskermenu-window entry.search image, #whiskermenu-window entry.search image:hover {
+      color: inherit; }
+
+#whiskermenu-button {
+  color: rgba(255, 255, 255, 0.78);
+  border-left: 22px solid rgba(99, 99, 99, 0.95);
+  border-right: 22px solid rgba(99, 99, 99, 0.95);
+  background-color: rgba(99, 99, 99, 0.95); }
 
 UnityDecoration {
   -UnityDecoration-extents: 28px 1 1 1;
@@ -4054,6 +4107,8 @@ GtkListBox .h4 {
   color: #f9f9f9;
   border-color: #1d1d1d;
   background-color: #101010; }
+  #content_frame button:backdrop {
+    color: rgba(249, 249, 249, 0.67); }
   #content_frame button:hover {
     color: #f9f9f9;
     border-color: #1d1d1d;
@@ -4062,6 +4117,8 @@ GtkListBox .h4 {
     color: #ffffff;
     border-color: #1d1d1d;
     background-color: #373737; }
+    #content_frame button:active:backdrop, #content_frame button:checked:backdrop {
+      color: rgba(255, 255, 255, 0.67); }
   #content_frame button:disabled {
     border-color: rgba(29, 29, 29, 0.55);
     background-color: rgba(16, 16, 16, 0.55); }
@@ -4227,6 +4284,9 @@ filechooser placessidebar.sidebar,
         color: #ffffff;
         border-color: #1d1d1d;
         background-color: #373737; }
+        filechooser placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button:active:backdrop,
+        .nautilus-window placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button:active:backdrop {
+          color: rgba(255, 255, 255, 0.67); }
       filechooser placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button:not(:hover):not(:active) > image,
       .nautilus-window placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button:not(:hover):not(:active) > image {
         opacity: 0.5; }
