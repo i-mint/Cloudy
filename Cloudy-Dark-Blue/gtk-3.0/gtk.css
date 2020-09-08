@@ -3042,6 +3042,13 @@ entry selection:focus, entry selection {
     color: rgba(26, 32, 38, 0.78);
     background-color: rgba(229, 223, 217, 0.78); }
 
+.nemo-window .nemo-inactive-pane .view:selected, .nemo-window .nemo-inactive-pane iconview:selected, .nemo-window .nemo-inactive-pane .iconview:selected {
+  background-color: rgba(65, 74, 101, 0.78);
+  color: rgba(255, 255, 255, 0.67); }
+  .nemo-window .nemo-inactive-pane .view:backdrop:selected, .nemo-window .nemo-inactive-pane iconview:backdrop:selected, .nemo-window .nemo-inactive-pane .iconview:backdrop:selected {
+    background-color: rgba(65, 74, 101, 0.56);
+    color: rgba(255, 255, 255, 0.56); }
+
 .gedit-bottom-panel-paned notebook > header.top > tabs > tab:checked,
 terminal-window notebook > header.top > tabs > tab:checked {
   box-shadow: inset 0 -1px #0e1114; }
