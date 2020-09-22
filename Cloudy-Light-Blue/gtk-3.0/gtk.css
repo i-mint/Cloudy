@@ -1604,7 +1604,7 @@ cursor-handle {
 notebook {
   padding: 0; }
   notebook.frame {
-    border: 1px solid #c5c7c9; }
+    border: 0px solid #c5c7c9; }
     notebook.frame > header {
       margin: -1px; }
       notebook.frame > header.top {
@@ -1627,21 +1627,13 @@ notebook {
     padding: 2px;
     background-color: #DDDEDF; }
     notebook > header.top {
-      box-shadow: inset 0 -1px #c5c7c9; }
-    notebook > header.bottom {
-      box-shadow: inset 0 1px #c5c7c9; }
-    notebook > header.right {
-      box-shadow: inset 1px 0 #c5c7c9; }
-    notebook > header.left {
-      box-shadow: inset -1px 0 #c5c7c9; }
-    notebook > header.top {
       padding-bottom: 0; }
       notebook > header.top > tabs > tab {
         padding: 2px 10px;
         min-width: 20px;
         min-height: 20px;
         outline-offset: -4px;
-        border: 1px solid transparent;
+        border: 0px solid transparent;
         border-bottom: none;
         border-radius: 1px 1px 0 0; }
         notebook > header.top > tabs > tab + tab {
@@ -1653,7 +1645,7 @@ notebook {
         min-width: 20px;
         min-height: 20px;
         outline-offset: -4px;
-        border: 1px solid transparent;
+        border: 0px solid transparent;
         border-top: none;
         border-radius: 0 0 1px 1px; }
         notebook > header.bottom > tabs > tab + tab {
@@ -1665,7 +1657,7 @@ notebook {
         min-width: 20px;
         min-height: 20px;
         outline-offset: -4px;
-        border: 1px solid transparent;
+        border: 0px solid transparent;
         border-left: none;
         border-radius: 0 1px 1px 0; }
         notebook > header.right > tabs > tab + tab {
@@ -1677,7 +1669,7 @@ notebook {
         min-width: 20px;
         min-height: 20px;
         outline-offset: -4px;
-        border: 1px solid transparent;
+        border: 0px solid transparent;
         border-right: none;
         border-radius: 1px 0 0 1px; }
         notebook > header.left > tabs > tab + tab {
@@ -1706,35 +1698,32 @@ notebook {
         color: #181c28; }
       notebook > header > tabs > arrow:disabled {
         color: rgba(24, 28, 40, 0.25); }
-    notebook > header.top > tabs > tab:hover:not(:checked) {
-      box-shadow: inset 0 -1px #c5c7c9; }
-    notebook > header.bottom > tabs > tab:hover:not(:checked) {
-      box-shadow: inset 0 1px #c5c7c9; }
-    notebook > header.left > tabs > tab:hover:not(:checked) {
-      box-shadow: inset -1px 0 #c5c7c9; }
-    notebook > header.right > tabs > tab:hover:not(:checked) {
-      box-shadow: inset 1px 0 #c5c7c9; }
     notebook > header > tabs > tab {
       background-color: rgba(86, 100, 138, 0.56);
-      color: rgba(255, 255, 255, 0.67); }
+      color: rgba(255, 255, 255, 0.67);
+      border-color: rgba(86, 100, 138, 0.56);
+      margin-bottom: 1px;
+      border-color: rgba(86, 100, 138, 0.34); }
       notebook > header > tabs > tab:backdrop {
         background-color: rgba(86, 100, 138, 0.34);
         color: rgba(255, 255, 255, 0.45); }
       notebook > header > tabs > tab:hover:not(:checked) {
         background-color: rgba(86, 100, 138, 0.67);
         color: #ffffff;
-        border-color: #c5c7c9; }
+        border-color: rgba(86, 100, 138, 0.67); }
         notebook > header > tabs > tab:hover:not(:checked):backdrop {
           background-color: rgba(86, 100, 138, 0.45);
-          color: rgba(255, 255, 255, 0.78); }
+          color: rgba(255, 255, 255, 0.78);
+          border-color: rgba(86, 100, 138, 0.45); }
       notebook > header > tabs > tab:checked {
         background-color: rgba(86, 100, 138, 0.78);
         color: #ffffff;
         font-weight: bold;
-        border-color: #c5c7c9; }
+        border-color: rgba(86, 100, 138, 0.78); }
         notebook > header > tabs > tab:checked:backdrop {
           background-color: rgba(86, 100, 138, 0.56);
-          color: rgba(255, 255, 255, 0.89); }
+          color: rgba(255, 255, 255, 0.89);
+          border-color: rgba(86, 100, 138, 0.56); }
       notebook > header > tabs > tab button.flat, notebook > header > tabs > tab button.sidebar-button {
         min-height: 22px;
         min-width: 16px;
@@ -4395,6 +4384,11 @@ filechooser headerbar widget stack box.path-bar-box,
   background-color: #5e6d97;
   color: #ffffff; }
 
+.nemo-window paned > separator {
+  min-width: 2px;
+  min-height: 2px;
+  background-color: #ededed;
+  background-image: linear-gradient(to right, #ededed, #ededed); }
 .nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview {
   background-color: whitesmoke;
   color: rgba(24, 28, 40, 0.34); }
