@@ -7,7 +7,7 @@ Global Mixin
 /****************
 Global Placeholder
 ******************/
-.calendar, .world-clocks-button, .weather-button {
+.calendar, .world-clocks-button, .weather-button, .events-button {
   background-color: #f7f7f7;
   padding: 0;
   padding: 4px 2px;
@@ -87,22 +87,22 @@ StEntry {
   padding: 7px;
   caret-size: 1px;
   caret-color: #ffffff;
-  selection-background-color: #4D4D4D;
-  selected-color: #ffffff;
+  selection-background-color: #ffffff;
+  selected-color: #4D4D4D;
   transition-duration: 300ms;
   border-radius: 3px;
   color: rgba(32, 32, 32, 0.54);
   background-color: #d7d7d7;
   border-width: 1px;
   border-style: solid;
-  border-color: #d4d4d4;
+  border-color: #c3c3c3;
   box-shadow: inset 0 2px 4px rgba(215, 215, 215, 0.05); }
   StEntry:focus, StEntry:hover {
     color: #202020;
-    background-color: #d7d7d7;
+    background-color: #d2d2d2;
     border-width: 1px;
     border-style: solid;
-    border-color: #d4d4d4;
+    border-color: #c3c3c3;
     box-shadow: inset 0 2px 4px rgba(215, 215, 215, 0.05); }
   StEntry:insensitive {
     color: rgba(32, 32, 32, 0.55);
@@ -212,10 +212,9 @@ StScrollBar {
 
 .modal-dialog {
   color: #202020;
-  background-color: rgba(220, 220, 220, 0);
+  background-color: gainsboro;
   border: none;
-  border-image: url("light-assets/misc/modal.svg") 9 9 9 67;
-  padding: 0 5px 6px 5px; }
+  padding: 0; }
   .modal-dialog .modal-dialog-content-box {
     padding: 20px 10px 10px 10px; }
   .modal-dialog-linked-button {
@@ -230,7 +229,7 @@ StScrollBar {
     .modal-dialog-linked-button:hover {
       background-color: rgba(90, 90, 90, 0.95); }
     .modal-dialog-linked-button:focus {
-      color: #4D4D4D; }
+      color: rgba(255, 255, 255, 0.78); }
     .modal-dialog-linked-button:active {
       color: #ffffff;
       background-color: #4D4D4D; }
@@ -258,6 +257,34 @@ StScrollBar {
 .end-session-dialog-subject {
   font-size: 11pt;
   font-weight: bold;
+  color: #202020; }
+
+.run-dialog .modal-dialog-content-box {
+  margin-top: 24px;
+  margin-bottom: 14px; }
+.run-dialog .run-dialog-entry {
+  color: rgba(32, 32, 32, 0.54);
+  background-color: #d7d7d7;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #c3c3c3;
+  box-shadow: inset 0 2px 4px rgba(215, 215, 215, 0.05);
+  width: 20em;
+  padding: 7px;
+  caret-size: 1px;
+  caret-color: #202020;
+  selection-background-color: #ffffff;
+  selected-color: #4D4D4D;
+  transition-duration: 300ms;
+  border-radius: 4px; }
+  .run-dialog .run-dialog-entry:hover, .run-dialog .run-dialog-entry:focus {
+    color: #202020;
+    caret-color: #202020;
+    background-color: #d7d7d7;
+    selection-background-color: #ffffff;
+    selected-color: #4D4D4D; }
+.run-dialog .run-dialog-description {
+  text-align: center;
   color: #202020; }
 
 .end-session-dialog {
@@ -1038,6 +1065,26 @@ StScrollBar {
   .weather-button .weather-forecast-temp {
     font-weight: bold; }
 
+.events-button {
+  color: #757575;
+  border-radius: 4px;
+  box-shadow: inset 0px 0px 0.5px 1px #ebebeb;
+  background-color: #eeeeee; }
+  .events-button .events-box {
+    spacing: 2px; }
+  .events-button .events-list {
+    spacing: 4px;
+    color: #373737; }
+  .events-button .events-title {
+    color: #202020;
+    font-weight: bold;
+    margin-bottom: 4px; }
+  .events-button .event-time {
+    color: #757575;
+    font-feature-settings: "tnum";
+    font-size: 99%;
+    margin-top: 4px; }
+
 .message-list {
   width: 31.5em; }
   .message-list-sections {
@@ -1254,7 +1301,7 @@ StScrollBar {
   background-color: #d7d7d7;
   border-width: 1px;
   border-style: solid;
-  border-color: #d4d4d4;
+  border-color: #c3c3c3;
   box-shadow: inset 0 2px 4px rgba(215, 215, 215, 0.05); }
   .search-entry .search-entry-icon {
     icon-size: 16px;
@@ -1262,14 +1309,14 @@ StScrollBar {
     color: rgba(32, 32, 32, 0.54); }
   .search-entry:hover, .search-entry:focus {
     caret-color: #202020;
-    selection-background-color: #4D4D4D;
-    selected-color: #ffffff;
+    selection-background-color: #ffffff;
+    selected-color: #4D4D4D;
     padding: 7px 9px;
     color: #202020;
-    background-color: #d7d7d7;
+    background-color: #d2d2d2;
     border-width: 1px;
     border-style: solid;
-    border-color: #d4d4d4;
+    border-color: #c3c3c3;
     box-shadow: inset 0 2px 4px rgba(215, 215, 215, 0.05); }
     .search-entry:hover .search-entry-icon, .search-entry:focus .search-entry-icon {
       color: #202020; }
