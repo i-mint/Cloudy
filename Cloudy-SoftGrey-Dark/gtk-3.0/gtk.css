@@ -1080,7 +1080,9 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
   background-color: rgba(31, 31, 31, 0);
   border-color: rgba(31, 31, 31, 0); }
   .primary-toolbar button:backdrop, headerbar button:backdrop {
-    opacity: 0.7; }
+    opacity: 0.5; }
+    .primary-toolbar button:backdrop label, headerbar button:backdrop label, .primary-toolbar button:backdrop, headerbar button:backdrop {
+      color: rgba(255, 255, 255, 0.8); }
   .primary-toolbar button:hover, headerbar button:hover {
     border-color: transparent;
     background-color: #3a3a3a;
@@ -4241,6 +4243,9 @@ filechooser placessidebar.sidebar,
   background-color: rgba(31, 31, 31, 0.95);
   box-shadow: inset 37px 0 0 0 #303030;
   margin-top: -4px; }
+  filechooser placessidebar.sidebar:backdrop,
+  .nautilus-window placessidebar.sidebar:backdrop {
+    box-shadow: inset 37px 0 0 0 rgba(48, 48, 48, 0.6); }
   filechooser placessidebar.sidebar row.sidebar-row,
   .nautilus-window placessidebar.sidebar row.sidebar-row {
     border: none;
@@ -4248,15 +4253,16 @@ filechooser placessidebar.sidebar,
     filechooser placessidebar.sidebar row.sidebar-row label,
     .nautilus-window placessidebar.sidebar row.sidebar-row label {
       color: rgba(255, 255, 255, 0.56); }
-    filechooser placessidebar.sidebar row.sidebar-row:backdrop,
+    filechooser placessidebar.sidebar row.sidebar-row:backdrop label, filechooser placessidebar.sidebar row.sidebar-row:backdrop,
+    .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop label,
     .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop {
-      color: rgba(255, 255, 255, 0.34); }
+      color: rgba(255, 255, 255, 0.28); }
     filechooser placessidebar.sidebar row.sidebar-row .sidebar-icon,
     .nautilus-window placessidebar.sidebar row.sidebar-row .sidebar-icon {
       color: rgba(255, 255, 255, 0.56); }
       filechooser placessidebar.sidebar row.sidebar-row .sidebar-icon:backdrop,
       .nautilus-window placessidebar.sidebar row.sidebar-row .sidebar-icon:backdrop {
-        color: rgba(255, 255, 255, 0.34); }
+        color: rgba(255, 255, 255, 0.28); }
     filechooser placessidebar.sidebar row.sidebar-row .sidebar-label,
     .nautilus-window placessidebar.sidebar row.sidebar-row .sidebar-label {
       color: rgba(255, 255, 255, 0.56);
@@ -4372,6 +4378,9 @@ filechooser headerbar widget stack box.path-bar-box,
   color: rgba(255, 255, 255, 0.56);
   background-color: #303030;
   color: rgba(255, 255, 255, 0.56); }
+  filechooser headerbar widget stack box.path-bar-box:backdrop,
+  .nautilus-window headerbar widget stack box.path-bar-box:backdrop {
+    background-color: rgba(48, 48, 48, 0.56); }
   filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button,
   .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button {
     background-color: #303030;
@@ -4441,6 +4450,15 @@ filechooser headerbar widget stack box.path-bar-box,
         .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child:active label,
         .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child:active image {
           color: #ffffff; }
+    filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button:backdrop,
+    .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button:backdrop {
+      background-color: transparent;
+      border-color: transparent;
+      opacify: 0.7; }
+      filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button:backdrop label, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button:backdrop,
+      .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button:backdrop label,
+      .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button:backdrop {
+        color: inherit; }
   filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button,
   .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button {
     background-color: #303030;
