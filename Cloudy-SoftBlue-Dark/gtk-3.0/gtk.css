@@ -1876,6 +1876,8 @@ switch {
     color: transparent;
     border: none;
     box-shadow: none; }
+  popover switch image, popover switch {
+    color: transparent; }
 
 switch {
   background-image: -gtk-scaled(url("assets/switch-dark.png"), url("assets/switch-dark@2.png")); }
@@ -3633,14 +3635,16 @@ popover {
     -gtk-icon-shadow: none; }
   popover button {
     background-color: transparent;
-    border-color: transparent; }
-    popover button label, popover button image, popover button {
-      color: #ecf0f4; }
+    border-color: transparent;
+    color: #ecf0f4; }
+    popover button label, popover button {
+      color: inherit; }
     popover button.flat, popover button.sidebar-button {
       background-color: transparent;
-      border-color: transparent; }
-      popover button.flat label, popover button.sidebar-button label, popover button.flat image, popover button.sidebar-button image, popover button.flat, popover button.sidebar-button {
-        color: #ecf0f4; }
+      border-color: transparent;
+      color: #ecf0f4; }
+      popover button.flat label, popover button.sidebar-button label, popover button.flat, popover button.sidebar-button {
+        color: inherit; }
       popover button.flat:hover, popover button.sidebar-button:hover {
         background-color: #333a4f;
         border-color: #333a4f; }
@@ -3653,9 +3657,10 @@ popover {
           color: #ffffff; }
   popover switch, popover button.switcher {
     background-color: transparent;
-    border-color: transparent; }
-    popover switch label, popover switch image, popover switch, popover button.switcher label, popover button.switcher image, popover button.switcher {
-      color: #ecf0f4; }
+    border-color: transparent;
+    color: #ecf0f4; }
+    popover switch label, popover switch, popover button.switcher label, popover button.switcher {
+      color: inherit; }
   popover entry, popover entry.search {
     color: rgba(236, 240, 244, 0.46);
     border-color: #282d36;
