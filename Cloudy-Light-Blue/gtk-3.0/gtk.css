@@ -4615,11 +4615,17 @@ filechooser placessidebar.sidebar scrollbar,
 
 overlay calendar-view event {
   background-image: linear-gradient(to bottom right, #b6bed2, #bac1d4);
-  border: 2px solid #b6bed2;
+  border: 0px solid #b6bed2;
   padding: 4px 6px; }
   overlay calendar-view event label {
     color: rgba(24, 28, 40, 0.8);
     font-weight: normal; }
+
+event.slanted-end label {
+  color: rgba(0, 0, 0, 0.7);
+  padding: 4px 6px; }
+event.slanted-end:backdrop label {
+  color: rgba(0, 0, 0, 0.5); }
 
 @define-color theme_fg_color #181c28;
 @define-color theme_text_color #181c28;

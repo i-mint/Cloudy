@@ -4634,11 +4634,17 @@ filechooser actionbar {
 
 overlay calendar-view event {
   background-image: linear-gradient(to bottom right, #2b2b2b, #2d2d2d);
-  border: 2px solid #2b2b2b;
+  border: 0px solid #2b2b2b;
   padding: 4px 6px; }
   overlay calendar-view event label {
     color: rgba(255, 255, 255, 0.8);
     font-weight: normal; }
+
+event.slanted-end label {
+  color: rgba(0, 0, 0, 0.7);
+  padding: 4px 6px; }
+event.slanted-end:backdrop label {
+  color: rgba(0, 0, 0, 0.5); }
 
 @define-color theme_fg_color #f9f9f9;
 @define-color theme_text_color #f9f9f9;
