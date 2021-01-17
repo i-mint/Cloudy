@@ -3269,6 +3269,14 @@ terminal-window notebook > header.top,
   .gedit-map-frame border:dir(rtl) {
     border-right-width: 1px; }
 
+paned.gedit-side-panel-paned treeview {
+  background-color: rgba(55, 55, 55, 0.95);
+  color: rgba(255, 255, 255, 0.78);
+  border-color: #1d1d1d; }
+  paned.gedit-side-panel-paned treeview:backdrop {
+    color: rgba(255, 255, 255, 0.28);
+    border-color: #1d1d1d; }
+
 .pluma-window statusbar frame > border {
   border: none; }
 
