@@ -3559,8 +3559,7 @@ panel-toplevel.background .wnck-pager {
     background-color: #373737; }
 .mate-panel-menu-bar na-tray-applet,
 panel-toplevel.background na-tray-applet {
-  -NaTrayApplet-icon-padding: 0;
-  -NaTrayApplet-icon-size: 16px; }
+  -NaTrayApplet-icon-padding: 0; }
 
 .xfce4-panel.panel {
   background-color: rgba(43, 43, 43, 0.95);
