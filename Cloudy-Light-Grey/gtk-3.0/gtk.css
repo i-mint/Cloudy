@@ -4693,6 +4693,7 @@ event.slanted-end:backdrop label {
 @define-color wm_icon_active_bg #ffffff;
 .budgie-menu.background {
   background-color: #FFFFFF;
+  background-image: linear-gradient(to right, #DCDCDC 50%, #FFFFFF 50%);
   border-color: #FFFFFF;
   border-radius: 2px;
   padding: 0px;
@@ -4712,28 +4713,28 @@ event.slanted-end:backdrop label {
   background-color: transparent;
   color: rgba(24, 28, 40, 0.73);
   border-color: transparent;
-  border-radius: 2px; }
+  border-radius: 0px; }
   .budgie-menu .category-button label {
     color: rgba(24, 28, 40, 0.73); }
   .budgie-menu .category-button:hover {
     background-color: rgba(77, 77, 77, 0.06);
     color: rgba(24, 28, 40, 0.89);
     border-color: rgba(77, 77, 77, 0.06);
-    border-radius: 2px; }
+    border-radius: 0px; }
     .budgie-menu .category-button:hover label {
       color: rgba(24, 28, 40, 0.89); }
   .budgie-menu .category-button:checked {
     background-color: #4D4D4D;
     color: #ffffff;
     border-color: #4D4D4D;
-    border-radius: 2px; }
+    border-radius: 0px; }
     .budgie-menu .category-button:checked label {
       color: #ffffff; }
   .budgie-menu .category-button:active {
     background-color: rgba(77, 77, 77, 0.02);
     color: #181c28;
     border-color: rgba(77, 77, 77, 0.02);
-    border-radius: 2px; }
+    border-radius: 0px; }
     .budgie-menu .category-button:active label {
       color: #181c28; }
 .budgie-menu row {
@@ -4746,28 +4747,28 @@ event.slanted-end:backdrop label {
   .budgie-menu row:hover {
     background-color: #DCDCDC;
     border-color: #DCDCDC;
-    border-radius: 2px;
+    border-radius: 0px;
     color: rgba(24, 28, 40, 0.89); }
     .budgie-menu row:hover label {
       color: rgba(24, 28, 40, 0.89); }
   .budgie-menu row:active {
     background-color: #4D4D4D;
     border-color: #4D4D4D;
-    border-radius: 2px;
+    border-radius: 0px;
     color: #ffffff; }
     .budgie-menu row:active label {
       color: #ffffff; }
   .budgie-menu row button {
     background-color: transparent;
     border-color: transparent;
-    border-radius: 2px;
+    border-radius: 0px;
     color: rgba(24, 28, 40, 0.73); }
     .budgie-menu row button label {
       color: rgba(24, 28, 40, 0.73); }
     .budgie-menu row button:hover {
       background-color: transparent;
       border-color: transparent;
-      border-radius: 2px;
+      border-radius: 0px;
       color: rgba(24, 28, 40, 0.89); }
       .budgie-menu row button:hover label {
         color: rgba(24, 28, 40, 0.89); }
@@ -4783,95 +4784,74 @@ event.slanted-end:backdrop label {
   font-size: 110%;
   color: #181c28; }
 
-.budgie-popover {
+.budgie-popover.places-menu, .budgie-popover.background.places-menu, .budgie-popover.places-menu row, .budgie-popover.background.places-menu row, .budgie-popover.user-menu, .budgie-popover.background.user-menu, .budgie-popover.user-menu row, .budgie-popover.background.user-menu row {
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
+  border-radius: 2px; }
+  .budgie-popover.places-menu label, .budgie-popover.background.places-menu label, .budgie-popover.user-menu label, .budgie-popover.background.user-menu label, .budgie-popover.places-menu, .budgie-popover.background.places-menu, .budgie-popover.places-menu row, .budgie-popover.background.places-menu row, .budgie-popover.user-menu, .budgie-popover.background.user-menu, .budgie-popover.user-menu row, .budgie-popover.background.user-menu row {
+    color: rgba(24, 28, 40, 0.73); }
+
+.budgie-popover.places-menu row:hover, .budgie-popover.background.places-menu row:hover, .budgie-popover.user-menu row:hover, .budgie-popover.background.user-menu row:hover, .budgie-popover button:hover {
+  background-color: rgba(41, 41, 41, 0.23);
+  border-color: rgba(41, 41, 41, 0.23);
+  border-radius: 2px; }
+  .budgie-popover.places-menu row:hover label, .budgie-popover.background.places-menu row:hover label, .budgie-popover.user-menu row:hover label, .budgie-popover.background.user-menu row:hover label, .budgie-popover button:hover label, .budgie-popover.places-menu row:hover, .budgie-popover.background.places-menu row:hover, .budgie-popover.user-menu row:hover, .budgie-popover.background.user-menu row:hover, .budgie-popover button:hover {
+    color: #181c28; }
+
+.budgie-popover.places-menu row:active, .budgie-popover.background.places-menu row:active, .budgie-popover.user-menu row:active, .budgie-popover.background.user-menu row:active, .budgie-popover button:active {
+  background-color: rgba(77, 77, 77, 0.78);
+  border-color: rgba(77, 77, 77, 0.78);
+  border-radius: 2px; }
+  .budgie-popover.places-menu row:active label, .budgie-popover.background.places-menu row:active label, .budgie-popover.user-menu row:active label, .budgie-popover.background.user-menu row:active label, .budgie-popover button:active label, .budgie-popover.places-menu row:active, .budgie-popover.background.places-menu row:active, .budgie-popover.user-menu row:active, .budgie-popover.background.user-menu row:active, .budgie-popover button:active {
+    color: #ffffff; }
+
+.budgie-popover, .budgie-popover.background {
   border-style: none;
   border-width: 0px;
-  border-color: transparent;
+  border-color: #FFFFFF;
   border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.27);
-  background-color: #FFFFFF; }
-  .budgie-popover list {
+  box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.07);
+  background-color: #FFFFFF;
+  background-clip: border-box; }
+  .budgie-popover list, .budgie-popover.background list {
     background-color: transparent; }
-  .budgie-popover.places-menu {
-    background-color: #FFFFFF;
-    border-color: #FFFFFF;
+  .budgie-popover.places-menu button, .budgie-popover.background.places-menu button {
     border-radius: 2px;
+    background-color: transparent;
+    border-color: transparent;
     color: rgba(24, 28, 40, 0.73); }
-    .budgie-popover.places-menu button {
+    .budgie-popover.places-menu button label, .budgie-popover.background.places-menu button label {
+      color: rgba(24, 28, 40, 0.73); }
+    .budgie-popover.places-menu button:hover, .budgie-popover.background.places-menu button:hover {
       border-radius: 2px;
       background-color: transparent;
       border-color: transparent;
-      color: rgba(24, 28, 40, 0.73); }
-      .budgie-popover.places-menu button label {
-        color: rgba(24, 28, 40, 0.73); }
-      .budgie-popover.places-menu button:hover {
-        border-radius: 2px;
-        background-color: transparent;
-        border-color: transparent;
+      color: rgba(24, 28, 40, 0.89); }
+      .budgie-popover.places-menu button:hover label, .budgie-popover.background.places-menu button:hover label {
         color: rgba(24, 28, 40, 0.89); }
-        .budgie-popover.places-menu button:hover label {
-          color: rgba(24, 28, 40, 0.89); }
-    .budgie-popover.places-menu row {
-      border-radius: 2px;
-      background-color: #FFFFFF;
-      border-color: #FFFFFF;
-      color: rgba(24, 28, 40, 0.73); }
-      .budgie-popover.places-menu row label {
-        color: rgba(24, 28, 40, 0.73); }
-      .budgie-popover.places-menu row:hover {
-        border-radius: 2px;
-        background-color: #DCDCDC;
-        border-color: #DCDCDC;
-        color: rgba(24, 28, 40, 0.89); }
-        .budgie-popover.places-menu row:hover label {
-          color: rgba(24, 28, 40, 0.89); }
-      .budgie-popover.places-menu row:active {
-        border-radius: 2px;
-        background-color: #4D4D4D;
-        border-color: #4D4D4D;
-        color: #ffffff; }
-        .budgie-popover.places-menu row:active label {
-          color: #ffffff; }
-  .budgie-popover.user-menu {
-    background-color: #FFFFFF;
-    border-color: #FFFFFF;
+  .budgie-popover.user-menu button, .budgie-popover.background.user-menu button {
     border-radius: 2px;
+    background-color: transparent;
+    border-color: transparent;
     color: rgba(24, 28, 40, 0.73); }
-    .budgie-popover.user-menu button {
+    .budgie-popover.user-menu button label, .budgie-popover.background.user-menu button label {
+      color: rgba(24, 28, 40, 0.73); }
+    .budgie-popover.user-menu button:hover, .budgie-popover.background.user-menu button:hover {
       border-radius: 2px;
       background-color: transparent;
       border-color: transparent;
-      color: rgba(24, 28, 40, 0.73); }
-      .budgie-popover.user-menu button label {
-        color: rgba(24, 28, 40, 0.73); }
-      .budgie-popover.user-menu button:hover {
-        border-radius: 2px;
-        background-color: transparent;
-        border-color: transparent;
+      color: rgba(24, 28, 40, 0.89); }
+      .budgie-popover.user-menu button:hover label, .budgie-popover.background.user-menu button:hover label {
         color: rgba(24, 28, 40, 0.89); }
-        .budgie-popover.user-menu button:hover label {
-          color: rgba(24, 28, 40, 0.89); }
-    .budgie-popover.user-menu row {
-      border-radius: 2px;
-      background-color: #FFFFFF;
-      border-color: #FFFFFF;
-      color: rgba(24, 28, 40, 0.73); }
-      .budgie-popover.user-menu row label {
-        color: rgba(24, 28, 40, 0.73); }
-      .budgie-popover.user-menu row:hover {
-        border-radius: 2px;
-        background-color: #DCDCDC;
-        border-color: #DCDCDC;
-        color: rgba(24, 28, 40, 0.89); }
-        .budgie-popover.user-menu row:hover label {
-          color: rgba(24, 28, 40, 0.89); }
-      .budgie-popover.user-menu row:active {
-        border-radius: 2px;
-        background-color: #4D4D4D;
-        border-color: #4D4D4D;
-        color: #ffffff; }
-        .budgie-popover.user-menu row:active label {
-          color: #ffffff; }
+  .budgie-popover frame > border, .budgie-popover .frame, .budgie-popover.background frame > border, .budgie-popover.background .frame {
+    border: none; }
+
+.budgie-popover .container {
+  background-color: #FFFFFF;
+  border: none; }
+
+.budgie-popover button {
+  background-color: transparent; }
 
 .budgie-run-dialog {
   background-color: #FFFFFF;
