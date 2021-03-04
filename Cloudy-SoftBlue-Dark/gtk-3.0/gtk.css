@@ -1385,17 +1385,17 @@ headerbar spinbutton:not(.vertical) > entry + button:not(:active):hover {
 .primary-toolbar scale:backdrop, headerbar scale:backdrop {
   opacity: 0.75; }
 .primary-toolbar scale slider, headerbar scale slider {
-  background-color: #191C1F;
-  border-color: #101214; }
+  background-color: #30374a;
+  border-color: rgba(4, 4, 6, 0.67); }
   .primary-toolbar scale slider:hover, headerbar scale slider:hover {
-    background-color: #24292d;
-    border-color: #101214; }
+    background-color: #3a4259;
+    border-color: rgba(4, 4, 6, 0.67); }
   .primary-toolbar scale slider:active, headerbar scale slider:active {
     background-color: #2B3143;
     border-color: #2B3143; }
   .primary-toolbar scale slider:disabled, headerbar scale slider:disabled {
-    background-color: rgba(26, 29, 34, 0.991);
-    border-color: #101214; }
+    background-color: rgba(42, 48, 65, 0.991);
+    border-color: rgba(4, 4, 6, 0.67); }
 .primary-toolbar scale trough, headerbar scale trough {
   background-color: rgba(4, 4, 6, 0.37); }
   .primary-toolbar scale trough:disabled, headerbar scale trough:disabled {
@@ -2194,9 +2194,9 @@ scale {
     scale trough:disabled {
       background-color: rgba(18, 21, 24, 0.55); }
     .osd scale trough {
-      background-color: rgba(42, 48, 65, 0.95); }
+      background-color: #1D2127; }
       .osd scale trough highlight {
-        background-color: #2B3143; }
+        background-color: rgba(42, 48, 65, 0.95); }
     menuitem:hover scale trough, row:selected scale trough, infobar scale trough {
       background-color: rgba(0, 0, 0, 0.2); }
       menuitem:hover scale trough highlight, row:selected scale trough highlight, infobar scale trough highlight {
@@ -2245,14 +2245,14 @@ scale {
         border-color: #a0a2aa; }
     .osd scale slider {
       background-clip: border-box;
-      background-color: #2B3143;
-      border-color: #2B3143; }
+      background-color: rgba(20, 23, 31, 0.95);
+      border-color: rgba(20, 23, 31, 0.95); }
       .osd scale slider:hover {
-        background-color: #3f4862;
-        border-color: #3f4862; }
+        background-color: rgba(26, 30, 40, 0.95);
+        border-color: rgba(26, 30, 40, 0.95); }
       .osd scale slider:active {
-        background-color: #171a24;
-        border-color: #171a24; }
+        background-color: rgba(42, 48, 65, 0.95);
+        border-color: rgba(42, 48, 65, 0.95); }
   scale value {
     color: alpha(currentColor,0.4); }
   scale marks {
