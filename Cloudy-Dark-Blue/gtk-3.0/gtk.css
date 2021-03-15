@@ -57,8 +57,8 @@ textview border {
 
 rubberband, flowbox rubberband, treeview.view rubberband, .content-view rubberband,
 .rubberband {
-  border: 1px solid #171a24;
-  background-color: rgba(23, 26, 36, 0.2); }
+  border: 1px solid #292f40;
+  background-color: rgba(41, 47, 64, 0.4); }
 
 flowbox flowboxchild {
   padding: 3px;
