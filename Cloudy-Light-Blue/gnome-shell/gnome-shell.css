@@ -34,8 +34,7 @@ Global Placeholder
  * Inc., 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
  */
 stage {
-  font-family: Futura Bk bt, Cantarell, Sans-Serif;
-  font-size: 9pt;
+  font-size: 1em;
   color: #181c28; }
 
 .button {
