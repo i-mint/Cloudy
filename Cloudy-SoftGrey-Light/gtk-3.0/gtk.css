@@ -1394,8 +1394,8 @@ headerbar spinbutton:not(.vertical) > entry + button:not(:active):hover {
     background-color: white;
     border-color: rgba(255, 255, 255, 0.3); }
   .primary-toolbar scale slider:active, headerbar scale slider:active {
-    background-color: #595959;
-    border-color: #595959; }
+    background-color: rgba(255, 255, 255, 0.8);
+    border-color: rgba(255, 255, 255, 0.3); }
   .primary-toolbar scale slider:disabled, headerbar scale slider:disabled {
     background-color: rgba(206, 206, 206, 0.985);
     border-color: rgba(255, 255, 255, 0.3); }
