@@ -370,7 +370,7 @@ button {
     border-color: #F08437;
     box-shadow: none; }
   button.osd {
-    color: rgba(255, 255, 255, 0.78);
+    color: rgba(255, 255, 255, 0.48);
     background-color: rgba(114, 128, 167, 0.95);
     border-color: rgba(92, 107, 148, 0.95); }
     button.osd.image-button {
@@ -378,7 +378,7 @@ button {
       min-height: 36px;
       min-width: 36px; }
     button.osd:hover {
-      color: #56648A; }
+      color: #ffffff; }
     button.osd:active, button.osd:checked {
       color: #ffffff;
       border-color: rgba(84, 98, 135, 0.35);
