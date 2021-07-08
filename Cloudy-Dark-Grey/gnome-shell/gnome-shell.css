@@ -9,11 +9,11 @@ Global Placeholder
 ******************/
 .calendar, .world-clocks-button, .weather-button, .events-button {
   background-color: #2d2d2d;
-  padding: 0;
-  padding: 4px 2px;
+  padding: 4px 8px;
+  margin: 4px 2px;
   border: 1px;
   border-radius: 4px;
-  border-color: transparent; }
+  border-color: #2a2a2a; }
 
 /* Copyright 2009, 2015 Red Hat, Inc.
  *
@@ -570,8 +570,17 @@ StScrollBar {
   height: 2px;
   margin: 0;
   background-color: transparent;
-  border: none;
-  border-image: url("common-assets/menu/menu-separator.svg") 1 1 1 1; }
+  border: none; }
+
+.popup-separator-menu-item {
+  padding: 0; }
+  .popup-separator-menu-item .popup-separator-menu-item-separator {
+    height: 2px;
+    margin: 0;
+    background-color: transparent; }
+    .popup-sub-menu .popup-separator-menu-item .popup-separator-menu-item-separator {
+      margin: 0;
+      background-color: transparent; }
 
 .background-menu {
   -boxpointer-gap: 4px;
@@ -994,7 +1003,7 @@ StScrollBar {
     height: 8px;
     width: 12px;
     border-radius: 16px;
-    padding: 4px;
+    margin: 4px;
     padding: 1.1em 4px 0 4px;
     color: #e5e5e5;
     text-align: center;
