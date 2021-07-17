@@ -1395,6 +1395,37 @@ headerbar spinbutton:not(.vertical) > entry + button:not(:active):hover {
   padding-left: 4px;
   padding-right: 4px; }
 
+filechooser .linked.path-bar button.image-button, filechooser .linked.path-bar button.text-button, filechooser .linked.path-bar button {
+  background-color: #595959;
+  border-color: #595959;
+  color: rgba(255, 255, 255, 0.56);
+  margin: 0px;
+  border-radius: 0%; }
+  filechooser .linked.path-bar button.image-button label, filechooser .linked.path-bar button.text-button label, filechooser .linked.path-bar button label, filechooser .linked.path-bar button.image-button image, filechooser .linked.path-bar button.text-button image, filechooser .linked.path-bar button image {
+    color: rgba(255, 255, 255, 0.56); }
+  filechooser .linked.path-bar button:hover {
+    background-color: #545454;
+    border-color: #545454;
+    color: rgba(255, 255, 255, 0.73);
+    margin: 0px;
+    border-radius: 0%; }
+    filechooser .linked.path-bar button:hover label, filechooser .linked.path-bar button:hover image {
+      color: rgba(255, 255, 255, 0.73); }
+  filechooser .linked.path-bar button:active, filechooser .linked.path-bar button:checked {
+    background-color: #4f4f4f;
+    border-color: #4f4f4f;
+    color: rgba(255, 255, 255, 0.89);
+    margin: 0px;
+    border-radius: 0%; }
+    filechooser .linked.path-bar button:active label, filechooser .linked.path-bar button:active image, filechooser .linked.path-bar button:checked label, filechooser .linked.path-bar button:checked image {
+      color: rgba(255, 255, 255, 0.89); }
+  filechooser .linked.path-bar button:backdrop {
+    background-color: transparent;
+    border-color: transparent;
+    opacify: 0.7; }
+    filechooser .linked.path-bar button:backdrop label, filechooser .linked.path-bar button:backdrop {
+      color: inherit; }
+
 treeview.view {
   border-left-color: rgba(24, 28, 40, 0.15);
   border-top-color: rgba(0, 0, 0, 0.1); }
@@ -2547,6 +2578,9 @@ filechooser #pathbarbox {
 filechooserbutton:drop(active) {
   box-shadow: none;
   border-color: transparent; }
+
+filechooser .linked.path-bar button.image-button, filechooser .linked.path-bar button.text-button, filechooser .linked.path-bar button {
+  border-right: none; }
 
 .sidebar {
   border-style: none;
