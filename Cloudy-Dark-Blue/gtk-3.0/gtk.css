@@ -996,6 +996,10 @@ headerbar:last-child, headerbar:last-child:backdrop {
   border-top-right-radius: 3px; }
   .maximized headerbar:last-child, .tiled headerbar:last-child, .maximized headerbar:last-child:backdrop, .tiled headerbar:last-child:backdrop {
     border-radius: 0; }
+headerbar separator, headerbar separator.sidebar {
+  background-image: image(rgba(43, 49, 67, 0.97)); }
+headerbar:backdrop separator, headerbar:backdrop separator.sidebar {
+  background-image: image(rgba(46, 52, 72, 0.97)); }
 
 window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, window.csd > .titlebar:not(headerbar), window.csd > .titlebar:not(headerbar):backdrop {
   padding: 0;
@@ -1003,14 +1007,14 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
   border: none;
   box-shadow: none; }
 .titlebar:not(headerbar) > separator {
-  background-image: linear-gradient(to bottom, rgba(35, 40, 55, 0.97), rgba(35, 40, 55, 0.97)); }
+  background-image: image(rgba(43, 49, 67, 0.97)); }
 
 .primary-toolbar:not(.libreoffice-toolbar) separator, headerbar separator.titlebutton, .titlebar:not(headerbar) separator.titlebutton {
   min-width: 1px;
   min-height: 1px;
   background: none;
   border-width: 0 1px;
-  border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.15) 25%, rgba(255, 255, 255, 0.15) 75%, rgba(255, 255, 255, 0) 75%) 0 1/0 1px stretch; }
+  border-image: image(rgba(43, 49, 67, 0.97)); }
   .primary-toolbar:not(.libreoffice-toolbar) separator:backdrop, headerbar separator.titlebutton:backdrop, .titlebar:not(headerbar) separator.titlebutton:backdrop {
     opacity: 0.6; }
 
