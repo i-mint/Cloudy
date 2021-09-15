@@ -1422,7 +1422,7 @@ filechooser .linked.path-bar button.image-button, filechooser .linked.path-bar b
   filechooser .linked.path-bar button:backdrop {
     background-color: transparent;
     border-color: transparent;
-    opacify: 0.7; }
+    opacity: 0.7; }
     filechooser .linked.path-bar button:backdrop label, filechooser .linked.path-bar button:backdrop {
       color: inherit; }
 
@@ -4599,7 +4599,7 @@ filechooser headerbar widget stack box.path-bar-box,
     .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button:backdrop {
       background-color: transparent;
       border-color: transparent;
-      opacify: 0.7; }
+      opacity: 0.7; }
       filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button:backdrop label, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button:backdrop,
       .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button:backdrop label,
       .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button:backdrop {
