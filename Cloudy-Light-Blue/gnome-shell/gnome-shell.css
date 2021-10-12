@@ -529,11 +529,11 @@ StScrollBar {
       font-weight: normal;
       background: none;
       box-shadow: none;
-      background-color: rgba(86, 100, 138, 0.08);
+      background-color: rgba(86, 100, 138, 0.15);
       color: #181c28; }
     .popup-menu .popup-menu-item:active, .popup-menu .popup-menu-item.selected {
       color: #181c28;
-      background-color: rgba(86, 100, 138, 0.05); }
+      background-color: rgba(86, 100, 138, 0.1); }
     .popup-menu .popup-menu-item:insensitive {
       color: rgba(24, 28, 40, 0.5);
       background: none; }
@@ -743,25 +743,41 @@ StScrollBar {
     color: white;
     transition-duration: 100ms;
     border-bottom-width: 1px;
-    border-color: transparent; }
+    border-color: transparent;
+    border-radius: 0px; }
     #panel .panel-button .app-menu-icon {
       width: 0;
       height: 0;
       margin-left: 0px;
       margin-right: 0px; }
+    #panel .panel-button.clock-display .clock {
+      color: rgba(255, 255, 255, 0.78);
+      border-radius: 0px; }
+    #panel .panel-button.clock-display:hover {
+      box-shadow: none; }
+      #panel .panel-button.clock-display:hover .clock {
+        box-shadow: inset 0 0 0 100px rgba(0, 0, 0, 0.17);
+        background-color: rgba(0, 0, 0, 0.17); }
     #panel .panel-button:hover {
       color: white;
-      background-color: rgba(0, 0, 0, 0.17);
+      background-color: transparent;
       border-bottom-width: 1px;
-      border-color: transparent; }
+      border-color: transparent;
+      box-shadow: inset 0 0 0 100px rgba(0, 0, 0, 0.17); }
     #panel .panel-button:active, #panel .panel-button:overview, #panel .panel-button:focus, #panel .panel-button:checked {
       color: #ffffff;
       background-color: #56648A;
-      box-shadow: none;
+      box-shadow: inset 0 0 0 100px #56648A;
       border-bottom-width: 0px;
       border-color: transparent; }
       #panel .panel-button:active > .system-status-icon, #panel .panel-button:overview > .system-status-icon, #panel .panel-button:focus > .system-status-icon, #panel .panel-button:checked > .system-status-icon {
         icon-shadow: none; }
+      #panel .panel-button:active.clock-display, #panel .panel-button:overview.clock-display, #panel .panel-button:focus.clock-display, #panel .panel-button:checked.clock-display {
+        background-color: transparent;
+        box-shadow: none; }
+        #panel .panel-button:active.clock-display .clock, #panel .panel-button:overview.clock-display .clock, #panel .panel-button:focus.clock-display .clock, #panel .panel-button:checked.clock-display .clock {
+          box-shadow: inset 0 0 0 100px #56648A;
+          color: #ffffff; }
     #panel .panel-button .system-status-icon {
       icon-size: 16px;
       padding: 0 4px; }
@@ -769,19 +785,6 @@ StScrollBar {
       color: #2b3248; }
       .unlock-screen #panel .panel-button:focus, .unlock-screen #panel .panel-button:hover, .unlock-screen #panel .panel-button:active, .login-screen #panel .panel-button:focus, .login-screen #panel .panel-button:hover, .login-screen #panel .panel-button:active, .lock-screen #panel .panel-button:focus, .lock-screen #panel .panel-button:hover, .lock-screen #panel .panel-button:active {
         color: #2b3248; }
-  #panel .panel-button.clock-display .clock {
-    color: white; }
-  #panel .panel-button.clock-display:active, #panel .panel-button.clock-display:overview, #panel .panel-button.clock-display:focus, #panel .panel-button.clock-display:checked {
-    box-shadow: none; }
-    #panel .panel-button.clock-display:active .clock, #panel .panel-button.clock-display:overview .clock, #panel .panel-button.clock-display:focus .clock, #panel .panel-button.clock-display:checked .clock {
-      color: #ffffff;
-      background-color: #56648A;
-      box-shadow: none;
-      border: none;
-      border-color: transparent; }
-  #panel .panel-button.clock-display:active > * > *:last-child, #panel .panel-button.clock-display:checked > * > *:last-child {
-    color: #ffffff;
-    background-color: #56648A; }
   #panel #panelActivities.panel-button {
     -natural-hpadding: 12px; }
   #panel .panel-status-indicators-box,
@@ -792,8 +795,7 @@ StScrollBar {
   #panel .screencast-indicator {
     color: #FC4138; }
   #panel .clock-display > * > *:last-child {
-    color: rgba(255, 255, 255, 0.78);
-    margin-left: .3em; }
+    color: rgba(255, 255, 255, 0.78); }
   #panel .popup-menu-arrow {
     width: 0; }
 
@@ -1286,6 +1288,9 @@ StScrollBar {
 
 #overview {
   spacing: 24px; }
+
+#overviewGroup {
+  background-color: rgba(77, 89, 123, 0.95); }
 
 .overview-controls {
   padding-bottom: 32px; }
