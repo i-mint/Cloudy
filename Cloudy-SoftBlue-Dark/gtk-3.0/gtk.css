@@ -1937,6 +1937,16 @@ headerbar switch:checked:disabled,
 .primary-toolbar switch:checked:disabled {
   background-image: -gtk-scaled(url("assets/switch-active-insensitive-header-dark.png"), url("assets/switch-active-insensitive-header-dark@2.png")); }
 
+switch.restricts {
+  min-width: 52px;
+  min-height: 26px;
+  background-size: 52px 26px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: -gtk-scaled(url("assets/switch-restricts-dark.png"), url("assets/switch-restricts-dark@2.png")); }
+  switch.restricts:active, switch.restricts:checked {
+    background-image: -gtk-scaled(url("assets/switch-restricts-dark-active.png"), url("assets/switch-restricts-dark-active@2.png")); }
+
 .check,
 check,
 treeview.check {
