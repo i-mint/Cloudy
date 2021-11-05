@@ -65,6 +65,12 @@ flowbox flowboxchild {
   border-radius: 2px; }
   flowbox flowboxchild:selected {
     outline-offset: -2px; }
+flowbox button.remove-button:hover label, flowbox button.remove-button:hover image {
+  color: #f68086; }
+flowbox button.remove-button:active {
+  background-color: #434343; }
+  flowbox button.remove-button:active label, flowbox button.remove-button:active image {
+    color: #ffffff; }
 
 label.separator {
   color: #181c28; }
