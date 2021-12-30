@@ -126,7 +126,7 @@ entry {
   border: 1px solid;
   padding: 2px 8px;
   caret-color: currentColor;
-  border-radius: 3px;
+  border-radius: 4px;
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   color: rgba(24, 28, 40, 0.54);
   border-color: #c3c5c6;
@@ -152,8 +152,8 @@ entry {
   entry:focus {
     background-clip: border-box;
     color: #181c28;
-    border-color: #c3c5c6;
-    background-color: #d2d4d5; }
+    border-color: rgba(86, 100, 138, 0.4);
+    background-color: #FFFFFF; }
     entry:focus image, entry:focus image:hover {
       color: inherit; }
   entry:disabled {
@@ -696,8 +696,8 @@ headerbar .linked:not(.vertical).path-bar > button:first-child:active,
 headerbar .linked:not(.vertical).path-bar > button:first-child:checked,
 headerbar .linked:not(.vertical).path-bar > button:first-child:disabled, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:first-child, filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:first-child,
 .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:first-child {
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px; }
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px; }
 .linked:not(.vertical) > entry:last-child, .inline-toolbar button:last-child, .linked:not(.vertical) > button:last-child, spinbutton:not(.vertical) button:last-child, spinbutton:not(.vertical) entry:last-child, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child:hover, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child:active, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child:checked, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child:disabled,
 .primary-toolbar .linked:not(.vertical).path-bar > button:last-child,
 headerbar .linked:not(.vertical).path-bar > button:last-child,
@@ -706,8 +706,8 @@ headerbar .linked:not(.vertical).path-bar > button:last-child:active,
 headerbar .linked:not(.vertical).path-bar > button:last-child:checked,
 headerbar .linked:not(.vertical).path-bar > button:last-child:disabled, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:last-child, filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:last-child,
 .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:last-child {
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
   border-right-style: solid; }
 .linked:not(.vertical) > entry:only-child, .inline-toolbar button:only-child, .linked:not(.vertical) > button:only-child, spinbutton:not(.vertical) button:only-child, spinbutton:not(.vertical) entry:only-child, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child:hover, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child:active, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child:checked, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child:disabled,
 .primary-toolbar .linked:not(.vertical).path-bar > button:only-child,
@@ -717,20 +717,20 @@ headerbar .linked:not(.vertical).path-bar > button:only-child:active,
 headerbar .linked:not(.vertical).path-bar > button:only-child:checked,
 headerbar .linked:not(.vertical).path-bar > button:only-child:disabled, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:only-child, filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:only-child,
 .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:only-child {
-  border-radius: 3px;
+  border-radius: 4px;
   border-style: solid; }
 
 toolbar.inline-toolbar toolbutton:first-child > button.flat, .inline-toolbar toolbutton:first-child > button.flat, .linked:not(.vertical) > combobox:first-child > box > button.combo {
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px; }
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px; }
 
 toolbar.inline-toolbar toolbutton:last-child > button.flat, .inline-toolbar toolbutton:last-child > button.flat, .linked:not(.vertical) > combobox:last-child > box > button.combo {
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
   border-right-style: solid; }
 
 toolbar.inline-toolbar toolbutton:only-child > button.flat, .inline-toolbar toolbutton:only-child > button.flat, .linked:not(.vertical) > combobox:only-child > box > button.combo {
-  border-radius: 3px;
+  border-radius: 4px;
   border-style: solid; }
 
 .linked.vertical > entry, .linked.vertical > entry:focus, .linked.vertical > button, .linked.vertical > button:hover, .linked.vertical > button:active, .linked.vertical > button:checked, spinbutton.vertical button, spinbutton.vertical entry, .linked.vertical > combobox > box > button.combo {
@@ -738,27 +738,27 @@ toolbar.inline-toolbar toolbutton:only-child > button.flat, .inline-toolbar tool
   border-bottom-style: none; }
 
 .linked.vertical > entry:first-child, .linked.vertical > button:first-child, spinbutton.vertical button:first-child, spinbutton.vertical entry:first-child {
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px; }
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px; }
 .linked.vertical > entry:last-child, .linked.vertical > button:last-child, spinbutton.vertical button:last-child, spinbutton.vertical entry:last-child {
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
   border-bottom-style: solid; }
 .linked.vertical > entry:only-child, .linked.vertical > button:only-child, spinbutton.vertical button:only-child, spinbutton.vertical entry:only-child {
-  border-radius: 3px;
+  border-radius: 4px;
   border-style: solid; }
 
 .linked.vertical > combobox:first-child > box > button.combo {
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px; }
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px; }
 
 .linked.vertical > combobox:last-child > box > button.combo {
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
   border-bottom-style: solid; }
 
 .linked.vertical > combobox:only-child > box > button.combo {
-  border-radius: 3px;
+  border-radius: 4px;
   border-style: solid; }
 
 menuitem.button.flat,
@@ -806,8 +806,10 @@ spinbutton:disabled {
   color: rgba(24, 28, 40, 0.55); }
 spinbutton:not(.vertical) entry {
   min-width: 28px; }
+spinbutton:not(.vertical) button, spinbutton:not(.vertical) entry {
+  border-color: #c5c7c9; }
 spinbutton:not(.vertical):dir(ltr) entry, spinbutton:not(.vertical):dir(rtl) button.up {
-  border-radius: 3px 0 0 3px; }
+  border-radius: 4px 0 0 4px; }
 spinbutton:not(.vertical) > button + button {
   border-left-style: none; }
 spinbutton:not(.vertical) > button:hover:not(:active),
@@ -821,7 +823,7 @@ spinbutton:not(.vertical) > button.up:dir(rtl):hover:not(:active),
 spinbutton:not(.vertical) > entry + button:not(:active):hover {
   box-shadow: none; }
 spinbutton:not(.vertical) > entry:focus + button {
-  border-left-color: #56648A; }
+  border-left-color: #d5d6d8; }
 spinbutton:not(.vertical) > entry:drop(active) + button {
   border-left-color: #F08437; }
 .osd spinbutton:not(.vertical) > button:hover:not(:active),
@@ -843,6 +845,13 @@ spinbutton.vertical > entry:focus + button {
   border-top-color: #56648A; }
 spinbutton.vertical > entry:drop(active) + button {
   border-top-color: #F08437; }
+spinbutton:focus, spinbutton entry:focus {
+  background-color: #FFFFFF;
+  border-color: rgba(86, 100, 138, 0.4);
+  border-radius: 4px;
+  caret-color: currentColor; }
+  spinbutton:focus label, spinbutton:focus, spinbutton entry:focus label, spinbutton entry:focus {
+    color: #181c28; }
 
 combobox button.combo {
   min-width: 0;
@@ -3285,8 +3294,8 @@ terminal-window notebook > header.top,
   border: 1px solid;
   border-radius: 3px;
   color: #181c28;
-  border-color: #c3c5c6;
-  background-color: #d2d4d5; }
+  border-color: rgba(86, 100, 138, 0.4);
+  background-color: #FFFFFF; }
   .nemo-window .nemo-window-pane widget.entry image, .nemo-window .nemo-window-pane widget.entry image:hover {
     color: inherit; }
 .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button {
@@ -3805,8 +3814,8 @@ popover {
       color: inherit; }
     popover entry:focus, popover entry.search:focus {
       color: #181c28;
-      border-color: #c3c5c6;
-      background-color: #d2d4d5; }
+      border-color: rgba(86, 100, 138, 0.4);
+      background-color: #FFFFFF; }
       popover entry:focus image, popover entry:focus image:hover, popover entry.search:focus image, popover entry.search:focus image:hover {
         color: inherit; }
   popover .sidebar, popover .sidebar.view, popover iconview.sidebar, popover .sidebar .view, popover .sidebar iconview, popover treeview .view, popover treeview iconview {
@@ -3964,8 +3973,8 @@ popover {
       color: #ffffff; }
   #whiskermenu-window entry:focus, #whiskermenu-window entry.search {
     color: #181c28;
-    border-color: #c3c5c6;
-    background-color: #d2d4d5; }
+    border-color: rgba(86, 100, 138, 0.4);
+    background-color: #FFFFFF; }
     #whiskermenu-window entry:focus image, #whiskermenu-window entry:focus image:hover, #whiskermenu-window entry.search image, #whiskermenu-window entry.search image:hover {
       color: inherit; }
 

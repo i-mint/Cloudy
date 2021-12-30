@@ -126,7 +126,7 @@ entry {
   border: 1px solid;
   padding: 2px 8px;
   caret-color: currentColor;
-  border-radius: 3px;
+  border-radius: 4px;
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   color: rgba(236, 240, 244, 0.46);
   border-color: #282d36;
@@ -697,8 +697,8 @@ headerbar .linked:not(.vertical).path-bar > button:first-child:active,
 headerbar .linked:not(.vertical).path-bar > button:first-child:checked,
 headerbar .linked:not(.vertical).path-bar > button:first-child:disabled, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:first-child, filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:first-child,
 .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:first-child {
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px; }
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px; }
 .linked:not(.vertical) > entry:last-child, .inline-toolbar button:last-child, .linked:not(.vertical) > button:last-child, spinbutton:not(.vertical) button:last-child, spinbutton:not(.vertical) entry:last-child, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child:hover, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child:active, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child:checked, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child:disabled,
 .primary-toolbar .linked:not(.vertical).path-bar > button:last-child,
 headerbar .linked:not(.vertical).path-bar > button:last-child,
@@ -707,8 +707,8 @@ headerbar .linked:not(.vertical).path-bar > button:last-child:active,
 headerbar .linked:not(.vertical).path-bar > button:last-child:checked,
 headerbar .linked:not(.vertical).path-bar > button:last-child:disabled, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:last-child, filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:last-child,
 .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:last-child {
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
   border-right-style: solid; }
 .linked:not(.vertical) > entry:only-child, .inline-toolbar button:only-child, .linked:not(.vertical) > button:only-child, spinbutton:not(.vertical) button:only-child, spinbutton:not(.vertical) entry:only-child, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child:hover, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child:active, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child:checked, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child:disabled,
 .primary-toolbar .linked:not(.vertical).path-bar > button:only-child,
@@ -718,20 +718,20 @@ headerbar .linked:not(.vertical).path-bar > button:only-child:active,
 headerbar .linked:not(.vertical).path-bar > button:only-child:checked,
 headerbar .linked:not(.vertical).path-bar > button:only-child:disabled, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:only-child, filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:only-child,
 .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:only-child {
-  border-radius: 3px;
+  border-radius: 4px;
   border-style: solid; }
 
 toolbar.inline-toolbar toolbutton:first-child > button.flat, .inline-toolbar toolbutton:first-child > button.flat, .linked:not(.vertical) > combobox:first-child > box > button.combo {
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px; }
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px; }
 
 toolbar.inline-toolbar toolbutton:last-child > button.flat, .inline-toolbar toolbutton:last-child > button.flat, .linked:not(.vertical) > combobox:last-child > box > button.combo {
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
   border-right-style: solid; }
 
 toolbar.inline-toolbar toolbutton:only-child > button.flat, .inline-toolbar toolbutton:only-child > button.flat, .linked:not(.vertical) > combobox:only-child > box > button.combo {
-  border-radius: 3px;
+  border-radius: 4px;
   border-style: solid; }
 
 .linked.vertical > entry, .linked.vertical > entry:focus, .linked.vertical > button, .linked.vertical > button:hover, .linked.vertical > button:active, .linked.vertical > button:checked, spinbutton.vertical button, spinbutton.vertical entry, .linked.vertical > combobox > box > button.combo {
@@ -739,27 +739,27 @@ toolbar.inline-toolbar toolbutton:only-child > button.flat, .inline-toolbar tool
   border-bottom-style: none; }
 
 .linked.vertical > entry:first-child, .linked.vertical > button:first-child, spinbutton.vertical button:first-child, spinbutton.vertical entry:first-child {
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px; }
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px; }
 .linked.vertical > entry:last-child, .linked.vertical > button:last-child, spinbutton.vertical button:last-child, spinbutton.vertical entry:last-child {
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
   border-bottom-style: solid; }
 .linked.vertical > entry:only-child, .linked.vertical > button:only-child, spinbutton.vertical button:only-child, spinbutton.vertical entry:only-child {
-  border-radius: 3px;
+  border-radius: 4px;
   border-style: solid; }
 
 .linked.vertical > combobox:first-child > box > button.combo {
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px; }
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px; }
 
 .linked.vertical > combobox:last-child > box > button.combo {
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
   border-bottom-style: solid; }
 
 .linked.vertical > combobox:only-child > box > button.combo {
-  border-radius: 3px;
+  border-radius: 4px;
   border-style: solid; }
 
 menuitem.button.flat,
@@ -807,8 +807,10 @@ spinbutton:disabled {
   color: rgba(236, 240, 244, 0.45); }
 spinbutton:not(.vertical) entry {
   min-width: 28px; }
+spinbutton:not(.vertical) button, spinbutton:not(.vertical) entry {
+  border-color: #101215; }
 spinbutton:not(.vertical):dir(ltr) entry, spinbutton:not(.vertical):dir(rtl) button.up {
-  border-radius: 3px 0 0 3px; }
+  border-radius: 4px 0 0 4px; }
 spinbutton:not(.vertical) > button + button {
   border-left-style: none; }
 spinbutton:not(.vertical) > button:hover:not(:active),
@@ -844,6 +846,19 @@ spinbutton.vertical > entry:focus + button {
   border-top-color: #101215; }
 spinbutton.vertical > entry:drop(active) + button {
   border-top-color: #F08437; }
+spinbutton:focus, spinbutton entry:focus {
+  color: #ecf0f4;
+  border-color: #282d36;
+  background-color: #202531;
+  box-shadow: inset 1px 0 #2B3143, inset -1px 0 #2B3143, inset 0 1px #2B3143, inset 0 -1px #2B3143;
+  border-radius: 4px;
+  caret-color: currentColor; }
+  spinbutton:focus image, spinbutton:focus image:hover, spinbutton entry:focus image, spinbutton entry:focus image:hover {
+    color: inherit; }
+  spinbutton:focus label, spinbutton entry:focus label {
+    color: #ffffff; }
+spinbutton label, spinbutton {
+  color: rgba(236, 240, 244, 0.46); }
 
 combobox button.combo {
   min-width: 0;
@@ -920,13 +935,17 @@ searchbar {
   border-width: 0 0 1px;
   padding: 3px; }
   searchbar entry.search {
-    background-color: #191C1F;
+    background-color: #1C202B;
     color: rgba(236, 240, 244, 0.46); }
     searchbar entry.search image, searchbar entry.search image:hover {
       color: inherit; }
     searchbar entry.search:focus {
-      background-color: #1e2125;
-      color: #ecf0f4; }
+      color: #ecf0f4;
+      border-color: #282d36;
+      background-color: #202531;
+      box-shadow: inset 1px 0 #2B3143, inset -1px 0 #2B3143, inset 0 1px #2B3143, inset 0 -1px #2B3143; }
+      searchbar entry.search:focus image, searchbar entry.search:focus image:hover {
+        color: inherit; }
       searchbar entry.search:focus image, searchbar entry.search:focus image:hover {
         color: inherit; }
 
@@ -3166,17 +3185,17 @@ textview text selection, .thunar notebook .view:selected, .thunar notebook iconv
     background-color: rgba(65, 74, 101, 0.78);
     color: rgba(255, 255, 255, 0.78); }
 
-entry selection:focus, entry selection {
-  background-color: rgba(236, 240, 244, 0.46); }
-  entry selection:focus, entry selection {
-    color: #1C202B; }
-    entry selection:backdrop {
-      color: rgba(28, 32, 43, 0.78); }
-    entry selection:disabled {
+entry selection:focus, entry selection, searchbar entry.search selection:focus, searchbar entry.search selection {
+  background-color: #ffffff; }
+  entry selection:focus, entry selection, searchbar entry.search selection:focus, searchbar entry.search selection {
+    color: #2B3143; }
+    entry selection:backdrop, searchbar entry.search selection:backdrop {
+      color: rgba(43, 49, 67, 0.78); }
+    entry selection:disabled, searchbar entry.search selection:disabled {
       color: #9598a1; }
-  entry selection:backdrop {
-    color: rgba(28, 32, 43, 0.78);
-    background-color: rgba(236, 240, 244, 0.24); }
+  entry selection:backdrop, searchbar entry.search selection:backdrop {
+    color: rgba(43, 49, 67, 0.78);
+    background-color: rgba(255, 255, 255, 0.78); }
 
 .nemo-window .nemo-inactive-pane .view:selected, .nemo-window .nemo-inactive-pane iconview:selected, .nemo-window .nemo-inactive-pane .iconview:selected {
   background-color: rgba(65, 74, 101, 0.78);
