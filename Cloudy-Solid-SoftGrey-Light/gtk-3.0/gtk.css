@@ -4607,7 +4607,8 @@ filechooser headerbar widget stack box.path-bar-box,
       border-color: #474747;
       color: #ffffff;
       margin: 0px;
-      border-radius: 0%; }
+      border-radius: 0%;
+      padding: 0 4px; }
       filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child label, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child image,
       .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child label,
       .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child image {
