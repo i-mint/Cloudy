@@ -4357,13 +4357,30 @@ terminal-window notebook > header.top button,
   border-right-width: 1px;
 }
 
-paned.gedit-side-panel-paned treeview {
+paned.gedit-side-panel-paned treeview.view {
   background-color: rgba(114, 114, 114, 0.95);
-  color: rgba(255, 255, 255, 0.78);
+  color: rgba(255, 255, 255, 0.56);
   border-color: #d1d1d1;
 }
-paned.gedit-side-panel-paned treeview:backdrop {
-  color: rgba(255, 255, 255, 0.48);
+paned.gedit-side-panel-paned treeview.view:hover {
+  background-color: #686868;
+  color: rgba(255, 255, 255, 0.78);
+}
+paned.gedit-side-panel-paned treeview.view:hover label, paned.gedit-side-panel-paned treeview.view:hover image {
+  color: inherit;
+}
+paned.gedit-side-panel-paned treeview.view:hover:backdrop {
+  color: rgba(255, 255, 255, 0.63);
+}
+paned.gedit-side-panel-paned treeview.view:selected, paned.gedit-side-panel-paned treeview.view:selected:focus, paned.gedit-side-panel-paned treeview.view:checked, paned.gedit-side-panel-paned treeview.view:checked:focus {
+  background-color: #515151;
+  color: #ffffff;
+}
+paned.gedit-side-panel-paned treeview.view:selected:backdrop, paned.gedit-side-panel-paned treeview.view:selected:focus:backdrop, paned.gedit-side-panel-paned treeview.view:checked:backdrop, paned.gedit-side-panel-paned treeview.view:checked:focus:backdrop {
+  color: rgba(255, 255, 255, 0.67);
+}
+paned.gedit-side-panel-paned treeview.view:backdrop {
+  color: rgba(255, 255, 255, 0.28);
   border-color: #d1d1d1;
 }
 
