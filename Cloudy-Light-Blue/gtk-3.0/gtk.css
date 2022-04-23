@@ -1801,7 +1801,6 @@ filechooser .linked.path-bar button.image-button, filechooser .linked.path-bar b
   border-color: #56648A;
   color: rgba(255, 255, 255, 0.56);
   margin: 0px;
-  border-radius: 4px;
 }
 filechooser .linked.path-bar button.image-button label, filechooser .linked.path-bar button.text-button label, filechooser .linked.path-bar button label, filechooser .linked.path-bar button.image-button image, filechooser .linked.path-bar button.text-button image, filechooser .linked.path-bar button image {
   color: rgba(255, 255, 255, 0.56);
@@ -1811,7 +1810,6 @@ filechooser .linked.path-bar button:hover {
   border-color: #5e6d97;
   color: rgba(255, 255, 255, 0.73);
   margin: 0px;
-  border-radius: 4px;
 }
 filechooser .linked.path-bar button:hover label, filechooser .linked.path-bar button:hover image {
   color: rgba(255, 255, 255, 0.73);
@@ -1821,7 +1819,6 @@ filechooser .linked.path-bar button:active, filechooser .linked.path-bar button:
   border-color: #505d81;
   color: rgba(255, 255, 255, 0.89);
   margin: 0px;
-  border-radius: 4px;
 }
 filechooser .linked.path-bar button:active label, filechooser .linked.path-bar button:active image, filechooser .linked.path-bar button:checked label, filechooser .linked.path-bar button:checked image {
   color: rgba(255, 255, 255, 0.89);
