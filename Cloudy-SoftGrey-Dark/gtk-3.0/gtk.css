@@ -5083,6 +5083,60 @@ popover .sidebar row:active label, popover .sidebar row:active image, popover .s
   border-radius: 4px;
 }
 
+.path-buttons-box:not(.vertical) {
+  background-color: #303030;
+  border-radius: 4px;
+  margin: 7px;
+}
+.path-buttons-box:not(.vertical) label.dim-label, .path-buttons-box:not(.vertical) label.separator, .path-buttons-box:not(.vertical) headerbar label.subtitle, headerbar .path-buttons-box:not(.vertical) label.subtitle,
+.path-buttons-box:not(.vertical) .titlebar:not(headerbar) label.subtitle,
+.titlebar:not(headerbar) .path-buttons-box:not(.vertical) label.subtitle {
+  color: transparent;
+}
+.path-buttons-box:not(.vertical) button {
+  background-color: #303030;
+  border-color: transparent;
+  margin: 0;
+}
+.path-buttons-box:not(.vertical) button label.dim-label, .path-buttons-box:not(.vertical) button label.separator, .path-buttons-box:not(.vertical) button headerbar label.subtitle, headerbar .path-buttons-box:not(.vertical) button label.subtitle,
+.path-buttons-box:not(.vertical) button .titlebar:not(headerbar) label.subtitle,
+.titlebar:not(headerbar) .path-buttons-box:not(.vertical) button label.subtitle,
+.path-buttons-box:not(.vertical) button image.dim-label,
+.path-buttons-box:not(.vertical) button headerbar image.subtitle,
+headerbar .path-buttons-box:not(.vertical) button image.subtitle,
+.path-buttons-box:not(.vertical) button .titlebar:not(headerbar) image.subtitle,
+.titlebar:not(headerbar) .path-buttons-box:not(.vertical) button image.subtitle, .path-buttons-box:not(.vertical) button {
+  color: rgba(255, 255, 255, 0.8);
+}
+.path-buttons-box:not(.vertical) button:hover {
+  background-color: #3a3a3a;
+  border-color: #3a3a3a;
+}
+.path-buttons-box:not(.vertical) button:hover label.dim-label, .path-buttons-box:not(.vertical) button:hover label.separator, .path-buttons-box:not(.vertical) button:hover headerbar label.subtitle, headerbar .path-buttons-box:not(.vertical) button:hover label.subtitle,
+.path-buttons-box:not(.vertical) button:hover .titlebar:not(headerbar) label.subtitle,
+.titlebar:not(headerbar) .path-buttons-box:not(.vertical) button:hover label.subtitle,
+.path-buttons-box:not(.vertical) button:hover image.dim-label,
+.path-buttons-box:not(.vertical) button:hover headerbar image.subtitle,
+headerbar .path-buttons-box:not(.vertical) button:hover image.subtitle,
+.path-buttons-box:not(.vertical) button:hover .titlebar:not(headerbar) image.subtitle,
+.titlebar:not(headerbar) .path-buttons-box:not(.vertical) button:hover image.subtitle, .path-buttons-box:not(.vertical) button:hover {
+  color: #ffffff;
+}
+.path-buttons-box:not(.vertical) button:active, .path-buttons-box:not(.vertical) button:checked, .path-buttons-box:not(.vertical) button.current-dir {
+  background-color: #3a3a3a;
+  color: #ffffff;
+  background-color: #3a3a3a;
+}
+.path-buttons-box:not(.vertical) button.current-dir {
+  margin-right: 3px;
+}
+
+.nautilus-path-bar > button.popup.toggle:active, .nautilus-path-bar > button.popup.toggle:checked {
+  background-color: #3a3a3a;
+  color: #ffffff;
+  background-color: #3a3a3a;
+}
+
 UnityDecoration {
   -UnityDecoration-extents: 28px 1 1 1;
   -UnityDecoration-input-extents: 10px;
