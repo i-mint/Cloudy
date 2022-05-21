@@ -6319,7 +6319,7 @@ event.slanted-end:backdrop label {
   background-clip: border-box;
   border: none;
   color: transparent;
-  box-shadow: 0 2px 6px 1px rgba(48, 48, 48, 0.2);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.4), 0 3px 3px 0 rgba(0, 0, 0, 0.4);
 }
 .budgie-popover:not(.csd) > frame.container,
 .budgie-popover:not(.csd) > frame.container > border {
