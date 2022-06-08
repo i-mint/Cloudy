@@ -1452,7 +1452,6 @@ headerbar .linked:not(.vertical).path-bar > button {
   background-color: #56648A;
   border-color: #56648A;
   margin: 0px;
-  border-radius: 4px;
 }
 .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button label, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button label, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button image, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button image,
 .primary-toolbar .linked:not(.vertical).path-bar > button label,
@@ -1468,7 +1467,6 @@ headerbar .linked:not(.vertical).path-bar > button:hover {
   background-color: #5e6d97;
   border-color: #5e6d97;
   margin: 0px;
-  border-radius: 4px;
 }
 .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover label, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover label, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover image, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover image,
 .primary-toolbar .linked:not(.vertical).path-bar > button:hover label,
@@ -1486,7 +1484,6 @@ headerbar .linked:not(.vertical).path-bar > button:checked {
   background-color: #505d81;
   border-color: #505d81;
   margin: 0px;
-  border-radius: 4px;
 }
 .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active label, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active label, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active image, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active image, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked label, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked label, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked image, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked image,
 .primary-toolbar .linked:not(.vertical).path-bar > button:active label,
