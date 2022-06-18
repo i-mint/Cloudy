@@ -5036,6 +5036,10 @@ popover .sidebar row:active label, popover .sidebar row:active image, popover .s
   opacity: 1;
 }
 
+.thunar .sidebar {
+  margin-top: -1px;
+  box-shadow: inset 0 2px 0 0 #121212;
+}
 .thunar .sidebar .view, .thunar .sidebar iconview {
   background-color: #1F1F1F;
   color: rgba(255, 255, 255, 0.78);
@@ -5078,6 +5082,98 @@ popover .sidebar row:active label, popover .sidebar row:active image, popover .s
   background-color: #575757;
   border: 0.5px solid #484848;
   border-radius: 4px;
+}
+
+.linked.path-bar > button,
+.thunar toolbar button,
+.thunar .inline-toolbar button {
+  color: rgba(255, 255, 255, 0.56);
+  background-color: #303030;
+  border-color: #303030;
+  margin: 0px;
+}
+.linked.path-bar > button label, .linked.path-bar > button image,
+.thunar toolbar button label,
+.thunar .inline-toolbar button label,
+.thunar toolbar button image,
+.thunar .inline-toolbar button image {
+  color: inherit;
+}
+.linked.path-bar > button:hover,
+.thunar toolbar button:hover,
+.thunar .inline-toolbar button:hover {
+  border-color: transparent;
+  background-color: #3a3a3a;
+  color: rgba(255, 255, 255, 0.56);
+}
+.linked.path-bar > button:active,
+.thunar toolbar button:active,
+.thunar .inline-toolbar button:active {
+  color: #ffffff;
+  border-color: #303030;
+  background-color: #303030;
+}
+.linked.path-bar > button.toggle,
+.thunar toolbar button.toggle,
+.thunar .inline-toolbar button.toggle {
+  color: rgba(255, 255, 255, 0.56);
+  background-color: #303030;
+  border-color: #303030;
+  margin: 0px;
+}
+.linked.path-bar > button.toggle label, .linked.path-bar > button.toggle image,
+.thunar toolbar button.toggle label,
+.thunar .inline-toolbar button.toggle label,
+.thunar toolbar button.toggle image,
+.thunar .inline-toolbar button.toggle image {
+  color: inherit;
+}
+.linked.path-bar > button.toggle:hover,
+.thunar toolbar button.toggle:hover,
+.thunar .inline-toolbar button.toggle:hover {
+  color: rgba(255, 255, 255, 0.73);
+  background-color: #353535;
+  border-color: #353535;
+  margin: 0px;
+}
+.linked.path-bar > button.toggle:hover label, .linked.path-bar > button.toggle:hover image,
+.thunar toolbar button.toggle:hover label,
+.thunar .inline-toolbar button.toggle:hover label,
+.thunar toolbar button.toggle:hover image,
+.thunar .inline-toolbar button.toggle:hover image {
+  color: inherit;
+}
+.linked.path-bar > button.toggle:active, .linked.path-bar > button.toggle:checked,
+.thunar toolbar button.toggle:active,
+.thunar .inline-toolbar button.toggle:active,
+.thunar toolbar button.toggle:checked,
+.thunar .inline-toolbar button.toggle:checked {
+  color: rgba(255, 255, 255, 0.89);
+  background-color: #3a3a3a;
+  border-color: #3a3a3a;
+  margin: 0px;
+}
+.linked.path-bar > button.toggle:active label, .linked.path-bar > button.toggle:active image, .linked.path-bar > button.toggle:checked label, .linked.path-bar > button.toggle:checked image,
+.thunar toolbar button.toggle:active label,
+.thunar .inline-toolbar button.toggle:active label,
+.thunar toolbar button.toggle:active image,
+.thunar .inline-toolbar button.toggle:active image,
+.thunar toolbar button.toggle:checked label,
+.thunar .inline-toolbar button.toggle:checked label,
+.thunar toolbar button.toggle:checked image,
+.thunar .inline-toolbar button.toggle:checked image {
+  color: inherit;
+}
+
+.thunar toolbar toolbutton button, .thunar .inline-toolbar toolbutton button {
+  background-color: transparent;
+  border-color: transparent;
+  margin: 0 2px;
+}
+
+.thunar toolbar, .thunar .inline-toolbar {
+  background-color: #1F1F1F;
+  border: none;
 }
 
 .path-buttons-box:not(.vertical) {
