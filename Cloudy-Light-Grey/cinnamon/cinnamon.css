@@ -133,9 +133,9 @@ stage {
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 .notification StEntry:focus {
-  color: #ffffff;
-  background-color: #4D4D4D;
-  border: 1px solid #4D4D4D;
+  color: #181c28;
+  background-color: #DCDCDC;
+  border: 1px solid #c5c5c5;
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 .notification StEntry:insensitive {
@@ -955,6 +955,7 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#vhandle:active, StScrol
   background-color: rgba(220, 220, 220, 0);
   border: none;
   padding: 0 5px 6px 5px;
+  text-align: center;
 }
 .modal-dialog > StBoxLayout:first-child {
   padding: 20px 10px 10px 10px;
@@ -971,19 +972,27 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#vhandle:active, StScrol
   padding-bottom: 0;
   height: 30px;
 }
+.modal-dialog .confirm-dialog-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1em;
+  padding-bottom: 15px;
+}
 
 .run-dialog {
   padding: 0px 15px 10px 15px;
-  border-image: url("common-assets/misc/bg.svg") 9 9 9 9;
+  background-color: rgba(77, 77, 77, 0.95);
+  border-radius: 4px;
 }
 .run-dialog > * {
   padding: 0;
 }
 .run-dialog-label {
-  font-size: 0;
+  font-size: 1.4em;
   font-weight: bold;
+  text-align: center;
   color: rgba(255, 255, 255, 0.78);
-  padding-bottom: 0;
+  padding-bottom: 15px;
 }
 .run-dialog-error-label {
   color: #FC4138;
@@ -998,21 +1007,22 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#vhandle:active, StScrol
 }
 .run-dialog-entry {
   width: 21em;
-  padding: 7px;
-  border-radius: 3px;
-  caret-color: rgba(255, 255, 255, 0.78);
-  selected-color: #ffffff;
+  padding: 4px 7px;
+  height: 1.4em;
+  font-size: 1.2em;
+  border-radius: 4px;
+  caret-color: #181c28;
+  selected-color: #181c28;
   selection-background-color: #4D4D4D;
-  min-height: 1.4em;
   color: rgba(255, 255, 255, 0.78);
   background-color: rgba(133, 133, 133, 0.35);
   border: 1px solid rgba(46, 46, 46, 0.35);
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 .run-dialog-entry:focus {
-  color: #ffffff;
-  background-color: #4D4D4D;
-  border: 1px solid #4D4D4D;
+  color: #181c28;
+  background-color: #DCDCDC;
+  border: 1px solid #c5c5c5;
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 .run-dialog .modal-dialog-button-box {
@@ -1020,6 +1030,14 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#vhandle:active, StScrol
   box-shadow: none;
   background: none;
   background-gradient-direction: none;
+}
+.run-dialog-description {
+  color: #181c28;
+  padding-top: 15px;
+  text-align: center;
+}
+.run-dialog-description.error {
+  color: #FC4138;
 }
 
 /* CinnamonMountOperation Dialogs */
