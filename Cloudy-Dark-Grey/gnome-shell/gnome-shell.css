@@ -1211,7 +1211,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   font-size: 70%;
   margin-top: 3px;
   margin-bottom: 2px;
-  border-bottom: 2px solid rgba(55, 55, 55, 0.95);
   border-radius: 16px;
   height: 38px;
   width: 12px;
@@ -1266,15 +1265,15 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 .calendar .calendar-week-number {
   background-color: transparent;
-  font-weight: bold;
-  height: 8px;
-  width: 12px;
-  border-radius: 16px;
+  font-weight: bold !important;
+  height: 25px;
+  width: 25px;
+  border-radius: 6px;
   margin: 4px;
-  padding: 1.1em 4px 0 4px;
-  color: #e5e5e5;
+  color: #939393;
+  padding: 0;
   text-align: center;
-  border-bottom: 2px solid rgba(55, 55, 55, 0.95);
+  border: 1px solid rgba(55, 55, 55, 0.95);
 }
 
 .world-clocks-button {
@@ -1306,7 +1305,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   padding: 4px;
   background-color: rgba(249, 249, 249, 0);
   font-weight: normal;
-  border-bottom: 2px solid rgba(55, 55, 55, 0.95);
 }
 .world-clocks-button .world-clocks-timezone {
   font-size: 6;
