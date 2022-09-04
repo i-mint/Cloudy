@@ -6620,7 +6620,7 @@ event.slanted-end:backdrop label {
   border-color: red;
 }
 .raven calendar.raven-calendar {
-  background-color: transparent;
+  background-color: #e8e8e9;
   color: #181c28;
   padding: 4px;
   border-color: transparent;
@@ -6629,8 +6629,9 @@ event.slanted-end:backdrop label {
   background-color: transparent;
 }
 .raven calendar.raven-calendar:selected {
-  background-color: transparent;
-  color: darkcyan;
+  background-color: #56648A;
+  color: #ffffff;
+  border-bottom: 9px solid transparent;
 }
 .raven button {
   color: #181c28;
