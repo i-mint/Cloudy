@@ -7,15 +7,6 @@ Global Mixin
 /****************
 Global Placeholder
 ******************/
-.events-button, .weather-button, .world-clocks-button, .calendar {
-  background-color: #f7f7f7;
-  padding: 4px 8px;
-  margin: 4px 2px;
-  border: 1px;
-  border-radius: 4px;
-  border-color: #f4f4f4;
-}
-
 /* Copyright 2009, 2015 Red Hat, Inc.
  *
  * Portions adapted from Mx's data/style/default.css
@@ -639,20 +630,31 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .popup-menu {
   min-width: 15em;
   color: rgba(24, 28, 40, 0.78);
-  border-image: url("light-assets/menu/menu.svg") 9 9 9 9;
+  background-color: transparent;
+  border-radius: 4px;
+  box-shadow: none;
+}
+.popup-menu.panel-menu {
+  margin-bottom: 1.75em;
 }
 .popup-menu .popup-sub-menu {
-  background: none;
+  background-color: rgba(86, 100, 138, 0.3) !important;
+  border: none;
   box-shadow: none;
-  border-image: url("light-assets/menu/submenu.svg") 9 9 9 9;
+  border-radius: 0;
+  color: rgba(24, 28, 40, 0.6) !important;
 }
 .popup-menu .popup-menu-content {
   padding: 1em 0em 1em 0em;
-  border-image: url("light-assets/menu/menu.svg") 9 9 9 9;
+  margin: 0;
+  background-color: #FFFFFF;
+  border: 1px solid #c5c7c9;
+  box-shadow: none;
+  border-radius: 4px;
 }
 .popup-menu .popup-menu-item {
   spacing: 12px;
-  margin: 0 4px 0 4px;
+  margin: 0;
 }
 .popup-menu .popup-menu-item:ltr {
   padding: 0.4em 3em 0.4em 0em;
@@ -661,16 +663,17 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   padding: 0.4em 0em 0.4em 3em;
 }
 .popup-menu .popup-menu-item:checked, .popup-menu .popup-menu-item:checked:hover {
-  font-weight: normal;
+  font-weight: normal !important;
+  background-color: rgba(86, 100, 138, 0.8) !important;
+  color: #ffffff;
+  border-radius: 0 !important;
+  border-color: transparent;
   box-shadow: none;
-  background-color: rgba(86, 100, 138, 0.25) !important;
-  color: #181c28;
-  border-radius: 0;
 }
 .popup-menu .popup-menu-item:active, .popup-menu .popup-menu-item.selected {
   color: #181c28;
   background-color: rgba(86, 100, 138, 0.1) !important;
-  border-radius: 0;
+  border-radius: 0 !important;
 }
 .popup-menu .popup-menu-item:insensitive {
   color: rgba(24, 28, 40, 0.5);
@@ -890,11 +893,10 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 #panel {
   font-weight: bold;
   height: 2.1em;
-  min-height: 27px;
+  min-height: 30px;
   background-gradient-direction: none;
-  background-color: transparent;
   border-bottom-width: 0;
-  border-image: url("common-assets/panel/panel.svg") 1 1 1 1;
+  background-color: #4d5a7c;
 }
 #panel.dynamic-top-bar-white-btn {
   border-image: none;
@@ -904,7 +906,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   border-image: none;
 }
 #panel:overview {
-  border-image: url("common-assets/panel/panel-overview.svg") 1 1 1 1;
+  background-color: rgba(77, 90, 124, 0.6);
 }
 #panel #panelLeft, #panel #panelCenter {
   spacing: 8px;
@@ -927,11 +929,10 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   -natural-hpadding: 10px;
   -minimum-hpadding: 6px;
   font-weight: bold;
-  color: white;
+  color: rgba(255, 255, 255, 0.8);
   transition-duration: 100ms;
-  border-bottom-width: 1px;
-  border-color: transparent;
-  border-radius: 0px;
+  border: 3px solid transparent;
+  border-radius: 6px;
 }
 #panel .panel-button .app-menu-icon {
   width: 0;
@@ -940,29 +941,32 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   margin-right: 0px;
 }
 #panel .panel-button.clock-display .clock {
-  color: rgba(255, 255, 255, 0.78);
-  border-radius: 0px;
+  color: rgba(255, 255, 255, 0.8);
+  border: 3px solid transparent;
+  border-radius: 6px;
 }
 #panel .panel-button.clock-display:hover {
   box-shadow: none;
 }
 #panel .panel-button.clock-display:hover .clock {
-  box-shadow: inset 0 0 0 100px rgba(0, 0, 0, 0.17);
-  background-color: rgba(0, 0, 0, 0.17);
+  box-shadow: inset 0 0 0 100px rgba(110, 125, 165, 0.4);
+  background-color: rgba(110, 125, 165, 0.4);
+  color: #ffffff;
+  border-radius: 6px;
 }
 #panel .panel-button:hover {
-  color: white;
+  color: #ffffff;
+  border: 3px solid transparent;
   background-color: transparent;
-  border-bottom-width: 1px;
-  border-color: transparent;
-  box-shadow: inset 0 0 0 100px rgba(0, 0, 0, 0.17);
+  box-shadow: inset 0 0 0 100px rgba(110, 125, 165, 0.4);
+  border-radius: 6px;
 }
 #panel .panel-button:active, #panel .panel-button:overview, #panel .panel-button:focus, #panel .panel-button:checked {
   color: #ffffff;
-  background-color: #56648A;
-  box-shadow: inset 0 0 0 100px #56648A;
-  border-bottom-width: 0px;
-  border-color: transparent;
+  background-color: #7b88ad;
+  box-shadow: inset 0 0 0 100px #7b88ad;
+  border: 3px solid transparent;
+  border-radius: 6px;
 }
 #panel .panel-button:active > .system-status-icon, #panel .panel-button:overview > .system-status-icon, #panel .panel-button:focus > .system-status-icon, #panel .panel-button:checked > .system-status-icon {
   icon-shadow: none;
@@ -972,8 +976,9 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   box-shadow: none;
 }
 #panel .panel-button:active.clock-display .clock, #panel .panel-button:overview.clock-display .clock, #panel .panel-button:focus.clock-display .clock, #panel .panel-button:checked.clock-display .clock {
-  box-shadow: inset 0 0 0 100px #56648A;
+  box-shadow: inset 0 0 0 100px #7b88ad;
   color: #ffffff;
+  border-radius: 6px;
 }
 #panel .panel-button .system-status-icon {
   icon-size: 16px;
@@ -999,7 +1004,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   color: #FC4138;
 }
 #panel .clock-display > * > *:last-child {
-  color: rgba(255, 255, 255, 0.78);
+  color: rgba(255, 255, 255, 0.8);
 }
 #panel .popup-menu-arrow {
   width: 0;
@@ -1012,7 +1017,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   height: 24px;
   background-color: transparent !important;
   background-gradient-direction: none !important;
-  border: 0 solid transparent !important;
+  border: 3px solid transparent !important;
   text-shadow: 0 0 transparent !important;
   transition-duration: 0ms !important;
   box-shadow: none !important;
@@ -1020,9 +1025,9 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 #panel #panelActivities.panel-button:active, #panel #panelActivities.panel-button:overview, #panel #panelActivities.panel-button:focus, #panel #panelActivities.panel-button:checked {
   background-color: transparent;
-  box-shadow: none;
-  border-bottom-width: 1px;
-  border-color: transparent;
+  box-shadow: inset 0 0 0 100px #7b88ad;
+  border: 3px solid transparent;
+  border-radius: 6px;
 }
 #panel #panelActivities.panel-button:active > *, #panel #panelActivities.panel-button:overview > *, #panel #panelActivities.panel-button:focus > *, #panel #panelActivities.panel-button:checked > * {
   background-image: url("common-assets/panel/activities-active.svg");
@@ -1115,7 +1120,11 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .calendar {
-  box-shadow: inset 0px 0px 0.5px 1px #ebebeb;
+  text-shadow: 0 1px rgba(255, 255, 255, 0);
+  color: #181c28;
+  background-color: #e8e8e9;
+  border: 1px solid #d5d6d8;
+  box-shadow: inset 0 1px rgba(232, 232, 233, 0.05);
 }
 .calendar .calendar-month-label {
   color: #181c28;
@@ -1192,13 +1201,13 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   font-feature-settings: "tnum";
 }
 .calendar .calendar-day-base:hover, .calendar .calendar-day-base:focus {
-  background-color: #ededed;
+  background-color: whitesmoke;
   border-radius: 999px;
   color: #454952;
 }
 .calendar .calendar-day-base:active, .calendar .calendar-day-base:selected {
-  background-color: #e2e2e2;
-  color: #30333e;
+  background-color: #56648A;
+  color: #ffffff;
   border-radius: 999px;
   box-shadow: inset 0 0 0 1px #56648A;
   font-weight: bold !important;
@@ -1276,27 +1285,37 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .world-clocks-button {
-  color: #71737a;
+  text-shadow: 0 1px rgba(255, 255, 255, 0);
+  color: #181c28;
+  background-color: #e8e8e9;
+  border: 1px solid #d5d6d8;
+  box-shadow: inset 0 1px rgba(232, 232, 233, 0.05);
   border-radius: 4px;
-  box-shadow: inset 0px 0px 0.5px 1px #ebebeb;
 }
 .world-clocks-button:hover {
-  background-color: #ededed;
+  text-shadow: 0 1px rgba(255, 255, 255, 0);
+  color: #181c28;
+  background-color: whitesmoke;
+  border: 1px solid #d5d6d8;
+  box-shadow: inset 0 1px rgba(245, 245, 245, 0.05);
 }
 .world-clocks-button:active {
-  background-color: #e2e2e2;
+  text-shadow: 0 1px rgba(255, 255, 255, 0);
+  color: #ffffff;
+  background-color: #56648A;
+  border: 1px solid #56648A;
+  box-shadow: inset 0 1px rgba(86, 100, 138, 0.05);
 }
-.world-clocks-button:active .world-clocks-grid, .world-clocks-button:active .world-clocks-timezone {
-  background-color: transparent;
-}
-.world-clocks-button:active .world-clocks-time {
-  background-color: rgba(24, 28, 40, 0);
-  color: #454952;
-  border-bottom: 2px solid rgba(86, 100, 138, 0.56);
+.world-clocks-button:active .world-clocks-city,
+.world-clocks-button:active .world-clocks-time,
+.world-clocks-button:active .world-clocks-timezone,
+.world-clocks-button:active .world-clocks-header,
+.world-clocks-button:active .world-clocks-grid {
+  color: inherit;
 }
 .world-clocks-button .world-clocks-city {
   font-size: 7;
-  color: inherit;
+  color: #71737a;
 }
 .world-clocks-button .world-clocks-time {
   color: #2c2f3a;
@@ -1319,18 +1338,34 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .weather-button {
-  color: #71737a;
+  text-shadow: 0 1px rgba(255, 255, 255, 0);
+  color: #181c28;
+  background-color: #e8e8e9;
+  border: 1px solid #d5d6d8;
+  box-shadow: inset 0 1px rgba(232, 232, 233, 0.05);
   border-radius: 4px;
-  box-shadow: inset 0px 0px 0.5px 1px #ebebeb;
 }
 .weather-button:hover {
-  background-color: #ededed;
+  text-shadow: 0 1px rgba(255, 255, 255, 0);
+  color: #181c28;
+  background-color: whitesmoke;
+  border: 1px solid #d5d6d8;
+  box-shadow: inset 0 1px rgba(245, 245, 245, 0.05);
 }
 .weather-button:active {
-  background-color: #e2e2e2;
+  text-shadow: 0 1px rgba(255, 255, 255, 0);
+  color: #ffffff;
+  background-color: #56648A;
+  border: 1px solid #56648A;
+  box-shadow: inset 0 1px rgba(86, 100, 138, 0.05);
 }
+.weather-button:active .weather-header,
 .weather-button:active .weather-forecast-icon {
-  color: rgba(24, 28, 40, 0.56);
+  color: inherit;
+}
+.weather-button:active .weather-forecast-time,
+.weather-button:active .weather-header.location {
+  color: inherit;
 }
 .weather-button .weather-box {
   spacing: 10px;
@@ -1368,17 +1403,19 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .events-button {
-  color: #71737a;
+  text-shadow: 0 1px rgba(255, 255, 255, 0);
+  color: #181c28;
+  background-color: #e8e8e9;
+  border: 1px solid #d5d6d8;
+  box-shadow: inset 0 1px rgba(232, 232, 233, 0.05);
   border-radius: 4px;
-  box-shadow: inset 0px 0px 0.5px 1px #ebebeb;
-  background-color: #e2e2e2;
 }
 .events-button .events-box {
   spacing: 2px;
 }
 .events-button .events-list {
   spacing: 4px;
-  color: #30333e;
+  color: #2c2f3a;
 }
 .events-button .events-title {
   color: #181c28;
@@ -1535,6 +1572,20 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   border: 1px solid #c5c7c9;
 }
 
+.message-close-button {
+  color: #ffffff;
+  background-color: #f46067;
+  border-radius: 999px;
+  padding: 6px;
+  margin: 1px;
+}
+.message-close-button:hover {
+  background-color: #f68086;
+}
+.message-close-button:active {
+  background-color: #f13039;
+}
+
 .ripple-box {
   width: 52px;
   height: 52px;
@@ -1648,7 +1699,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 #overviewGroup {
-  background-color: rgba(77, 89, 123, 0.95);
+  background-color: #4d5a7c;
 }
 
 .overview-controls {
@@ -2065,7 +2116,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   color: #181c28;
   background-color: transparent;
   border: 1px solid transparent;
-  border-image: url("light-assets/menu/menu.svg") 9 9 9 9;
+  background-color: #FFFFFF;
+  border-radius: 4px;
 }
 .notification-banner .notification-icon,
 .notification-banner:hover .notification-icon,
@@ -2205,7 +2257,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .legacy-tray {
-  background-color: rgba(77, 89, 123, 0.95);
+  background-color: #4d5a7c;
 }
 .legacy-tray:ltr {
   border-radius: 0 2px 0 0;
