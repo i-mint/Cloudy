@@ -5225,6 +5225,10 @@ headerbar .path-buttons-box:not(.vertical) button:hover image.subtitle,
 .path-buttons-box:not(.vertical) button.current-dir {
   margin-right: 3px;
 }
+.path-buttons-box:not(.vertical) button.current-dir:active {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #465271;
+}
 
 .nautilus-path-bar > button.popup.toggle:active, .nautilus-path-bar > button.popup.toggle:checked {
   background-color: #4e5b7d;
