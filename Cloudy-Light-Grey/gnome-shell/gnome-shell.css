@@ -1482,16 +1482,25 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .message {
   padding: 4px;
+  text-shadow: 0 1px rgba(255, 255, 255, 0);
   color: #202020;
-  border-image: url("light-assets/misc/message.svg") 9 9 9 9;
+  background-color: #e6e6e6;
+  border: 1px solid #d4d4d4;
+  box-shadow: inset 0 1px rgba(230, 230, 230, 0.05);
 }
 .message:hover, .message:focus {
+  text-shadow: 0 1px rgba(255, 255, 255, 0);
   color: #202020;
-  border-image: url("light-assets/misc/message-hover.svg") 9 9 9 9;
+  background-color: #f3f3f3;
+  border: 1px solid #d4d4d4;
+  box-shadow: inset 0 1px rgba(243, 243, 243, 0.05);
 }
 .message:active {
+  text-shadow: 0 1px rgba(255, 255, 255, 0);
   color: #ffffff;
-  border-image: url("light-assets/misc/message-active.svg") 9 9 9 9;
+  background-color: #4D4D4D;
+  border: 1px solid #4D4D4D;
+  box-shadow: inset 0 1px rgba(77, 77, 77, 0.05);
 }
 .message-icon-bin {
   padding: 8px 0px 8px 8px;
@@ -2113,11 +2122,12 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   width: 34em;
   margin: 5px;
   padding: 10px;
-  color: #202020;
-  background-color: transparent;
-  border: 1px solid transparent;
-  background-color: #FFFFFF;
   border-radius: 4px;
+  text-shadow: 0 1px rgba(255, 255, 255, 0);
+  color: #202020;
+  background-color: #e6e6e6;
+  border: 1px solid #d4d4d4;
+  box-shadow: inset 0 1px rgba(230, 230, 230, 0.05);
 }
 .notification-banner .notification-icon,
 .notification-banner:hover .notification-icon,
