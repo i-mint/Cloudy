@@ -4598,15 +4598,6 @@ button.documents-favorite:active:hover {
   transition: opacity 0.2s ease-out;
 }
 
-.tweak-categories,
-.tweak-category:not(:selected):not(:hover) {
-  background-image: linear-gradient(to bottom, #1A1A1A, #1A1A1A);
-}
-
-scrolledwindow .tweak-category:hover {
-  background-color: rgba(48, 48, 48, 0.15);
-}
-
 .tr-workarea undershoot,
 .tr-workarea overshoot {
   border-color: transparent;
