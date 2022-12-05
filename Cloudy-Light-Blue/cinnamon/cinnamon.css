@@ -1869,9 +1869,12 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#vhandle:active, StScrol
   background-color: #FFFFFF;
   padding: 9px;
   margin-right: 7px;
-  border-radius: 4px;
+  border-radius: 0;
   min-width: 350px;
   height: 300px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-color: #c5c7c9;
 }
 
 .calendar-events-no-events-button {
