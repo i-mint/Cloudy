@@ -1549,6 +1549,9 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   padding: 6px;
   color: #ecf0f4;
 }
+.message-media-control StIcon {
+  color: inherit;
+}
 .message-media-control:last-child:ltr {
   padding-right: 18px;
 }
@@ -1557,9 +1560,17 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 .message-media-control:hover {
   color: rgba(236, 240, 244, 0.7);
+  background-color: #2B3143;
+}
+.message-media-control:hover StIcon {
+  color: #ffffff;
 }
 .message-media-control:active {
-  color: #2B3143;
+  color: #ffffff;
+  background-color: #373f56;
+}
+.message-media-control:active StIcon {
+  color: inherit;
 }
 .message-media-control:insensitive {
   color: rgba(236, 240, 244, 0.45);
@@ -1567,6 +1578,9 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .message:active .message-media-control {
   color: #ffffff;
+}
+.message:active .message-media-control StIcon {
+  color: inherit;
 }
 
 .media-message-cover-icon {
