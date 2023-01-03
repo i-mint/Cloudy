@@ -1,0 +1,3 @@
+#Install themes
+- Extract archive file in to directory /.themes, /.local/share/themes or
+/usr/share/themes (as root)
