@@ -1,11 +1,11 @@
 [Desktop Entry]
-Name=Cloudy-Dark-Grey
+Name=Cloudy-Solid-Dark-Grey
 Type=X-GNOME-Metatheme
 Comment=Cloudy Gtk Themes
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Cloudy-Dark-Grey
-IconTheme=Mint-Y-Dark-Grey
+GtkTheme=Cloudy-Solid-Dark-Grey
+IconTheme=Papirus-Dark-Grey
 CursorTheme=Adwaita
 CursorSize=24
