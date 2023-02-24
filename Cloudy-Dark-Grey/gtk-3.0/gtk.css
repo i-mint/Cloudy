@@ -1152,6 +1152,10 @@ toolbar:not(.inline-toolbar) .linked > entry,
   border-style: solid;
   border-image: linear-gradient(to bottom, #3d3d3d, rgba(43, 43, 43, 0.97)) 1 0 1 0;
 }
+.primary-toolbar:not(.libreoffice-toolbar):backdrop {
+  background-color: #414141;
+}
+
 .inline-toolbar {
   background-color: #1c1c1c;
   border-style: solid;
@@ -1551,6 +1555,15 @@ headerbar .linked:not(.vertical).path-bar > button:disabled,
 .primary-toolbar .path-bar-box.horizontal > .linked > button:disabled,
 headerbar .path-bar-box.horizontal > .linked > button:disabled {
   color: rgba(255, 255, 255, 0.4);
+}
+.primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:backdrop, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:backdrop,
+.primary-toolbar .linked:not(.vertical).path-bar > button:backdrop,
+headerbar .linked:not(.vertical).path-bar > button:backdrop,
+.primary-toolbar .path-bar-box.horizontal > .linked > button:backdrop,
+headerbar .path-bar-box.horizontal > .linked > button:backdrop {
+  border-color: transparent;
+  background-color: transparent;
+  background-image: none;
 }
 .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher .dim-label, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher .dim-label, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher label.separator, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher label.separator, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher headerbar .subtitle, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher .subtitle,
 .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher .titlebar:not(headerbar) .subtitle,
@@ -1994,6 +2007,7 @@ menubar,
 menubar:backdrop,
 .menubar:backdrop {
   color: rgba(255, 255, 255, 0.5);
+  background-color: #414141;
 }
 menubar > menuitem,
 .menubar > menuitem {

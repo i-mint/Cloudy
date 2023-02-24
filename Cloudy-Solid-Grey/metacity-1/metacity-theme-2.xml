@@ -12,9 +12,9 @@
 
 <constant name="C_title_focused" value="rgba(255, 255, 255, 0.8)" />
 <constant name="C_title_unfocused" value="rgba(255, 255, 255, 0.5)" />
-<constant name="C_wm_bg_focused" value="rgba(77, 77, 77, 1)" />
-<constant name="C_wm_bg_unfocused" value="rgba(85, 85, 85, 1)" />
-<constant name="C_wm_highlight" value="rgba(77, 77, 77, 1)" />
+<constant name="C_wm_bg_focused" value="rgba(71, 71, 71, 1)" />
+<constant name="C_wm_bg_unfocused" value="rgba(79, 79, 79, 1)" />
+<constant name="C_wm_highlight" value="rgba(71, 71, 71, 1)" />
 
 <!-- window button colors -->
 

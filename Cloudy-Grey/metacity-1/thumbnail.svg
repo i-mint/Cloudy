@@ -2,22 +2,32 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="50mm"
    height="20mm"
    viewBox="0 0 50 20"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="thumbnail.svg">
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="thumbnail.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
-     id="defs2" />
+     id="defs2">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1346">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 180.00678,-2697.0778 0.001,11.7406 h -39.02359 v -11.7406 z"
+         id="path1348"
+         sodipodi:nodetypes="cccccc" />
+    </clipPath>
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -25,18 +35,19 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="114.68492"
-     inkscape:cy="33.696487"
+     inkscape:zoom="0.9899495"
+     inkscape:cx="110.10663"
+     inkscape:cy="80.812203"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1366"
-     inkscape:window-height="701"
+     inkscape:window-width="1920"
+     inkscape:window-height="1025"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="27"
      inkscape:window-maximized="1"
-     showguides="false" />
+     showguides="false"
+     inkscape:pagecheckerboard="0" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -45,7 +56,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -55,7 +65,7 @@
      id="layer1"
      transform="translate(0,-277)">
     <rect
-       style="opacity:1;fill:#4d4d4d;fill-opacity:1;stroke:#dcdcdc;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:1;fill:#474747;fill-opacity:1;stroke:#dcdcdc;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect834"
        width="50"
        height="19.999998"
@@ -64,12 +74,14 @@
        rx="0.66817385"
        ry="0.66817385"
        inkscape:export-xdpi="96.520004"
-       inkscape:export-ydpi="96.520004" />
+       inkscape:export-ydpi="96.520004"
+       inkscape:export-filename="/media/auoi/DATA01/theming/source/cloudy/last_update/1.9.8.1/metacity/grey/light/thumbnail.png" />
     <g
        id="g976"
        transform="matrix(2.8151407,0,0,2.8151407,-33.311101,-584.83586)"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96">
+       inkscape:export-xdpi="96.520004"
+       inkscape:export-ydpi="96.520004"
+       inkscape:export-filename="/media/auoi/DATA01/theming/source/cloudy/last_update/1.9.8.1/metacity/grey/light/thumbnail.png">
       <g
          style="display:inline;opacity:0.8"
          transform="matrix(0.26458333,0,0,0.26458333,-142.00536,356.69531)"
