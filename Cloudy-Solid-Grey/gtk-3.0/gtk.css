@@ -1454,7 +1454,7 @@ headerbar .path-bar-box.horizontal > .linked > button {
   color: rgba(255, 255, 255, 0.56);
   background-color: #474747;
   border-color: #474747;
-  margin: 0px;
+  margin: 0 4px;
 }
 .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button label, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button label, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button image, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button image,
 .primary-toolbar .linked:not(.vertical).path-bar > button label,
@@ -1475,8 +1475,8 @@ headerbar .path-bar-box.horizontal > .linked > button:hover {
   color: rgba(255, 255, 255, 0.73);
   background-color: #515151;
   border-color: #515151;
-  margin: 0px;
   border-radius: 4px;
+  margin: 0 4px;
 }
 .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover label, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover label, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover image, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover image,
 .primary-toolbar .linked:not(.vertical).path-bar > button:hover label,
@@ -1505,8 +1505,8 @@ headerbar .path-bar-box.horizontal > .linked > button.image-button:last-child {
   color: #ffffff;
   background-color: #383838;
   border-color: #383838;
-  margin: 0px;
   border-radius: 4px;
+  margin: 0 4px;
 }
 .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active label, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active label, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active image, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active image, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked label, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked label, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked image, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked image, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button.image-button:last-child label, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button.image-button:last-child label, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button.image-button:last-child image, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button.image-button:last-child image,
 .primary-toolbar .linked:not(.vertical).path-bar > button:active label,
@@ -5156,7 +5156,8 @@ popover .sidebar row:active:backdrop, popover .sidebar row:checked:backdrop, pop
   color: rgba(255, 255, 255, 0.56);
   background-color: #474747;
   border-color: #474747;
-  margin: 0px;
+  margin: 0 4px;
+  border-radius: 4px;
 }
 .thunar .linked.path-bar > button.toggle label, .thunar .linked.path-bar > button.toggle image,
 .thunar toolbar button.toggle label,
@@ -5171,7 +5172,8 @@ popover .sidebar row:active:backdrop, popover .sidebar row:checked:backdrop, pop
   color: rgba(255, 255, 255, 0.73);
   background-color: #515151;
   border-color: #515151;
-  margin: 0px;
+  margin: 0 4px;
+  border-radius: 4px;
 }
 .thunar .linked.path-bar > button.toggle:hover label, .thunar .linked.path-bar > button.toggle:hover image,
 .thunar toolbar button.toggle:hover label,
@@ -5188,7 +5190,8 @@ popover .sidebar row:active:backdrop, popover .sidebar row:checked:backdrop, pop
   color: #ffffff;
   background-color: #383838;
   border-color: #383838;
-  margin: 0px;
+  margin: 0 4px;
+  border-radius: 4px;
 }
 .thunar .linked.path-bar > button.toggle:active label, .thunar .linked.path-bar > button.toggle:active image, .thunar .linked.path-bar > button.toggle:checked label, .thunar .linked.path-bar > button.toggle:checked image,
 .thunar toolbar button.toggle:active label,
@@ -5205,7 +5208,6 @@ popover .sidebar row:active:backdrop, popover .sidebar row:checked:backdrop, pop
 .thunar toolbar toolbutton button, .thunar .inline-toolbar toolbutton button {
   background-color: transparent;
   border-color: transparent;
-  margin: 0 2px;
 }
 
 .thunar toolbar, .thunar .inline-toolbar {
