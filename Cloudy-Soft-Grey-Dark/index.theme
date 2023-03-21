@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Cloudy-Soft-Grey-Dark
+Type=X-GNOME-Metatheme
+Comment=Cloudy Gtk Themes
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Cloudy-Soft-Grey-Dark
+IconTheme=Papirus-Dark-Grey
+CursorTheme=Adwaita
+CursorSize=24
