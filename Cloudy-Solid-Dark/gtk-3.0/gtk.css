@@ -1331,6 +1331,9 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
   background-color: #2B3143;
   box-shadow: none;
 }
+.primary-toolbar entry label, headerbar entry label, .primary-toolbar entry image, headerbar entry image {
+  color: inherit;
+}
 .primary-toolbar entry:backdrop, headerbar entry:backdrop {
   opacity: 0.85;
 }
