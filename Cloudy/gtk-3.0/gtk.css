@@ -3878,7 +3878,6 @@ popover.background.touch-selection,
 
 button.circular,
 button.circular-button, button.nautilus-circular-button.image-button {
-  padding: 0;
   min-width: 16px;
   min-height: 24px;
   padding: 2px 6px;
@@ -5271,6 +5270,12 @@ headerbar .path-buttons-box:not(.vertical) button:hover image.subtitle,
   background-color: #505d81;
   color: #ffffff;
   border-color: #505d81;
+}
+
+list.tweak-group row.activatable > box > button.image-button {
+  padding: 4px;
+  min-width: 18px;
+  min-height: 18px;
 }
 
 *:drop(active):focus,
