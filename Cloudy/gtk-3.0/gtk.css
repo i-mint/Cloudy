@@ -183,7 +183,7 @@ entry.search {
   border-radius: 4px;
 }
 entry image {
-  color: rgba(61, 64, 71, 0.54);
+  color: inherit;
 }
 entry image.left {
   padding-left: 0;
@@ -206,6 +206,9 @@ entry:focus {
   background-color: #FFFFFF;
   border: 1px solid rgba(86, 100, 138, 0.4);
   box-shadow: none;
+}
+entry:focus image {
+  color: inherit;
 }
 entry:disabled {
   color: rgba(61, 64, 71, 0.55);

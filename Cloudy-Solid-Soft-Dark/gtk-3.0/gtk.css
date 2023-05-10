@@ -183,7 +183,7 @@ entry.search {
   border-radius: 4px;
 }
 entry image {
-  color: rgba(182, 186, 191, 0.41);
+  color: inherit;
 }
 entry image.left {
   padding-left: 0;
@@ -206,6 +206,9 @@ entry:focus {
   background-color: #14181f;
   border: 1px solid #2B3143;
   box-shadow: none;
+}
+entry:focus image {
+  color: inherit;
 }
 entry:disabled {
   color: rgba(182, 186, 191, 0.45);
@@ -5149,6 +5152,48 @@ popover .sidebar row:active:backdrop, popover .sidebar row:checked:backdrop, pop
   border: 0.5px solid #445269;
   border-radius: 4px;
 }
+.thunar toolbar .linked.path-bar, .thunar .inline-toolbar .linked.path-bar,
+.thunar toolbar entry,
+.thunar .inline-toolbar entry {
+  color: rgba(255, 255, 255, 0.73);
+  background-color: #1f2330;
+  border-color: #1f2330;
+  margin: 0px;
+}
+.thunar toolbar .linked.path-bar label, .thunar .inline-toolbar .linked.path-bar label, .thunar toolbar .linked.path-bar image, .thunar .inline-toolbar .linked.path-bar image,
+.thunar toolbar entry label,
+.thunar .inline-toolbar entry label,
+.thunar toolbar entry image,
+.thunar .inline-toolbar entry image {
+  color: inherit;
+}
+.thunar toolbar .linked.path-bar:focus, .thunar .inline-toolbar .linked.path-bar:focus, .thunar toolbar .linked.path-bar:active, .thunar .inline-toolbar .linked.path-bar:active, .thunar toolbar .linked.path-bar:checked, .thunar .inline-toolbar .linked.path-bar:checked,
+.thunar toolbar entry:focus,
+.thunar .inline-toolbar entry:focus,
+.thunar toolbar entry:active,
+.thunar .inline-toolbar entry:active,
+.thunar toolbar entry:checked,
+.thunar .inline-toolbar entry:checked {
+  color: #ffffff;
+  background-color: #1f2330;
+  border-color: #1f2330;
+  margin: 0px;
+}
+.thunar toolbar .linked.path-bar:focus label, .thunar .inline-toolbar .linked.path-bar:focus label, .thunar toolbar .linked.path-bar:focus image, .thunar .inline-toolbar .linked.path-bar:focus image, .thunar toolbar .linked.path-bar:active label, .thunar .inline-toolbar .linked.path-bar:active label, .thunar toolbar .linked.path-bar:active image, .thunar .inline-toolbar .linked.path-bar:active image, .thunar toolbar .linked.path-bar:checked label, .thunar .inline-toolbar .linked.path-bar:checked label, .thunar toolbar .linked.path-bar:checked image, .thunar .inline-toolbar .linked.path-bar:checked image,
+.thunar toolbar entry:focus label,
+.thunar .inline-toolbar entry:focus label,
+.thunar toolbar entry:focus image,
+.thunar .inline-toolbar entry:focus image,
+.thunar toolbar entry:active label,
+.thunar .inline-toolbar entry:active label,
+.thunar toolbar entry:active image,
+.thunar .inline-toolbar entry:active image,
+.thunar toolbar entry:checked label,
+.thunar .inline-toolbar entry:checked label,
+.thunar toolbar entry:checked image,
+.thunar .inline-toolbar entry:checked image {
+  color: inherit;
+}
 
 .thunar .linked.path-bar > button,
 .thunar toolbar button,
@@ -5998,6 +6043,9 @@ filechooser stack .linked > entry.search:focus,
   background-color: #353c53;
   color: #ffffff;
 }
+.nemo-window .primary-toolbar stack {
+  background-color: #1f2330;
+}
 
 .nemo-window paned:last-child > separator {
   min-width: 2px;
@@ -6020,7 +6068,7 @@ filechooser stack .linked > entry.search:focus,
 .nemo-window .sidebar row {
   background-color: #2B3143;
   color: rgba(255, 255, 255, 0.56);
-  padding: 4px 0;
+  padding: 2px 0;
 }
 .nemo-window .sidebar .view.cell:hover, .nemo-window .sidebar iconview.cell:hover,
 .nemo-window .sidebar row.cell:hover {
