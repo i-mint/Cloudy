@@ -4821,7 +4821,7 @@ panel-toplevel.background button:checked:not(#tasklist-button) {
   -gtk-icon-shadow: none;
 }
 .panel.xfce4-panel .tasklist .toggle {
-  font-weight: bold;
+  font-weight: normal;
   background-image: none;
   background-color: transparent;
   padding: 0 6px;
