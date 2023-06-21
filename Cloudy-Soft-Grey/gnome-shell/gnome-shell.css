@@ -78,6 +78,9 @@ StEntry:hover, StEntry:focus {
   border: 1px solid rgba(71, 71, 71, 0.4);
   box-shadow: none;
 }
+StEntry:focus StLabel.hint-text {
+  margin-left: 10px;
+}
 StEntry:insensitive {
   color: rgba(61, 64, 71, 0.55);
   border-color: rgba(212, 212, 212, 0.55);
