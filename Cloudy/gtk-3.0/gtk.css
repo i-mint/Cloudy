@@ -1458,8 +1458,8 @@ headerbar .linked:not(.vertical).path-bar > button,
 .primary-toolbar .path-bar-box.horizontal > .linked > button,
 headerbar .path-bar-box.horizontal > .linked > button {
   color: rgba(255, 255, 255, 0.56);
-  background-color: #56648A;
-  border-color: #56648A;
+  background-color: transparent;
+  border-color: transparent;
   margin: 0 4px;
 }
 .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button label, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button label, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button image, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button image,
@@ -5189,8 +5189,8 @@ popover .sidebar row:active:backdrop, popover .sidebar row:checked:backdrop, pop
 .thunar toolbar button.toggle,
 .thunar .inline-toolbar button.toggle {
   color: rgba(255, 255, 255, 0.56);
-  background-color: #56648A;
-  border-color: #56648A;
+  background-color: transparent;
+  border-color: transparent;
   margin: 0 4px;
   border-radius: 4px;
 }
