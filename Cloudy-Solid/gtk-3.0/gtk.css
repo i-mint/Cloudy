@@ -5162,6 +5162,29 @@ popover .sidebar row:active:backdrop, popover .sidebar row:checked:backdrop, pop
 .thunar toolbar, .thunar .inline-toolbar {
   box-shadow: inset 0 -1px #4e5b7d;
 }
+.thunar menubar,
+.thunar toolbar,
+.thunar .inline-toolbar {
+  background-color: #56648A;
+}
+.thunar menubar:backdrop,
+.thunar toolbar:backdrop,
+.thunar .inline-toolbar:backdrop {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5c6b93;
+}
+.thunar toolbar > toolbutton > button.flat:backdrop label, .thunar .inline-toolbar > toolbutton > button.flat:backdrop label, .thunar toolbar > toolbutton > button.flat:backdrop image, .thunar .inline-toolbar > toolbutton > button.flat:backdrop image, .thunar toolbar > toolbutton > button.flat:backdrop, .thunar .inline-toolbar > toolbutton > button.flat:backdrop,
+.thunar toolbar > box.horizontal > entry:backdrop label,
+.thunar .inline-toolbar > box.horizontal > entry:backdrop label,
+.thunar toolbar > box.horizontal > entry:backdrop image,
+.thunar .inline-toolbar > box.horizontal > entry:backdrop image,
+.thunar toolbar > box.horizontal > entry:backdrop,
+.thunar .inline-toolbar > box.horizontal > entry:backdrop {
+  color: rgba(255, 255, 255, 0.3);
+}
+.thunar .linked.path-bar > button:backdrop {
+  opacity: 0.5;
+}
 
 .thunar .linked.path-bar > button,
 .thunar toolbar button,
