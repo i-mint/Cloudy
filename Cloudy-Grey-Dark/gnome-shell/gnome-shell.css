@@ -1065,7 +1065,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 #calendarArea {
-  padding: 0px;
+  padding: 0.1em 1.4em;
 }
 
 .datemenu-calendar-column {
