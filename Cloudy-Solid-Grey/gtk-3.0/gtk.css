@@ -5254,59 +5254,76 @@ popover .sidebar row:active:backdrop, popover .sidebar row:checked:backdrop, pop
   border: none;
 }
 
-.path-buttons-box:not(.vertical) {
-  background-color: transparent;
-}
-.path-buttons-box:not(.vertical) label.dim-label, .path-buttons-box:not(.vertical) label.separator, .path-buttons-box:not(.vertical) headerbar label.subtitle, headerbar .path-buttons-box:not(.vertical) label.subtitle,
-.path-buttons-box:not(.vertical) .titlebar:not(headerbar) label.subtitle,
-.titlebar:not(headerbar) .path-buttons-box:not(.vertical) label.subtitle {
-  color: transparent;
-}
-.path-buttons-box:not(.vertical) button {
+headerbar.windowhandle box.path-buttons-box:not(.vertical) {
+  color: rgba(255, 255, 255, 0.56);
   background-color: transparent;
   border-color: transparent;
+  padding: 0;
+  border-radius: 4px 0 0 4px;
+  margin: 6px 0;
 }
-.path-buttons-box:not(.vertical) button label.dim-label, .path-buttons-box:not(.vertical) button label.separator, .path-buttons-box:not(.vertical) button headerbar label.subtitle, headerbar .path-buttons-box:not(.vertical) button label.subtitle,
-.path-buttons-box:not(.vertical) button .titlebar:not(headerbar) label.subtitle,
-.titlebar:not(headerbar) .path-buttons-box:not(.vertical) button label.subtitle,
-.path-buttons-box:not(.vertical) button image.dim-label,
-.path-buttons-box:not(.vertical) button headerbar image.subtitle,
-headerbar .path-buttons-box:not(.vertical) button image.subtitle,
-.path-buttons-box:not(.vertical) button .titlebar:not(headerbar) image.subtitle,
-.titlebar:not(headerbar) .path-buttons-box:not(.vertical) button image.subtitle, .path-buttons-box:not(.vertical) button {
-  color: rgba(255, 255, 255, 0.8);
+headerbar.windowhandle box.path-buttons-box:not(.vertical) label, headerbar.windowhandle box.path-buttons-box:not(.vertical) image {
+  color: inherit;
 }
-.path-buttons-box:not(.vertical) button:hover {
+headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > button {
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 4px;
+  margin: 0;
+  padding-top: 0;
+}
+headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > button:hover {
+  color: rgba(255, 255, 255, 0.73);
   background-color: #515151;
   border-color: #515151;
 }
-.path-buttons-box:not(.vertical) button:hover label.dim-label, .path-buttons-box:not(.vertical) button:hover label.separator, .path-buttons-box:not(.vertical) button:hover headerbar label.subtitle, headerbar .path-buttons-box:not(.vertical) button:hover label.subtitle,
-.path-buttons-box:not(.vertical) button:hover .titlebar:not(headerbar) label.subtitle,
-.titlebar:not(headerbar) .path-buttons-box:not(.vertical) button:hover label.subtitle,
-.path-buttons-box:not(.vertical) button:hover image.dim-label,
-.path-buttons-box:not(.vertical) button:hover headerbar image.subtitle,
-headerbar .path-buttons-box:not(.vertical) button:hover image.subtitle,
-.path-buttons-box:not(.vertical) button:hover .titlebar:not(headerbar) image.subtitle,
-.titlebar:not(headerbar) .path-buttons-box:not(.vertical) button:hover image.subtitle, .path-buttons-box:not(.vertical) button:hover {
+headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > button:hover label, headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > button:hover image {
+  color: inherit;
+}
+headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > button:active, headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > button:checked, headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > button.current-dir {
   color: #ffffff;
-}
-.path-buttons-box:not(.vertical) button:active, .path-buttons-box:not(.vertical) button:checked, .path-buttons-box:not(.vertical) button.current-dir {
-  background-color: #3f3f3f;
-  color: #ffffff;
-  border-color: #3f3f3f;
-}
-.path-buttons-box:not(.vertical) button.current-dir {
-  margin-right: 3px;
-}
-.path-buttons-box:not(.vertical) button.current-dir:active {
-  color: rgba(255, 255, 255, 0.5);
   background-color: #383838;
+  border-color: #383838;
 }
-
-.nautilus-path-bar > button.popup.toggle:active, .nautilus-path-bar > button.popup.toggle:checked {
-  background-color: #3f3f3f;
+headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > button:active label, headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > button:active image, headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > button:checked label, headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > button:checked image, headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > button.current-dir label, headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > button.current-dir image {
+  color: inherit;
+}
+headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > button.current-dir {
+  border-radius: 4px 0 0 4px;
+}
+headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > button.current-dir:active label, headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > button.current-dir:active image {
+  opacity: 0.5;
+}
+headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > button:backdrop {
+  border-color: transparent;
+  background-color: transparent;
+  background-image: none;
+}
+headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > label.dim-label, headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > label.separator, headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > label.subtitle {
+  color: transparent;
+}
+headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle {
   color: #ffffff;
-  border-color: #3f3f3f;
+  background-color: #383838;
+  border-color: #383838;
+  border-radius: 0 4px 4px 0;
+}
+headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle label, headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle image {
+  color: inherit;
+}
+headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:active label, headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:active image {
+  opacity: 0.5;
+}
+headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:backdrop {
+  color: rgba(255, 255, 255, 0.56);
+  background-color: transparent;
+  border-color: transparent;
+}
+headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:backdrop label, headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:backdrop image {
+  color: inherit;
+}
+headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:backdrop label, headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:backdrop image {
+  opacity: 0.5;
 }
 
 list.tweak-group row.activatable > box > button.image-button {

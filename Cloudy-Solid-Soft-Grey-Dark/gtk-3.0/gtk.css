@@ -5314,53 +5314,87 @@ popover .sidebar row:active:backdrop, popover .sidebar row:checked:backdrop, pop
   border: none;
 }
 
-.path-buttons-box:not(.vertical) {
-  background-color: transparent;
+headerbar.windowhandle box.path-buttons-box:not(.vertical) {
+  color: rgba(255, 255, 255, 0.56);
+  background-color: #2e2e2e;
+  border-color: #2e2e2e;
+  margin: 0px;
+  padding: 0;
+  border-radius: 4px 0 0 4px;
+  margin: 8px 0 6px 0;
 }
-.path-buttons-box:not(.vertical) label.dim-label, .path-buttons-box:not(.vertical) label.separator, .path-buttons-box:not(.vertical) headerbar label.subtitle, headerbar .path-buttons-box:not(.vertical) label.subtitle,
-.path-buttons-box:not(.vertical) .titlebar:not(headerbar) label.subtitle,
-.titlebar:not(headerbar) .path-buttons-box:not(.vertical) label.subtitle {
-  color: transparent;
+headerbar.windowhandle box.path-buttons-box:not(.vertical) label, headerbar.windowhandle box.path-buttons-box:not(.vertical) image {
+  color: inherit;
 }
-.path-buttons-box:not(.vertical) button {
+headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > button {
   background-color: transparent;
   border-color: transparent;
+  border-radius: 4px;
+  margin: 0;
 }
-.path-buttons-box:not(.vertical) button label.dim-label, .path-buttons-box:not(.vertical) button label.separator, .path-buttons-box:not(.vertical) button headerbar label.subtitle, headerbar .path-buttons-box:not(.vertical) button label.subtitle,
-.path-buttons-box:not(.vertical) button .titlebar:not(headerbar) label.subtitle,
-.titlebar:not(headerbar) .path-buttons-box:not(.vertical) button label.subtitle,
-.path-buttons-box:not(.vertical) button image.dim-label,
-.path-buttons-box:not(.vertical) button headerbar image.subtitle,
-headerbar .path-buttons-box:not(.vertical) button image.subtitle,
-.path-buttons-box:not(.vertical) button .titlebar:not(headerbar) image.subtitle,
-.titlebar:not(headerbar) .path-buttons-box:not(.vertical) button image.subtitle, .path-buttons-box:not(.vertical) button {
-  color: rgba(255, 255, 255, 0.8);
-}
-.path-buttons-box:not(.vertical) button:hover {
-  background-color: #474747;
-  border-color: #474747;
-}
-.path-buttons-box:not(.vertical) button:hover label.dim-label, .path-buttons-box:not(.vertical) button:hover label.separator, .path-buttons-box:not(.vertical) button:hover headerbar label.subtitle, headerbar .path-buttons-box:not(.vertical) button:hover label.subtitle,
-.path-buttons-box:not(.vertical) button:hover .titlebar:not(headerbar) label.subtitle,
-.titlebar:not(headerbar) .path-buttons-box:not(.vertical) button:hover label.subtitle,
-.path-buttons-box:not(.vertical) button:hover image.dim-label,
-.path-buttons-box:not(.vertical) button:hover headerbar image.subtitle,
-headerbar .path-buttons-box:not(.vertical) button:hover image.subtitle,
-.path-buttons-box:not(.vertical) button:hover .titlebar:not(headerbar) image.subtitle,
-.titlebar:not(headerbar) .path-buttons-box:not(.vertical) button:hover image.subtitle, .path-buttons-box:not(.vertical) button:hover {
-  color: #ffffff;
-}
-.path-buttons-box:not(.vertical) button:active, .path-buttons-box:not(.vertical) button:checked, .path-buttons-box:not(.vertical) button.current-dir {
-  background-color: #353535;
-  color: #ffffff;
-  border-color: #353535;
-}
-.path-buttons-box:not(.vertical) button.current-dir {
-  margin-right: 3px;
-}
-.path-buttons-box:not(.vertical) button.current-dir:active {
-  color: rgba(255, 255, 255, 0.5);
+headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > button:hover {
+  color: rgba(255, 255, 255, 0.73);
   background-color: #2e2e2e;
+  border-color: #2e2e2e;
+  margin: 0px;
+}
+headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > button:hover label, headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > button:hover image {
+  color: inherit;
+}
+headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > button:active, headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > button:checked, headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > button.current-dir {
+  color: #ffffff;
+  background-color: #2e2e2e;
+  border-color: #2e2e2e;
+  margin: 0px;
+}
+headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > button:active label, headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > button:active image, headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > button:checked label, headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > button:checked image, headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > button.current-dir label, headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > button.current-dir image {
+  color: inherit;
+}
+headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > button.current-dir {
+  border-radius: 4px 0 0 4px;
+}
+headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > button.current-dir:active label, headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > button.current-dir:active image {
+  opacity: 0.5;
+}
+headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > button:backdrop {
+  border-color: transparent;
+  background-color: transparent;
+  background-image: none;
+}
+headerbar.windowhandle box.path-buttons-box:not(.vertical) > box:first-child button {
+  border-radius: 4px 0 0 4px;
+}
+headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > label.dim-label, headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > label.separator, headerbar.windowhandle box.path-buttons-box:not(.vertical) > box > label.subtitle {
+  color: transparent;
+}
+headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle {
+  color: rgba(255, 255, 255, 0.56);
+  background-color: #2e2e2e;
+  border-color: #2e2e2e;
+  margin: 0px;
+  border-radius: 0 4px 4px 0;
+  padding: 0;
+  margin: 8px 0 6px 0;
+}
+headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle label, headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle image {
+  color: inherit;
+}
+headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:active label, headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:active image {
+  opacity: 0.5;
+}
+headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:backdrop {
+  color: rgba(255, 255, 255, 0.56);
+  background-color: #2e2e2e;
+  border-color: #2e2e2e;
+  margin: 0px;
+  opacity: 1;
+  margin: 8px 0 6px 0;
+}
+headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:backdrop label, headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:backdrop image {
+  color: inherit;
+}
+headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:backdrop label, headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:backdrop image {
+  opacity: 0.5;
 }
 
 .nautilus-path-bar > button.popup.toggle:active, .nautilus-path-bar > button.popup.toggle:checked {
