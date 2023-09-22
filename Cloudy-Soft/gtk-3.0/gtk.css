@@ -5412,6 +5412,11 @@ headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:backdr
 headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:backdrop label, headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:backdrop image {
   opacity: 0.5;
 }
+headerbar.windowhandle .linked:not(.nautilus-path-bar) > button.popup.toggle:not(.disclosured-button),
+headerbar.windowhandle .linked > entry.search {
+  margin-top: 8px;
+  margin-bottom: 6px;
+}
 
 .nautilus-path-bar > button.popup.toggle:active, .nautilus-path-bar > button.popup.toggle:checked {
   background-color: #505d81;
