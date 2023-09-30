@@ -1231,17 +1231,12 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   border-radius: 999px;
   font-weight: bold !important;
 }
-.calendar .calendar-today:hover, .calendar .calendar-today:focus {
-  color: #c6c9cd;
-  border-color: #141414;
-  background-color: #454545;
-}
-.calendar .calendar-today:active, .calendar .calendar-today:selected {
+.calendar .calendar-today:hover, .calendar .calendar-today:focus, .calendar .calendar-today:active, .calendar .calendar-today:selected, .calendar .calendar-today {
   color: #ffffff;
   border-color: #141414;
   background-color: #616161;
 }
-.calendar .calendar-today:active:backdrop, .calendar .calendar-today:selected:backdrop {
+.calendar .calendar-today:hover:backdrop, .calendar .calendar-today:focus:backdrop, .calendar .calendar-today:active:backdrop, .calendar .calendar-today:selected:backdrop, .calendar .calendar-today:backdrop {
   color: rgba(255, 255, 255, 0.6);
 }
 .calendar .calendar-day-with-events {
