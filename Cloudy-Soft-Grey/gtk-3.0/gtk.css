@@ -6382,22 +6382,34 @@ filechooser placessidebar.sidebar scrollbar trough,
   background-color: rgba(53, 53, 53, 0.95);
 }
 
-overlay calendar-view event {
-  background-image: linear-gradient(to bottom right, #9b9b9b, #9e9e9e);
-  border: 0px solid #9b9b9b;
-  padding: 4px 6px;
+calendar-view event {
+  box-shadow: inset 0 -100px 0 0 #a3a3a3;
+  border: none;
 }
-overlay calendar-view event label {
-  color: rgba(61, 64, 71, 0.8);
+calendar-view event label {
+  color: rgba(61, 64, 71, 0.78);
+  padding: 7px 4px;
   font-weight: normal;
 }
 
-event.slanted-end label {
-  color: rgba(0, 0, 0, 0.7);
-  padding: 4px 6px;
+event,
+event.slanted-end,
+event.color-light {
+  box-shadow: inset 0 -100px 0 0 #a3a3a3;
 }
-event.slanted-end:backdrop label {
-  color: rgba(0, 0, 0, 0.5);
+event label, event,
+event.slanted-end label,
+event.slanted-end,
+event.color-light label,
+event.color-light {
+  color: rgba(61, 64, 71, 0.78);
+}
+event label:backdrop, event:backdrop,
+event.slanted-end label:backdrop,
+event.slanted-end:backdrop,
+event.color-light label:backdrop,
+event.color-light:backdrop {
+  color: rgba(61, 64, 71, 0.28);
 }
 
 @define-color theme_fg_color #3d4047;

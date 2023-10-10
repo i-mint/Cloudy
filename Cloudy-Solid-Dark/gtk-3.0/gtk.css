@@ -6235,22 +6235,34 @@ filechooser placessidebar.sidebar scrollbar trough,
   background-color: #212633;
 }
 
-overlay calendar-view event {
-  background-image: linear-gradient(to bottom right, #1d212d, #1f2330);
-  border: 0px solid #1d212d;
-  padding: 4px 6px;
+calendar-view event {
+  box-shadow: inset 0 -100px 0 0 #69769e;
+  border: none;
 }
-overlay calendar-view event label {
-  color: rgba(255, 255, 255, 0.8);
+calendar-view event label {
+  color: rgba(255, 255, 255, 0.78);
+  padding: 7px 4px;
   font-weight: normal;
 }
 
-event.slanted-end label {
-  color: rgba(0, 0, 0, 0.7);
-  padding: 4px 6px;
+event,
+event.slanted-end,
+event.color-light {
+  box-shadow: inset 0 -100px 0 0 #69769e;
 }
-event.slanted-end:backdrop label {
-  color: rgba(0, 0, 0, 0.5);
+event label, event,
+event.slanted-end label,
+event.slanted-end,
+event.color-light label,
+event.color-light {
+  color: rgba(255, 255, 255, 0.78);
+}
+event label:backdrop, event:backdrop,
+event.slanted-end label:backdrop,
+event.slanted-end:backdrop,
+event.color-light label:backdrop,
+event.color-light:backdrop {
+  color: rgba(255, 255, 255, 0.28);
 }
 
 @define-color theme_fg_color #b6babf;
