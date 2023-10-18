@@ -6517,25 +6517,33 @@ event.color-light:backdrop {
 .budgie-popover:not(.csd) .categories {
   border-right: 1px solid rgba(182, 186, 191, 0.1);
 }
-.budgie-popover:not(.csd) list, .budgie-popover:not(.csd) row {
-  background-color: transparent;
+.budgie-popover:not(.csd) list,
+.budgie-popover:not(.csd) row {
+  background-color: #14181f;
   border-radius: 4px;
   margin: 0;
   padding: 0;
 }
-.budgie-popover:not(.csd) list label, .budgie-popover:not(.csd) row label {
+.budgie-popover:not(.csd) list label,
+.budgie-popover:not(.csd) row label {
   color: #b6babf;
 }
-.budgie-popover:not(.csd) list:hover, .budgie-popover:not(.csd) row:hover {
+.budgie-popover:not(.csd) list:hover,
+.budgie-popover:not(.csd) row:hover {
   background-color: transparent;
 }
-.budgie-popover:not(.csd) list:active, .budgie-popover:not(.csd) list:checked, .budgie-popover:not(.csd) row:active, .budgie-popover:not(.csd) row:checked {
+.budgie-popover:not(.csd) list:active, .budgie-popover:not(.csd) list:checked,
+.budgie-popover:not(.csd) row:active,
+.budgie-popover:not(.csd) row:checked {
   background-color: #2B3143;
 }
-.budgie-popover:not(.csd) list:active label, .budgie-popover:not(.csd) list:checked label, .budgie-popover:not(.csd) row:active label, .budgie-popover:not(.csd) row:checked label {
+.budgie-popover:not(.csd) list:active label, .budgie-popover:not(.csd) list:checked label,
+.budgie-popover:not(.csd) row:active label,
+.budgie-popover:not(.csd) row:checked label {
   color: #ffffff;
 }
-.budgie-popover:not(.csd) list button, .budgie-popover:not(.csd) row button {
+.budgie-popover:not(.csd) list button,
+.budgie-popover:not(.csd) row button {
   margin: 1px 0;
   padding: 4px 6px;
 }
@@ -6718,7 +6726,8 @@ event.color-light:backdrop {
 .budgie-panel.transparent .workspace-layout .workspace-item.current-workspace {
   background: transparent;
 }
-.budgie-panel.transparent button.flat.running {
+.budgie-panel.transparent button.flat.running,
+.budgie-panel.transparent button.image-button.workspace-add-button {
   background: image(transparent);
 }
 .top .budgie-panel button.flat:not(.raven-trigger):not(.budgie-menu-launcher), .bottom .budgie-panel button.flat:not(.raven-trigger):not(.budgie-menu-launcher) {
