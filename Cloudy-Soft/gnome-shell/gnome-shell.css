@@ -793,7 +793,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 .switcher-list .item-box:selected {
   background-color: rgba(255, 255, 255, 0.18);
-  font-weight: bold;
 }
 .switcher-list .thumbnail-box {
   padding: 2px;
