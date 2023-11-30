@@ -6478,6 +6478,12 @@ event.color-light:backdrop {
 .budgie-popover:not(.csd) button:active label, .budgie-menu .category-button:active label, .budgie-popover:not(.csd) button:active, .budgie-menu .category-button:active, .budgie-popover:not(.csd) button:selected label, .budgie-menu .category-button:selected label, .budgie-popover:not(.csd) button:selected, .budgie-menu .category-button:selected, .budgie-popover:not(.csd) button:checked label, .budgie-menu .category-button:checked label, .budgie-popover:not(.csd) button:checked, .budgie-menu .category-button:checked {
   color: #ffffff;
 }
+.budgie-popover:not(.csd) button:disabled label, .budgie-menu .category-button:disabled label, .budgie-popover:not(.csd) button:disabled, .budgie-menu .category-button:disabled {
+  color: rgba(61, 64, 71, 0.5);
+}
+.budgie-popover:not(.csd) button:checked:disabled label, .budgie-menu .category-button:checked:disabled label, .budgie-popover:not(.csd) button:checked:disabled, .budgie-menu .category-button:checked:disabled {
+  color: rgba(255, 255, 255, 0.5);
+}
 
 .budgie-menu scrolledwindow,
 .budgie-menu list,
