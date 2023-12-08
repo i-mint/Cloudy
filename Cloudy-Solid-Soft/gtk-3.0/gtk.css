@@ -6805,6 +6805,9 @@ event.color-light:backdrop {
 .budgie-panel.transparent {
   background-color: rgba(77, 89, 123, 0.3);
 }
+.budgie-panel.transparent button#tasklist-button {
+  background-color: transparent;
+}
 .budgie-panel separator {
   background-color: rgba(255, 255, 255, 0.18);
 }
