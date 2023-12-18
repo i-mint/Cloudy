@@ -6031,6 +6031,18 @@ filechooser box.path-bar-box > .linked > button.image-button.text-button:only-ch
 .nautilus-window box.path-bar-box > .linked > button.image-button.text-button:only-child image {
   padding: 1px;
 }
+filechooser stack .linked > button.popup.toggle,
+.nautilus-window stack .linked > button.popup.toggle {
+  border-radius: 0 4px 4px 0;
+}
+filechooser stack .linked > button.popup.toggle:hover,
+.nautilus-window stack .linked > button.popup.toggle:hover {
+  border-color: #6e7da5;
+}
+filechooser stack .linked > button.popup.toggle:checked,
+.nautilus-window stack .linked > button.popup.toggle:checked {
+  border-radius: 4px;
+}
 
 .nemo-window .primary-toolbar widget entry {
   background-color: #5e6d97;
