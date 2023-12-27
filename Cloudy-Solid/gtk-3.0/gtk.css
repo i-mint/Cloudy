@@ -1898,9 +1898,9 @@ treeview.view:disabled {
 treeview.view:disabled:selected {
   color: #9aa2b9;
 }
-treeview.view.separator {
+treeview.view.separator, treeview.view.separator:backdrop {
   min-height: 2px;
-  color: rgba(0, 0, 0, 0.1);
+  color: #56648A;
 }
 treeview.view:drop(active) {
   border-style: solid none;
@@ -4424,6 +4424,9 @@ paned.gedit-side-panel-paned treeview.view:selected:backdrop, paned.gedit-side-p
 paned.gedit-side-panel-paned treeview.view:backdrop {
   color: rgba(255, 255, 255, 0.28);
   border-color: #c5c7c9;
+}
+paned.gedit-side-panel-paned treeview.view.separator, paned.gedit-side-panel-paned treeview.view.separator:backdrop {
+  color: #56648A;
 }
 
 .pluma-window statusbar frame > border {
