@@ -1321,7 +1321,7 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
   box-shadow: none;
 }
 .titlebar:not(headerbar) > separator {
-  background-image: image(rgba(86, 100, 138, 0.95));
+  background-image: image(rgba(72, 84, 116, 0.95));
 }
 
 .primary-toolbar:not(.libreoffice-toolbar) separator, headerbar separator.titlebutton,
@@ -3233,15 +3233,17 @@ separator:backdrop {
   background-color: transparent;
 }
 
-separator.sidebar, hdyleaflet > separator {
+separator.sidebar,
+hdyleaflet > separator {
   background-color: #d2d4d5;
 }
-separator.sidebar:backdrop, hdyleaflet > separator:backdrop {
+separator.sidebar:backdrop,
+hdyleaflet > separator:backdrop {
   background-color: #d8d9da;
 }
 
 headerbar separator, headerbar separator.sidebar {
-  background-image: linear-gradient(to bottom, rgba(86, 100, 138, 0.95), rgba(86, 100, 138, 0.95));
+  background-image: linear-gradient(to bottom, rgba(72, 84, 116, 0.95), rgba(72, 84, 116, 0.95));
 }
 headerbar separator:backdrop, headerbar separator.sidebar:backdrop {
   background-image: linear-gradient(to bottom, rgba(86, 100, 138, 0.95), rgba(86, 100, 138, 0.95));

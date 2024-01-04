@@ -1323,7 +1323,7 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
   box-shadow: none;
 }
 .titlebar:not(headerbar) > separator {
-  background-image: image(#474747);
+  background-image: image(#353535);
 }
 
 .primary-toolbar:not(.libreoffice-toolbar) separator, headerbar separator.titlebutton,
@@ -1898,7 +1898,7 @@ treeview.view:disabled {
 treeview.view:disabled:selected {
   color: #919191;
 }
-treeview.view.separator {
+treeview.view.separator, treeview.view.separator:backdrop {
   min-height: 2px;
   color: #474747;
 }
@@ -3264,7 +3264,7 @@ separator.sidebar:backdrop, hdyleaflet > separator:backdrop {
 }
 
 headerbar separator, headerbar separator.sidebar {
-  background-image: linear-gradient(to bottom, #474747, #474747);
+  background-image: linear-gradient(to bottom, #353535, #353535);
 }
 headerbar separator:backdrop, headerbar separator.sidebar:backdrop {
   background-image: linear-gradient(to bottom, #474747, #474747);
