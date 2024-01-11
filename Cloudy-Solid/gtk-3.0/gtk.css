@@ -1369,6 +1369,10 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
   background-color: #ffffff;
   color: #56648A;
 }
+.primary-toolbar entry.search selection, headerbar entry.search selection {
+  color: #56648A;
+  background-color: #ffffff;
+}
 .primary-toolbar entry progress, headerbar entry progress {
   border-color: #56648A;
   background-image: none;
