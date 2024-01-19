@@ -6727,7 +6727,7 @@ filechooser placessidebar.sidebar scrollbar trough,
 .raven,
 .raven-notifications-view > .raven-background > .frame > list {
   background-color: #DCDCDC;
-  border-radius: 4px;
+  border-radius: 0;
 }
 .raven-background label, .raven-background image, .raven-background,
 .raven-header label,
