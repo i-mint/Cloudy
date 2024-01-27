@@ -1341,7 +1341,7 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
 
 .primary-toolbar entry, headerbar entry {
   color: rgba(255, 255, 255, 0.34);
-  border-color: transparent;
+  border-color: #383838;
   background-color: #383838;
   box-shadow: none;
 }
@@ -1353,7 +1353,7 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
 }
 .primary-toolbar entry:focus, headerbar entry:focus {
   color: #ffffff;
-  border-color: transparent;
+  border-color: #383838;
   background-color: #383838;
   box-shadow: none;
   background-clip: border-box;
@@ -1771,13 +1771,13 @@ headerbar spinbutton:not(.vertical) > entry + button:not(:active):hover {
 }
 .primary-toolbar combobox > .linked > button.combo, headerbar combobox > .linked > button.combo {
   color: rgba(255, 255, 255, 0.34);
-  border-color: transparent;
+  border-color: #383838;
   background-color: #383838;
   box-shadow: none;
 }
 .primary-toolbar combobox > .linked > button.combo:hover, headerbar combobox > .linked > button.combo:hover {
   color: #ffffff;
-  border-color: transparent;
+  border-color: #383838;
   background-color: #383838;
   box-shadow: none;
   box-shadow: none;
@@ -5016,13 +5016,13 @@ popover .sidebar row:active:backdrop, popover .sidebar row:checked:backdrop, pop
   padding-left: 4px;
   padding-right: 4px;
   color: rgba(255, 255, 255, 0.34);
-  border-color: transparent;
+  border-color: #383838;
   background-color: #383838;
   box-shadow: none;
 }
 .marlin-pathbar.pathbar:focus {
   color: #ffffff;
-  border-color: transparent;
+  border-color: #383838;
   background-color: #383838;
   box-shadow: none;
 }
@@ -5208,7 +5208,7 @@ popover .sidebar row:active:backdrop, popover .sidebar row:checked:backdrop, pop
 }
 .thunar toolbar > toolitem box.horizontal > entry:focus, .thunar .inline-toolbar > toolitem box.horizontal > entry:focus {
   color: #ffffff;
-  border-color: transparent;
+  border-color: #383838;
   background-color: #383838;
   box-shadow: none;
   background-clip: border-box;
@@ -6160,6 +6160,11 @@ filechooser stack .linked > button.popup.toggle:hover, filechooser stack .linked
   border-color: #6b6b6b;
   background-color: #6b6b6b;
   border-radius: 0 4px 4px 0;
+  border-left-color: #383838;
+}
+filechooser stack .linked > button.popup.toggle:active image,
+.nautilus-window stack .linked > button.popup.toggle:active image {
+  opacity: 0.5;
 }
 filechooser stack .linked > entry.search image,
 .nautilus-window stack .linked > entry.search image {
