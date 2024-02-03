@@ -884,7 +884,9 @@ viewswitcher > box > button.radio:hover, viewswitcher > box > button.radio:activ
 .primary-toolbar .linked:not(.vertical).path-bar > button,
 headerbar .linked:not(.vertical).path-bar > button,
 .primary-toolbar .path-bar-box.horizontal > .linked > button,
-headerbar .path-bar-box.horizontal > .linked > button, spinbutton:not(.vertical) button, spinbutton:not(.vertical) entry, .linked:not(.vertical) > entry, .linked:not(.vertical) > entry:focus, .inline-toolbar button, .inline-toolbar button:backdrop, .linked:not(.vertical) > button, .linked:not(.vertical) > button:hover, .linked:not(.vertical) > button:active, .linked:not(.vertical) > button:checked, toolbar.inline-toolbar toolbutton > button.flat, .inline-toolbar toolbutton > button.flat {
+headerbar .path-bar-box.horizontal > .linked > button, .night-light-indicator spinbutton:not(.vertical) button, .night-light-indicator spinbutton:not(.vertical) entry,
+spinbutton:not(.vertical) button,
+spinbutton:not(.vertical) entry, .linked:not(.vertical) > entry, .linked:not(.vertical) > entry:focus, .inline-toolbar button, .inline-toolbar button:backdrop, .linked:not(.vertical) > button, .linked:not(.vertical) > button:hover, .linked:not(.vertical) > button:active, .linked:not(.vertical) > button:checked, toolbar.inline-toolbar toolbutton > button.flat, .inline-toolbar toolbutton > button.flat {
   border-radius: 0;
   border-right-style: none;
 }
@@ -893,7 +895,9 @@ headerbar .path-bar-box.horizontal > .linked > button, spinbutton:not(.vertical)
 .primary-toolbar .linked:not(.vertical).path-bar > button:first-child,
 headerbar .linked:not(.vertical).path-bar > button:first-child,
 .primary-toolbar .path-bar-box.horizontal > .linked > button:first-child,
-headerbar .path-bar-box.horizontal > .linked > button:first-child, spinbutton:not(.vertical) button:first-child, spinbutton:not(.vertical) entry:first-child, .linked:not(.vertical) > entry:first-child, .inline-toolbar button:first-child, .inline-toolbar button:first-child:backdrop, .linked:not(.vertical) > button:first-child {
+headerbar .path-bar-box.horizontal > .linked > button:first-child,
+spinbutton:not(.vertical) button:first-child,
+spinbutton:not(.vertical) entry:first-child, .linked:not(.vertical) > entry:first-child, .inline-toolbar button:first-child, .inline-toolbar button:first-child:backdrop, .linked:not(.vertical) > button:first-child {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
@@ -901,7 +905,9 @@ headerbar .path-bar-box.horizontal > .linked > button:first-child, spinbutton:no
 .primary-toolbar .linked:not(.vertical).path-bar > button:last-child,
 headerbar .linked:not(.vertical).path-bar > button:last-child,
 .primary-toolbar .path-bar-box.horizontal > .linked > button:last-child,
-headerbar .path-bar-box.horizontal > .linked > button:last-child, spinbutton:not(.vertical) button:last-child, spinbutton:not(.vertical) entry:last-child, .linked:not(.vertical) > entry:last-child, .inline-toolbar button:last-child, .inline-toolbar button:last-child:backdrop, .linked:not(.vertical) > button:last-child {
+headerbar .path-bar-box.horizontal > .linked > button:last-child,
+spinbutton:not(.vertical) button:last-child,
+spinbutton:not(.vertical) entry:last-child, .linked:not(.vertical) > entry:last-child, .inline-toolbar button:last-child, .inline-toolbar button:last-child:backdrop, .linked:not(.vertical) > button:last-child {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   border-right-style: solid;
@@ -910,7 +916,9 @@ headerbar .path-bar-box.horizontal > .linked > button:last-child, spinbutton:not
 .primary-toolbar .linked:not(.vertical).path-bar > button:only-child,
 headerbar .linked:not(.vertical).path-bar > button:only-child,
 .primary-toolbar .path-bar-box.horizontal > .linked > button:only-child,
-headerbar .path-bar-box.horizontal > .linked > button:only-child, spinbutton:not(.vertical) button:only-child, spinbutton:not(.vertical) entry:only-child, .linked:not(.vertical) > entry:only-child, .inline-toolbar button:only-child, .inline-toolbar button:only-child:backdrop, .linked:not(.vertical) > button:only-child {
+headerbar .path-bar-box.horizontal > .linked > button:only-child,
+spinbutton:not(.vertical) button:only-child,
+spinbutton:not(.vertical) entry:only-child, .linked:not(.vertical) > entry:only-child, .inline-toolbar button:only-child, .inline-toolbar button:only-child:backdrop, .linked:not(.vertical) > button:only-child {
   border-radius: 4px;
   border-style: solid;
 }
@@ -931,21 +939,26 @@ headerbar .path-bar-box.horizontal > .linked > button:only-child, spinbutton:not
   border-style: solid;
 }
 
-.linked.vertical > combobox > box > button.combo, spinbutton.vertical button, spinbutton.vertical entry, .linked.vertical > entry, .linked.vertical > entry:focus, .linked.vertical > button, .linked.vertical > button:hover, .linked.vertical > button:active, .linked.vertical > button:checked {
+.linked.vertical > combobox > box > button.combo, .night-light-indicator spinbutton.vertical button, .night-light-indicator spinbutton.vertical entry,
+spinbutton.vertical button,
+spinbutton.vertical entry, .linked.vertical > entry, .linked.vertical > entry:focus, .linked.vertical > button, .linked.vertical > button:hover, .linked.vertical > button:active, .linked.vertical > button:checked {
   border-radius: 0;
   border-bottom-style: none;
 }
 
-spinbutton.vertical button:first-child, spinbutton.vertical entry:first-child, .linked.vertical > entry:first-child, .linked.vertical > button:first-child {
+spinbutton.vertical button:first-child,
+spinbutton.vertical entry:first-child, .linked.vertical > entry:first-child, .linked.vertical > button:first-child {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
-spinbutton.vertical button:last-child, spinbutton.vertical entry:last-child, .linked.vertical > entry:last-child, .linked.vertical > button:last-child {
+spinbutton.vertical button:last-child,
+spinbutton.vertical entry:last-child, .linked.vertical > entry:last-child, .linked.vertical > button:last-child {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   border-bottom-style: solid;
 }
-spinbutton.vertical button:only-child, spinbutton.vertical entry:only-child, .linked.vertical > entry:only-child, .linked.vertical > button:only-child {
+spinbutton.vertical button:only-child,
+spinbutton.vertical entry:only-child, .linked.vertical > entry:only-child, .linked.vertical > button:only-child {
   border-radius: 4px;
   border-style: solid;
 }
@@ -1020,18 +1033,24 @@ spinbutton button:active {
 spinbutton:disabled {
   color: rgba(182, 186, 191, 0.45);
 }
+.night-light-indicator spinbutton:not(.vertical) entry,
 spinbutton:not(.vertical) entry {
   min-width: 28px;
 }
-spinbutton:not(.vertical) button, spinbutton:not(.vertical) entry {
+.night-light-indicator spinbutton:not(.vertical) button, .night-light-indicator spinbutton:not(.vertical) entry,
+spinbutton:not(.vertical) button,
+spinbutton:not(.vertical) entry {
   border-color: #0e1114;
 }
-spinbutton:not(.vertical):dir(ltr) entry, spinbutton:not(.vertical):dir(rtl) button.up {
+spinbutton:not(.vertical):dir(ltr) entry,
+spinbutton:not(.vertical):dir(rtl) button.up {
   border-radius: 4px 0 0 4px;
 }
+.night-light-indicator spinbutton:not(.vertical) > button + button,
 spinbutton:not(.vertical) > button + button {
   border-left-style: none;
 }
+.night-light-indicator spinbutton:not(.vertical) > button:hover:not(:active),
 spinbutton:not(.vertical) > button:hover:not(:active),
 spinbutton:not(.vertical) > button:hover + button {
   box-shadow: inset 1px 0 #12161c;
@@ -1040,6 +1059,8 @@ spinbutton:not(.vertical) > button:disabled + button:not(:disabled):not(:active)
 spinbutton:not(.vertical) > button:not(:disabled):not(:active):not(:checked):not(:hover) + button:disabled {
   box-shadow: inset 1px 0 rgba(18, 22, 28, 0.5);
 }
+.night-light-indicator spinbutton:not(.vertical) > button:first-child:hover:not(:active),
+.night-light-indicator spinbutton:not(.vertical) > button.up:dir(rtl):hover:not(:active),
 spinbutton:not(.vertical) > button:first-child:hover:not(:active),
 spinbutton:not(.vertical) > button.up:dir(rtl):hover:not(:active),
 spinbutton:not(.vertical) > entry + button:not(:active):hover {
@@ -1051,10 +1072,13 @@ spinbutton:not(.vertical) > entry:focus + button {
 spinbutton:not(.vertical) > entry:drop(active) + button {
   border-left-color: #F08437;
 }
+.osd .night-light-indicator spinbutton:not(.vertical) > button:hover:not(:active),
 .osd spinbutton:not(.vertical) > button:hover:not(:active),
 .osd spinbutton:not(.vertical) > button:hover + button {
   box-shadow: inset 1px 0 #394159;
 }
+.osd .night-light-indicator spinbutton:not(.vertical) > button:first-child:hover:not(:active),
+.osd .night-light-indicator spinbutton:not(.vertical) > button.up:dir(rtl):hover:not(:active),
 .osd spinbutton:not(.vertical) > button:first-child:hover:not(:active),
 .osd spinbutton:not(.vertical) > button.up:dir(rtl):hover:not(:active),
 .osd spinbutton:not(.vertical) > entry + button:not(:active):hover {
@@ -1063,7 +1087,9 @@ spinbutton:not(.vertical) > entry:drop(active) + button {
 .osd spinbutton:not(.vertical) > entry:focus + button {
   border-left-color: #394159;
 }
-spinbutton.vertical button, spinbutton.vertical entry {
+.night-light-indicator spinbutton.vertical button, .night-light-indicator spinbutton.vertical entry,
+spinbutton.vertical button,
+spinbutton.vertical entry {
   padding-left: 4px;
   padding-right: 4px;
   min-width: 0;
@@ -1084,7 +1110,8 @@ spinbutton entry:focus {
   border-radius: 4px;
   caret-color: currentColor;
 }
-spinbutton:focus label, spinbutton:focus,
+spinbutton:focus label,
+spinbutton:focus,
 spinbutton entry:focus label,
 spinbutton entry:focus {
   color: #b6babf;
@@ -4077,20 +4104,20 @@ modelbutton.flat:selected arrow:backdrop, treeview.view:backdrop:selected, row:b
   color: rgba(255, 255, 255, 0.78);
 }
 
-entry selection:focus, entry selection {
+.night-light-indicator entry selection:focus, .night-light-indicator entry selection, entry selection:focus, entry selection {
   background-color: #ebe7e0;
 }
-entry selection:focus, entry selection {
+.night-light-indicator entry selection:focus, .night-light-indicator entry selection, entry selection:focus, entry selection {
   color: #14181f;
 }
-entry selection:backdrop {
+.night-light-indicator entry selection:backdrop, entry selection:backdrop {
   color: rgba(26, 32, 38, 0.78);
 }
-entry selection:disabled {
+.night-light-indicator entry selection:disabled, entry selection:disabled {
   color: gray;
 }
 
-entry selection:backdrop {
+.night-light-indicator entry selection:backdrop, entry selection:backdrop {
   color: rgba(20, 24, 31, 0.78);
   background-color: rgba(235, 231, 224, 0.78);
 }
@@ -6435,31 +6462,8 @@ filechooser placessidebar.sidebar scrollbar trough,
 .night-light-indicator button.display-settings-button {
   background-color: transparent;
 }
-.night-light-indicator spinbutton {
-  background-color: #262e3b;
+.night-light-indicator spinbutton label, .night-light-indicator spinbutton {
   color: #b6babf;
-  border-radius: 4px;
-  border: 1px solid #2B3143;
-}
-.night-light-indicator spinbutton button.up:hover, .night-light-indicator spinbutton button.up:active, .night-light-indicator spinbutton button.up {
-  border-radius: 0px 4px 4px 0px;
-  background-color: transparent;
-  border-color: transparent;
-  box-shadow: none;
-}
-.night-light-indicator spinbutton button.down:hover, .night-light-indicator spinbutton button.down:active, .night-light-indicator spinbutton button.down {
-  border-radius: 0;
-  background-color: transparent;
-  border-color: transparent;
-  border-color: transparent;
-  box-shadow: none;
-}
-.night-light-indicator spinbutton button.up:active, .night-light-indicator spinbutton button.down:active {
-  border-color: transparent;
-  border-color: transparent;
-}
-.night-light-indicator spinbutton button.up:active image, .night-light-indicator spinbutton button.up:active, .night-light-indicator spinbutton button.down:active image, .night-light-indicator spinbutton button.down:active {
-  color: #2B3143;
 }
 .night-light-indicator entry {
   border-color: transparent;
