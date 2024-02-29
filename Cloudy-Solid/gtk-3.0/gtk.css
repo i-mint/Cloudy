@@ -5143,20 +5143,23 @@ popover .sidebar row:active:backdrop, popover .sidebar row:checked:backdrop, pop
 .thunar notebook .view:backdrop, .thunar notebook iconview:backdrop {
   color: rgba(61, 64, 71, 0.67);
 }
-.thunar notebook tabs > tab button.flat image {
-  background-color: transparent;
-  border: 0.5px solid transparent;
-  border-radius: 4px;
+.thunar notebook tabs > tab.reorderable-page button.flat image {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  padding: 2px;
+  border: 2px solid transparent;
 }
-.thunar notebook tabs > tab button.flat:hover image {
-  background-color: #858585;
-  border: 0.5px solid #757575;
-  border-radius: 4px;
+.thunar notebook tabs > tab.reorderable-page button.flat:hover image {
+  background-color: #aab3ca;
+  border-radius: 8px;
+  padding: 2px;
+  border: 2px solid transparent;
 }
-.thunar notebook tabs > tab button.flat:active image {
-  background-color: #7a7a7a;
-  border: 0.5px solid #6b6b6b;
-  border-radius: 4px;
+.thunar notebook tabs > tab.reorderable-page button.flat:active image {
+  background-color: #cdcfd0;
+  border-radius: 8px;
+  padding: 2px;
+  border: 2px solid transparent;
 }
 .thunar toolbar > toolitem box.horizontal > entry, .thunar .inline-toolbar > toolitem box.horizontal > entry {
   background-color: #56648A;
