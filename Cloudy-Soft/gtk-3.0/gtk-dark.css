@@ -3398,10 +3398,9 @@ calendar {
   color: #b6babf;
   border: 1px solid #0e1114;
   border-radius: 4px;
-  padding: 2px;
 }
 calendar:selected {
-  border-radius: 1.5px;
+  border-radius: 4px;
 }
 calendar.header {
   color: #b6babf;

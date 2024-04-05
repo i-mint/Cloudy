@@ -3404,10 +3404,9 @@ calendar {
   color: #3d4047;
   border: 1px solid #c5c7c9;
   border-radius: 4px;
-  padding: 2px;
 }
 calendar:selected {
-  border-radius: 1.5px;
+  border-radius: 4px;
 }
 calendar.header {
   color: #3d4047;
