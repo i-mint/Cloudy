@@ -1050,7 +1050,6 @@ spinbutton:not(.vertical):dir(rtl) button.up {
 spinbutton:not(.vertical) > button + button {
   border-left-style: none;
 }
-.night-light-indicator spinbutton:not(.vertical) > button:hover:not(:active),
 spinbutton:not(.vertical) > button:hover:not(:active),
 spinbutton:not(.vertical) > button:hover + button {
   box-shadow: inset 1px 0 #12161c;
@@ -1059,8 +1058,6 @@ spinbutton:not(.vertical) > button:disabled + button:not(:disabled):not(:active)
 spinbutton:not(.vertical) > button:not(:disabled):not(:active):not(:checked):not(:hover) + button:disabled {
   box-shadow: inset 1px 0 rgba(18, 22, 28, 0.5);
 }
-.night-light-indicator spinbutton:not(.vertical) > button:first-child:hover:not(:active),
-.night-light-indicator spinbutton:not(.vertical) > button.up:dir(rtl):hover:not(:active),
 spinbutton:not(.vertical) > button:first-child:hover:not(:active),
 spinbutton:not(.vertical) > button.up:dir(rtl):hover:not(:active),
 spinbutton:not(.vertical) > entry + button:not(:active):hover {
@@ -1072,13 +1069,10 @@ spinbutton:not(.vertical) > entry:focus + button {
 spinbutton:not(.vertical) > entry:drop(active) + button {
   border-left-color: #F08437;
 }
-.osd .night-light-indicator spinbutton:not(.vertical) > button:hover:not(:active),
 .osd spinbutton:not(.vertical) > button:hover:not(:active),
 .osd spinbutton:not(.vertical) > button:hover + button {
   box-shadow: inset 1px 0 rgba(57, 65, 89, 0.95);
 }
-.osd .night-light-indicator spinbutton:not(.vertical) > button:first-child:hover:not(:active),
-.osd .night-light-indicator spinbutton:not(.vertical) > button.up:dir(rtl):hover:not(:active),
 .osd spinbutton:not(.vertical) > button:first-child:hover:not(:active),
 .osd spinbutton:not(.vertical) > button.up:dir(rtl):hover:not(:active),
 .osd spinbutton:not(.vertical) > entry + button:not(:active):hover {
@@ -5219,6 +5213,18 @@ popover .sidebar row:active:backdrop, popover .sidebar row:checked:backdrop, pop
   color: rgba(255, 255, 255, 0.3);
   background-color: #2e3448;
 }
+.thunar menubar > menuitem {
+  border-radius: 4px;
+}
+.thunar menubar > menuitem:hover {
+  color: #ffffff;
+  background-color: #1f2330;
+  border-color: #1f2330;
+  border-radius: 4px;
+}
+.thunar menubar > menuitem:hover label, .thunar menubar > menuitem:hover image {
+  color: inherit;
+}
 .thunar toolbar > toolbutton > button.flat:backdrop label, .thunar .inline-toolbar > toolbutton > button.flat:backdrop label, .thunar toolbar > toolbutton > button.flat:backdrop image, .thunar .inline-toolbar > toolbutton > button.flat:backdrop image, .thunar toolbar > toolbutton > button.flat:backdrop, .thunar .inline-toolbar > toolbutton > button.flat:backdrop,
 .thunar toolbar > box.horizontal > entry:backdrop label,
 .thunar .inline-toolbar > box.horizontal > entry:backdrop label,
@@ -5705,7 +5711,7 @@ GraniteWidgetsPopOver {
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-GraniteWidgetsPopOver .sidebar.view, GraniteWidgetsPopOver iconview.sidebar,
+GraniteWidgetsPopOver .sidebar.view,
 GraniteWidgetsPopOver * {
   background-color: transparent;
 }
