@@ -670,6 +670,25 @@ button.font separator, button.file separator {
   border-radius: 4px;
   border-width: 1px;
 }
+button.circular,
+button.circular.radio.text-button,
+button.circular.toggle {
+  min-height: 16px;
+  min-width: 16px;
+  padding: 2px;
+  border-radius: 100%;
+  -gtk-outline-radius: 100%;
+}
+
+button.circular,
+button.circular.toggle {
+  padding: 2px;
+}
+
+button.circular.radio.text-button {
+  padding: 4px 6px;
+}
+
 viewswitcher > box > button.radio {
   margin: 0;
   padding: 0;
