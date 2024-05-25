@@ -4374,6 +4374,36 @@ terminal-window notebook > header.top button,
 .caja-side-pane .frame {
   border-width: 1px 0 0;
 }
+.caja-side-pane .frame treeview.view {
+  color: rgba(255, 255, 255, 0.58);
+}
+.caja-side-pane .frame treeview.view:hover {
+  color: rgba(255, 255, 255, 0.73);
+  background-color: #515151;
+}
+.caja-side-pane .frame treeview.view:hover:backdrop {
+  color: rgba(255, 255, 255, 0.63);
+}
+.caja-side-pane .frame treeview.view:selected, .caja-side-pane .frame treeview.view:selected:hover, .caja-side-pane .frame treeview.view:active:hover {
+  background-color: #383838;
+  color: #ffffff;
+  font-weight: bold;
+}
+.caja-side-pane .frame treeview.view:selected .sidebar-label,
+.caja-side-pane .frame treeview.view:selected .sidebar-icon, .caja-side-pane .frame treeview.view:selected:hover .sidebar-label,
+.caja-side-pane .frame treeview.view:selected:hover .sidebar-icon, .caja-side-pane .frame treeview.view:active:hover .sidebar-label,
+.caja-side-pane .frame treeview.view:active:hover .sidebar-icon {
+  color: inherit;
+}
+.caja-side-pane .frame treeview.view:selected:backdrop .sidebar-label,
+.caja-side-pane .frame treeview.view:selected:backdrop .sidebar-icon, .caja-side-pane .frame treeview.view:selected:backdrop, .caja-side-pane .frame treeview.view:selected:hover:backdrop .sidebar-label,
+.caja-side-pane .frame treeview.view:selected:hover:backdrop .sidebar-icon, .caja-side-pane .frame treeview.view:selected:hover:backdrop, .caja-side-pane .frame treeview.view:active:hover:backdrop .sidebar-label,
+.caja-side-pane .frame treeview.view:active:hover:backdrop .sidebar-icon, .caja-side-pane .frame treeview.view:active:hover:backdrop {
+  color: rgba(255, 255, 255, 0.67);
+}
+.caja-side-pane .frame treeview.view:backdrop {
+  color: rgba(255, 255, 255, 0.28);
+}
 
 .caja-notebook .frame {
   border-width: 0 0 1px;
@@ -4818,27 +4848,65 @@ panel-toplevel.background #PanelApplet image {
   color: rgba(255, 255, 255, 0.78);
 }
 .mate-panel-menu-bar button label, .mate-panel-menu-bar button image,
-.mate-panel-menu-bar #tasklist-button label,
-.mate-panel-menu-bar #tasklist-button image,
 panel-toplevel.background button label,
-panel-toplevel.background button image,
-panel-toplevel.background #tasklist-button label,
-panel-toplevel.background #tasklist-button image {
+panel-toplevel.background button image {
   color: inherit;
 }
-.mate-panel-menu-bar .wnck-pager,
-panel-toplevel.background .wnck-pager {
-  color: rgba(99, 99, 99, 0.89);
-  background-color: #222222;
+.mate-panel-menu-bar #tasklist-button,
+panel-toplevel.background #tasklist-button {
+  font-weight: normal;
+  background-image: none;
+  background-color: transparent;
+  padding: 0 6px;
+  transition-duration: 100ms;
+  border-color: transparent;
 }
-.mate-panel-menu-bar .wnck-pager:hover,
-panel-toplevel.background .wnck-pager:hover {
-  background-color: #484848;
+.mate-panel-menu-bar #tasklist-button label, .mate-panel-menu-bar #tasklist-button image, .mate-panel-menu-bar #tasklist-button,
+panel-toplevel.background #tasklist-button label,
+panel-toplevel.background #tasklist-button image,
+panel-toplevel.background #tasklist-button {
+  color: rgba(255, 255, 255, 0.38);
 }
-.mate-panel-menu-bar .wnck-pager:selected,
-panel-toplevel.background .wnck-pager:selected {
-  color: #7a7a7a;
-  background-color: #474747;
+.mate-panel-menu-bar #tasklist-button:hover,
+panel-toplevel.background #tasklist-button:hover {
+  background-color: #525252;
+  border-color: transparent;
+}
+.mate-panel-menu-bar #tasklist-button:hover label, .mate-panel-menu-bar #tasklist-button:hover image, .mate-panel-menu-bar #tasklist-button:hover,
+panel-toplevel.background #tasklist-button:hover label,
+panel-toplevel.background #tasklist-button:hover image,
+panel-toplevel.background #tasklist-button:hover {
+  color: rgba(255, 255, 255, 0.58);
+}
+.mate-panel-menu-bar #tasklist-button:active, .mate-panel-menu-bar #tasklist-button:checked, .mate-panel-menu-bar #tasklist-button:checked:hover,
+panel-toplevel.background #tasklist-button:active,
+panel-toplevel.background #tasklist-button:checked,
+panel-toplevel.background #tasklist-button:checked:hover {
+  background-color: #6b6b6b;
+}
+.mate-panel-menu-bar #tasklist-button:active label, .mate-panel-menu-bar #tasklist-button:active image, .mate-panel-menu-bar #tasklist-button:active, .mate-panel-menu-bar #tasklist-button:checked label, .mate-panel-menu-bar #tasklist-button:checked image, .mate-panel-menu-bar #tasklist-button:checked, .mate-panel-menu-bar #tasklist-button:checked:hover label, .mate-panel-menu-bar #tasklist-button:checked:hover image, .mate-panel-menu-bar #tasklist-button:checked:hover,
+panel-toplevel.background #tasklist-button:active label,
+panel-toplevel.background #tasklist-button:active image,
+panel-toplevel.background #tasklist-button:active,
+panel-toplevel.background #tasklist-button:checked label,
+panel-toplevel.background #tasklist-button:checked image,
+panel-toplevel.background #tasklist-button:checked,
+panel-toplevel.background #tasklist-button:checked:hover label,
+panel-toplevel.background #tasklist-button:checked:hover image,
+panel-toplevel.background #tasklist-button:checked:hover {
+  color: #ffffff;
+}
+.mate-panel-menu-bar wnck-pager,
+panel-toplevel.background wnck-pager {
+  background-color: rgba(191, 191, 191, 0.78);
+}
+.mate-panel-menu-bar wnck-pager:hover,
+panel-toplevel.background wnck-pager:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+.mate-panel-menu-bar wnck-pager:selected,
+panel-toplevel.background wnck-pager:selected {
+  background-color: rgba(255, 255, 255, 0.38);
 }
 .mate-panel-menu-bar na-tray-applet,
 panel-toplevel.background na-tray-applet {
