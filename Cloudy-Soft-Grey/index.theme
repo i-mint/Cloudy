@@ -7,6 +7,6 @@ Encoding=UTF-8
 [X-GNOME-Metatheme]
 GtkTheme=Cloudy-Soft-Grey
 MetacityTheme=Cloudy-Soft-Grey
-IconTheme=Papirus
+IconTheme=Papirus-Dark
 CursorTheme=Adwaita
 CursorSize=24
