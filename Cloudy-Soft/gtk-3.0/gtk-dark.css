@@ -4361,13 +4361,6 @@ terminal-window notebook > header.top button,
 .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:disabled {
   color: rgba(255, 255, 255, 0.4);
 }
-.caja-notebook {
-  border-top: 1px solid #0e1114;
-}
-
-.caja-side-pane .frame {
-  border-width: 1px 0 0;
-}
 .caja-side-pane .frame treeview.view {
   color: rgba(255, 255, 255, 0.58);
 }
@@ -4400,7 +4393,124 @@ terminal-window notebook > header.top button,
 }
 
 .caja-notebook .frame {
-  border-width: 0 0 1px;
+  border-width: 0 0 1px 0;
+  border-color: rgba(0, 0, 0, 0.4);
+}
+
+.caja-side-pane .frame {
+  border-width: 1px 0 0;
+  border-color: rgba(0, 0, 0, 0.4);
+}
+
+.caja-notebook {
+  border-top: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.caja-navigation-window toolbar.horizontal.primary-toolbar, .caja-navigation-window .horizontal.primary-toolbar.inline-toolbar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+entry.caja-location-entry {
+  background: image(#262e3b);
+  border-color: #12161c;
+  box-shadow: none;
+  border-radius: 4px;
+}
+entry.caja-location-entry label, entry.caja-location-entry image, entry.caja-location-entry {
+  color: rgba(182, 186, 191, 0.41);
+}
+entry.caja-location-entry:focus {
+  background: image(#14181f);
+  border-color: #2B3143;
+  background-clip: padding-box;
+  box-shadow: none;
+  border-radius: 4px;
+}
+entry.caja-location-entry:focus label, entry.caja-location-entry:focus image, entry.caja-location-entry:focus {
+  color: #b6babf;
+}
+entry.caja-location-entry selection:focus {
+  background-color: #2B3143;
+}
+entry.caja-location-entry selection:focus label, entry.caja-location-entry selection:focus image, entry.caja-location-entry selection:focus {
+  color: #ffffff;
+}
+entry.caja-location-entry:backdrop {
+  opacity: 0.85;
+}
+entry.caja-location-entry:disabled {
+  border-color: #0e1114;
+  background: image(transparent);
+}
+entry.caja-location-entry:disabled label, entry.caja-location-entry:disabled image, entry.caja-location-entry:disabled {
+  color: rgba(182, 186, 191, 0.45);
+}
+
+.caja-pathbar button.toggle, .caja-pathbar button.slider-button, .caja-pathbar button.text-button, .caja-pathbar button.image-button {
+  background-color: transparent;
+  border-color: transparent;
+}
+.caja-pathbar button.toggle label, .caja-pathbar button.toggle image, .caja-pathbar button.toggle, .caja-pathbar button.slider-button label, .caja-pathbar button.slider-button image, .caja-pathbar button.slider-button, .caja-pathbar button.text-button label, .caja-pathbar button.text-button image, .caja-pathbar button.text-button, .caja-pathbar button.image-button label, .caja-pathbar button.image-button image, .caja-pathbar button.image-button {
+  color: rgba(255, 255, 255, 0.56);
+}
+.caja-pathbar button.toggle:hover, .caja-pathbar button.slider-button:hover, .caja-pathbar button.text-button:hover, .caja-pathbar button.image-button:hover {
+  background-color: #333a4f;
+  border-color: #333a4f;
+}
+.caja-pathbar button.toggle:hover label, .caja-pathbar button.toggle:hover image, .caja-pathbar button.toggle:hover, .caja-pathbar button.slider-button:hover label, .caja-pathbar button.slider-button:hover image, .caja-pathbar button.slider-button:hover, .caja-pathbar button.text-button:hover label, .caja-pathbar button.text-button:hover image, .caja-pathbar button.text-button:hover, .caja-pathbar button.image-button:hover label, .caja-pathbar button.image-button:hover image, .caja-pathbar button.image-button:hover {
+  color: rgba(255, 255, 255, 0.73);
+}
+.caja-pathbar button.toggle:active, .caja-pathbar button.toggle:checked, .caja-pathbar button.toggle:checked:hover, .caja-pathbar button.slider-button:active, .caja-pathbar button.slider-button:checked, .caja-pathbar button.slider-button:checked:hover, .caja-pathbar button.text-button:active, .caja-pathbar button.text-button:checked, .caja-pathbar button.text-button:checked:hover, .caja-pathbar button.image-button:active, .caja-pathbar button.image-button:checked, .caja-pathbar button.image-button:checked:hover {
+  background-color: #1f2330;
+  border-color: #1f2330;
+}
+.caja-pathbar button.toggle:active label, .caja-pathbar button.toggle:active image, .caja-pathbar button.toggle:active, .caja-pathbar button.toggle:checked label, .caja-pathbar button.toggle:checked image, .caja-pathbar button.toggle:checked, .caja-pathbar button.toggle:checked:hover label, .caja-pathbar button.toggle:checked:hover image, .caja-pathbar button.toggle:checked:hover, .caja-pathbar button.slider-button:active label, .caja-pathbar button.slider-button:active image, .caja-pathbar button.slider-button:active, .caja-pathbar button.slider-button:checked label, .caja-pathbar button.slider-button:checked image, .caja-pathbar button.slider-button:checked, .caja-pathbar button.slider-button:checked:hover label, .caja-pathbar button.slider-button:checked:hover image, .caja-pathbar button.slider-button:checked:hover, .caja-pathbar button.text-button:active label, .caja-pathbar button.text-button:active image, .caja-pathbar button.text-button:active, .caja-pathbar button.text-button:checked label, .caja-pathbar button.text-button:checked image, .caja-pathbar button.text-button:checked, .caja-pathbar button.text-button:checked:hover label, .caja-pathbar button.text-button:checked:hover image, .caja-pathbar button.text-button:checked:hover, .caja-pathbar button.image-button:active label, .caja-pathbar button.image-button:active image, .caja-pathbar button.image-button:active, .caja-pathbar button.image-button:checked label, .caja-pathbar button.image-button:checked image, .caja-pathbar button.image-button:checked, .caja-pathbar button.image-button:checked:hover label, .caja-pathbar button.image-button:checked:hover image, .caja-pathbar button.image-button:checked:hover {
+  color: #ffffff;
+}
+
+.caja-navigation-window paned > box {
+  background-color: #2B3143;
+}
+.caja-navigation-window paned > box label, .caja-navigation-window paned > box image, .caja-navigation-window paned > box {
+  color: rgba(255, 255, 255, 0.8);
+}
+.caja-navigation-window paned > box button.image-button {
+  color: rgba(255, 255, 255, 0.8);
+  outline-offset: -3px;
+  background-color: rgba(43, 49, 67, 0);
+  border-color: rgba(43, 49, 67, 0);
+}
+.caja-navigation-window paned > box button.image-button:backdrop {
+  opacity: 0.3;
+}
+.caja-navigation-window paned > box button.image-button:backdrop label, .caja-navigation-window paned > box button.image-button:backdrop {
+  color: rgba(255, 255, 255, 0.8);
+}
+.caja-navigation-window paned > box button.image-button:hover {
+  border-color: rgba(19, 22, 30, 0.37);
+  background-color: #3f4862;
+  color: rgba(255, 255, 255, 0.56);
+}
+.caja-navigation-window paned > box button.image-button:active, .caja-navigation-window paned > box button.image-button:checked {
+  color: #ffffff;
+  border-color: #47516e;
+  background-color: #47516e;
+  background-clip: padding-box;
+}
+.caja-navigation-window paned > box button.image-button:disabled {
+  background-color: rgba(43, 49, 67, 0);
+  border-color: rgba(43, 49, 67, 0);
+}
+.caja-navigation-window paned > box button.image-button:disabled label, .caja-navigation-window paned > box button.image-button:disabled {
+  color: rgba(255, 255, 255, 0.35);
+}
+.caja-navigation-window paned > box button.image-button:disabled:active, .caja-navigation-window paned > box button.image-button:disabled:checked {
+  color: rgba(255, 255, 255, 0.75);
+  border-color: rgba(43, 49, 67, 0.65);
+  background-color: rgba(43, 49, 67, 0.65);
+}
+.caja-navigation-window paned > separator {
+  background: image(rgba(25, 29, 39, 0.95));
 }
 
 .open-document-selector-treeview.view, iconview.open-document-selector-treeview {
