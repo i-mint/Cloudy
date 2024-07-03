@@ -311,6 +311,52 @@ treeview entry.flat:focus, treeview entry:focus {
   border-color: #56648A;
 }
 
+.entry-tag {
+  padding: 4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border-style: none;
+  color: rgba(255, 255, 255, 0.8);
+  outline-offset: -3px;
+  background-color: rgba(86, 100, 138, 0);
+  border-color: rgba(86, 100, 138, 0);
+}
+:dir(ltr) .entry-tag {
+  margin-left: 8px;
+  margin-right: -5px;
+}
+:dir(rtl) .entry-tag {
+  margin-left: -5px;
+  margin-right: 8px;
+}
+.entry-tag:hover {
+  border-color: rgba(74, 86, 119, 0.55);
+  background-color: #6e7da5;
+  color: rgba(255, 255, 255, 0.56);
+}
+:backdrop .entry-tag {
+  background-color: rgba(86, 100, 138, 0);
+  border-color: rgba(86, 100, 138, 0);
+}
+:backdrop .entry-tag label, :backdrop .entry-tag {
+  color: rgba(255, 255, 255, 0.35);
+}
+.entry-tag.button {
+  color: rgba(255, 255, 255, 0.8);
+  outline-offset: -3px;
+  background-color: rgba(86, 100, 138, 0);
+  border-color: rgba(86, 100, 138, 0);
+}
+:not(:backdrop) .entry-tag.button:hover {
+  border: 1px solid rgba(74, 86, 119, 0.55);
+  color: rgba(255, 255, 255, 0.56);
+}
+:not(:backdrop) .entry-tag.button:active {
+  color: #ffffff;
+  border-color: #7b88ad;
+  background-color: #7b88ad;
+}
+
 @keyframes needs_attention {
   from {
     background-image: -gtk-gradient(radial, center center, 0, center center, 0.01, to(#56648A), to(transparent));
