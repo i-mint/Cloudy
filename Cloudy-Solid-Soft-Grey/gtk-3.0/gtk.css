@@ -2260,8 +2260,8 @@ popover.background > .inline-toolbar {
 popover.background button,
 popover.menu stack button:not(.flat):not(.toggle):not(.switcher) {
   color: #3d4047;
-  border-color: transparent;
-  background-color: transparent;
+  border-color: #d4d4d4;
+  background-color: #ebebeb;
 }
 popover.background button:backdrop,
 popover.menu stack button:not(.flat):not(.toggle):not(.switcher):backdrop {
@@ -2275,9 +2275,9 @@ popover.menu stack button:not(.flat):not(.toggle):not(.switcher) {
 }
 popover.background button:hover,
 popover.menu stack button:not(.flat):not(.toggle):not(.switcher):hover {
-  color: #3d4047;
-  border-color: transparent;
-  background-color: #ebebeb;
+  color: #2f3137;
+  border-color: #d4d4d4;
+  background-color: #f8f8f8;
 }
 popover.background button:hover label, popover.background button:hover image,
 popover.menu stack button:not(.flat):not(.toggle):not(.switcher):hover label,
@@ -2289,14 +2289,14 @@ popover.menu stack button:not(.flat):not(.toggle):not(.switcher):active,
 popover.menu stack button:not(.flat):not(.toggle):not(.switcher):focus,
 popover.menu stack button:not(.flat):not(.toggle):not(.switcher):checked {
   color: #ffffff;
-  border-color: transparent;
+  border-color: #d4d4d4;
   background-color: #474747;
 }
 popover.background button:active:backdrop, popover.background button:focus:backdrop, popover.background button:checked:backdrop,
 popover.menu stack button:not(.flat):not(.toggle):not(.switcher):active:backdrop,
 popover.menu stack button:not(.flat):not(.toggle):not(.switcher):focus:backdrop,
 popover.menu stack button:not(.flat):not(.toggle):not(.switcher):checked:backdrop {
-  color: rgba(255, 255, 255, 0.67);
+  color: rgba(255, 255, 255, 0.6);
 }
 popover.background button:active label, popover.background button:active image, popover.background button:focus label, popover.background button:focus image, popover.background button:checked label, popover.background button:checked image,
 popover.menu stack button:not(.flat):not(.toggle):not(.switcher):active label,
@@ -2309,9 +2309,13 @@ popover.menu stack button:not(.flat):not(.toggle):not(.switcher):checked image {
 }
 popover.background button:disabled,
 popover.menu stack button:not(.flat):not(.toggle):not(.switcher):disabled {
+  border-color: rgba(212, 212, 212, 0.55);
+  background-color: rgba(235, 235, 235, 0.55);
+}
+popover.background button:disabled label, popover.background button:disabled,
+popover.menu stack button:not(.flat):not(.toggle):not(.switcher):disabled label,
+popover.menu stack button:not(.flat):not(.toggle):not(.switcher):disabled {
   color: rgba(61, 64, 71, 0.55);
-  border-color: transparent;
-  background-color: transparent;
 }
 popover.background button:disabled label, popover.background button:disabled image,
 popover.menu stack button:not(.flat):not(.toggle):not(.switcher):disabled label,
