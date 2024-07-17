@@ -947,9 +947,7 @@ viewswitcher > box > button.radio:hover, viewswitcher > box > button.radio:activ
 
 .linked:not(.vertical) > combobox > box > button.combo:dir(ltr), .linked:not(.vertical) > combobox > box > button.combo:dir(rtl), .panel.xfce4-panel #pulseaudio-button > window.popup.csd .linked button, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:hover, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:active, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:checked, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:disabled, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button,
 .primary-toolbar .linked:not(.vertical).path-bar > button,
-headerbar .linked:not(.vertical).path-bar > button,
-.primary-toolbar .path-bar-box.horizontal > .linked > button,
-headerbar .path-bar-box.horizontal > .linked > button, .night-light-indicator spinbutton:not(.vertical) button, .night-light-indicator spinbutton:not(.vertical) entry,
+headerbar .linked:not(.vertical).path-bar > button, .night-light-indicator spinbutton:not(.vertical) button, .night-light-indicator spinbutton:not(.vertical) entry,
 spinbutton:not(.vertical) button,
 spinbutton:not(.vertical) entry, .linked:not(.vertical) > entry, .linked:not(.vertical) > entry:focus, .inline-toolbar button, .inline-toolbar button:backdrop, .linked:not(.vertical) > button, .linked:not(.vertical) > button:hover, .linked:not(.vertical) > button:active, .linked:not(.vertical) > button:checked, toolbar.inline-toolbar toolbutton > button.flat, .inline-toolbar toolbutton > button.flat {
   border-radius: 0;
@@ -959,8 +957,6 @@ spinbutton:not(.vertical) entry, .linked:not(.vertical) > entry, .linked:not(.ve
 .panel.xfce4-panel #pulseaudio-button > window.popup.csd .linked button:first-child, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:first-child, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:first-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:first-child,
 .primary-toolbar .linked:not(.vertical).path-bar > button:first-child,
 headerbar .linked:not(.vertical).path-bar > button:first-child,
-.primary-toolbar .path-bar-box.horizontal > .linked > button:first-child,
-headerbar .path-bar-box.horizontal > .linked > button:first-child,
 spinbutton:not(.vertical) button:first-child,
 spinbutton:not(.vertical) entry:first-child, .linked:not(.vertical) > entry:first-child, .inline-toolbar button:first-child, .inline-toolbar button:first-child:backdrop, .linked:not(.vertical) > button:first-child {
   border-top-left-radius: 4px;
@@ -969,8 +965,6 @@ spinbutton:not(.vertical) entry:first-child, .linked:not(.vertical) > entry:firs
 .panel.xfce4-panel #pulseaudio-button > window.popup.csd .linked button:last-child, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:last-child, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child,
 .primary-toolbar .linked:not(.vertical).path-bar > button:last-child,
 headerbar .linked:not(.vertical).path-bar > button:last-child,
-.primary-toolbar .path-bar-box.horizontal > .linked > button:last-child,
-headerbar .path-bar-box.horizontal > .linked > button:last-child,
 spinbutton:not(.vertical) button:last-child,
 spinbutton:not(.vertical) entry:last-child, .linked:not(.vertical) > entry:last-child, .inline-toolbar button:last-child, .inline-toolbar button:last-child:backdrop, .linked:not(.vertical) > button:last-child {
   border-top-right-radius: 4px;
@@ -980,8 +974,6 @@ spinbutton:not(.vertical) entry:last-child, .linked:not(.vertical) > entry:last-
 .panel.xfce4-panel #pulseaudio-button > window.popup.csd .linked button:only-child, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:only-child, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child,
 .primary-toolbar .linked:not(.vertical).path-bar > button:only-child,
 headerbar .linked:not(.vertical).path-bar > button:only-child,
-.primary-toolbar .path-bar-box.horizontal > .linked > button:only-child,
-headerbar .path-bar-box.horizontal > .linked > button:only-child,
 spinbutton:not(.vertical) button:only-child,
 spinbutton:not(.vertical) entry:only-child, .linked:not(.vertical) > entry:only-child, .inline-toolbar button:only-child, .inline-toolbar button:only-child:backdrop, .linked:not(.vertical) > button:only-child {
   border-radius: 4px;
@@ -1553,9 +1545,7 @@ headerbar .linked:not(.vertical):not(.path-bar) > button:not(:checked):not(:acti
 }
 .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button,
 .primary-toolbar .linked:not(.vertical).path-bar > button,
-headerbar .linked:not(.vertical).path-bar > button,
-.primary-toolbar .path-bar-box.horizontal > .linked > button,
-headerbar .path-bar-box.horizontal > .linked > button {
+headerbar .linked:not(.vertical).path-bar > button {
   color: rgba(255, 255, 255, 0.56);
   background-color: transparent;
   border-color: transparent;
@@ -1565,18 +1555,12 @@ headerbar .path-bar-box.horizontal > .linked > button {
 .primary-toolbar .linked:not(.vertical).path-bar > button label,
 headerbar .linked:not(.vertical).path-bar > button label,
 .primary-toolbar .linked:not(.vertical).path-bar > button image,
-headerbar .linked:not(.vertical).path-bar > button image,
-.primary-toolbar .path-bar-box.horizontal > .linked > button label,
-headerbar .path-bar-box.horizontal > .linked > button label,
-.primary-toolbar .path-bar-box.horizontal > .linked > button image,
-headerbar .path-bar-box.horizontal > .linked > button image {
+headerbar .linked:not(.vertical).path-bar > button image {
   color: inherit;
 }
 .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover,
 .primary-toolbar .linked:not(.vertical).path-bar > button:hover,
-headerbar .linked:not(.vertical).path-bar > button:hover,
-.primary-toolbar .path-bar-box.horizontal > .linked > button:hover,
-headerbar .path-bar-box.horizontal > .linked > button:hover {
+headerbar .linked:not(.vertical).path-bar > button:hover {
   color: rgba(255, 255, 255, 0.73);
   background-color: #5e6d97;
   border-color: #5e6d97;
@@ -1587,22 +1571,14 @@ headerbar .path-bar-box.horizontal > .linked > button:hover {
 .primary-toolbar .linked:not(.vertical).path-bar > button:hover label,
 headerbar .linked:not(.vertical).path-bar > button:hover label,
 .primary-toolbar .linked:not(.vertical).path-bar > button:hover image,
-headerbar .linked:not(.vertical).path-bar > button:hover image,
-.primary-toolbar .path-bar-box.horizontal > .linked > button:hover label,
-headerbar .path-bar-box.horizontal > .linked > button:hover label,
-.primary-toolbar .path-bar-box.horizontal > .linked > button:hover image,
-headerbar .path-bar-box.horizontal > .linked > button:hover image {
+headerbar .linked:not(.vertical).path-bar > button:hover image {
   color: inherit;
 }
 .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked,
 .primary-toolbar .linked:not(.vertical).path-bar > button:active,
 headerbar .linked:not(.vertical).path-bar > button:active,
 .primary-toolbar .linked:not(.vertical).path-bar > button:checked,
-headerbar .linked:not(.vertical).path-bar > button:checked,
-.primary-toolbar .path-bar-box.horizontal > .linked > button:active,
-headerbar .path-bar-box.horizontal > .linked > button:active,
-.primary-toolbar .path-bar-box.horizontal > .linked > button:checked,
-headerbar .path-bar-box.horizontal > .linked > button:checked {
+headerbar .linked:not(.vertical).path-bar > button:checked {
   color: #ffffff;
   background-color: #4a5677;
   border-color: #4a5677;
@@ -1617,36 +1593,22 @@ headerbar .linked:not(.vertical).path-bar > button:active image,
 .primary-toolbar .linked:not(.vertical).path-bar > button:checked label,
 headerbar .linked:not(.vertical).path-bar > button:checked label,
 .primary-toolbar .linked:not(.vertical).path-bar > button:checked image,
-headerbar .linked:not(.vertical).path-bar > button:checked image,
-.primary-toolbar .path-bar-box.horizontal > .linked > button:active label,
-headerbar .path-bar-box.horizontal > .linked > button:active label,
-.primary-toolbar .path-bar-box.horizontal > .linked > button:active image,
-headerbar .path-bar-box.horizontal > .linked > button:active image,
-.primary-toolbar .path-bar-box.horizontal > .linked > button:checked label,
-headerbar .path-bar-box.horizontal > .linked > button:checked label,
-.primary-toolbar .path-bar-box.horizontal > .linked > button:checked image,
-headerbar .path-bar-box.horizontal > .linked > button:checked image {
+headerbar .linked:not(.vertical).path-bar > button:checked image {
   color: inherit;
 }
 .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active:active, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active:active,
 .primary-toolbar .linked:not(.vertical).path-bar > button:active:active,
-headerbar .linked:not(.vertical).path-bar > button:active:active,
-.primary-toolbar .path-bar-box.horizontal > .linked > button:active:active,
-headerbar .path-bar-box.horizontal > .linked > button:active:active {
+headerbar .linked:not(.vertical).path-bar > button:active:active {
   color: rgba(255, 255, 255, 0.5);
 }
 .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:disabled, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:disabled,
 .primary-toolbar .linked:not(.vertical).path-bar > button:disabled,
-headerbar .linked:not(.vertical).path-bar > button:disabled,
-.primary-toolbar .path-bar-box.horizontal > .linked > button:disabled,
-headerbar .path-bar-box.horizontal > .linked > button:disabled {
+headerbar .linked:not(.vertical).path-bar > button:disabled {
   color: rgba(255, 255, 255, 0.4);
 }
 .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:backdrop, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:backdrop,
 .primary-toolbar .linked:not(.vertical).path-bar > button:backdrop,
-headerbar .linked:not(.vertical).path-bar > button:backdrop,
-.primary-toolbar .path-bar-box.horizontal > .linked > button:backdrop,
-headerbar .path-bar-box.horizontal > .linked > button:backdrop {
+headerbar .linked:not(.vertical).path-bar > button:backdrop {
   border-color: transparent;
   background-color: transparent;
   background-image: none;
@@ -1661,15 +1623,7 @@ headerbar .linked:not(.vertical).path-bar label.separator,
 .primary-toolbar .linked:not(.vertical).path-bar headerbar .subtitle,
 headerbar .linked:not(.vertical).path-bar .subtitle,
 .primary-toolbar .linked:not(.vertical).path-bar .titlebar:not(headerbar) .subtitle,
-.titlebar:not(headerbar) .primary-toolbar .linked:not(.vertical).path-bar .subtitle,
-.primary-toolbar .path-bar-box.horizontal > .linked .dim-label,
-headerbar .path-bar-box.horizontal > .linked .dim-label,
-.primary-toolbar .path-bar-box.horizontal > .linked label.separator,
-headerbar .path-bar-box.horizontal > .linked label.separator,
-.primary-toolbar .path-bar-box.horizontal > .linked headerbar .subtitle,
-headerbar .path-bar-box.horizontal > .linked .subtitle,
-.primary-toolbar .path-bar-box.horizontal > .linked .titlebar:not(headerbar) .subtitle,
-.titlebar:not(headerbar) .primary-toolbar .path-bar-box.horizontal > .linked .subtitle {
+.titlebar:not(headerbar) .primary-toolbar .linked:not(.vertical).path-bar .subtitle {
   color: transparent;
 }
 .primary-toolbar .linked:not(.vertical):not(.path-bar) > entry + entry, headerbar .linked:not(.vertical):not(.path-bar) > entry + entry {
@@ -6400,12 +6354,62 @@ filechooser .nautilus-desktop:backdrop,
 .nautilus-window .nautilus-desktop:backdrop {
   color: rgba(230, 230, 230, 0.78);
 }
+filechooser box.path-bar-box > .linked > button,
+.nautilus-window box.path-bar-box > .linked > button {
+  color: rgba(255, 255, 255, 0.56);
+  background-color: transparent;
+  border-color: transparent;
+  margin: 0 4px;
+  border: none;
+}
+filechooser box.path-bar-box > .linked > button label, filechooser box.path-bar-box > .linked > button image,
+.nautilus-window box.path-bar-box > .linked > button label,
+.nautilus-window box.path-bar-box > .linked > button image {
+  color: inherit;
+}
+filechooser box.path-bar-box > .linked > button:hover,
+.nautilus-window box.path-bar-box > .linked > button:hover {
+  color: rgba(255, 255, 255, 0.73);
+  background-color: #5e6d97;
+  border-color: #5e6d97;
+  border-radius: 4px;
+  margin: 0 4px;
+  border: none;
+}
+filechooser box.path-bar-box > .linked > button:hover label, filechooser box.path-bar-box > .linked > button:hover image,
+.nautilus-window box.path-bar-box > .linked > button:hover label,
+.nautilus-window box.path-bar-box > .linked > button:hover image {
+  color: inherit;
+}
+filechooser box.path-bar-box > .linked > button:active, filechooser box.path-bar-box > .linked > button:checked,
+.nautilus-window box.path-bar-box > .linked > button:active,
+.nautilus-window box.path-bar-box > .linked > button:checked {
+  color: #ffffff;
+  background-color: #4a5677;
+  border-color: #4a5677;
+  border-radius: 4px;
+  margin: 0 4px;
+  border: none;
+}
+filechooser box.path-bar-box > .linked > button:active label, filechooser box.path-bar-box > .linked > button:active image, filechooser box.path-bar-box > .linked > button:checked label, filechooser box.path-bar-box > .linked > button:checked image,
+.nautilus-window box.path-bar-box > .linked > button:active label,
+.nautilus-window box.path-bar-box > .linked > button:active image,
+.nautilus-window box.path-bar-box > .linked > button:checked label,
+.nautilus-window box.path-bar-box > .linked > button:checked image {
+  color: inherit;
+}
+filechooser box.path-bar-box > .linked > button:active:active, filechooser box.path-bar-box > .linked > button:checked:active,
+.nautilus-window box.path-bar-box > .linked > button:active:active,
+.nautilus-window box.path-bar-box > .linked > button:checked:active {
+  color: rgba(255, 255, 255, 0.5);
+}
 filechooser box.path-bar-box > .linked > button.image-button:last-child,
 .nautilus-window box.path-bar-box > .linked > button.image-button:last-child {
   color: #ffffff;
   background-color: #4a5677;
   border-color: #4a5677;
   border-radius: 4px;
+  border: none;
   margin: 0 4px;
   padding: 0 4px;
   font-weight: bold;
@@ -6423,6 +6427,7 @@ filechooser box.path-bar-box > .linked > button.image-button.text-button:only-ch
 .nautilus-window box.path-bar-box > .linked > button.image-button.text-button:only-child {
   padding-top: 2px;
   padding-bottom: 2px;
+  border: none;
 }
 filechooser box.path-bar-box > .linked > button.image-button.text-button:only-child label, filechooser box.path-bar-box > .linked > button.image-button.text-button:only-child image,
 .nautilus-window box.path-bar-box > .linked > button.image-button.text-button:only-child label,
