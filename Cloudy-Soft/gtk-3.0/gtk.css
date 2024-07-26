@@ -4416,6 +4416,17 @@ terminal-window notebook > header.top button,
 .caja-notebook {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
+.caja-notebook tabs > tab.reorderable-page > box > button.flat image {
+  margin: 1px 0;
+  padding: 0 2px;
+  border-radius: 4px;
+}
+.caja-notebook tabs > tab.reorderable-page > box > button.flat:hover image {
+  background-color: rgba(255, 255, 255, 0.38);
+}
+.caja-notebook tabs > tab.reorderable-page > box > button.flat:active image {
+  background-color: #f13039;
+}
 
 .caja-navigation-window toolbar.horizontal.primary-toolbar, .caja-navigation-window .horizontal.primary-toolbar.inline-toolbar {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -5432,22 +5443,15 @@ popover .sidebar row:active:backdrop, popover .sidebar row:checked:backdrop, pop
   color: rgba(61, 64, 71, 0.67);
 }
 .thunar notebook tabs > tab.reorderable-page button.flat image {
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 8px;
-  padding: 2px;
-  border: 2px solid transparent;
+  margin: 2px 0;
+  padding: 0 1px;
+  border-radius: 4px;
 }
 .thunar notebook tabs > tab.reorderable-page button.flat:hover image {
-  background-color: #aab3ca;
-  border-radius: 8px;
-  padding: 2px;
-  border: 2px solid transparent;
+  background-color: rgba(255, 255, 255, 0.38);
 }
 .thunar notebook tabs > tab.reorderable-page button.flat:active image {
-  background-color: #cdcfd0;
-  border-radius: 8px;
-  padding: 2px;
-  border: 2px solid transparent;
+  background-color: #f13039;
 }
 .thunar toolbar .linked.path-bar, .thunar .inline-toolbar .linked.path-bar,
 .thunar toolbar entry,
