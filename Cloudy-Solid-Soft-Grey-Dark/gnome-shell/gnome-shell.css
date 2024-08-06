@@ -1043,8 +1043,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .system-menu-action {
   padding: 13px;
   color: #b6babf;
-  border-radius: 32px;
-  /* wish we could do 50% */
+  border-radius: 32px; /* wish we could do 50% */
   border: 1px solid transparent;
 }
 .system-menu-action:hover, .system-menu-action:focus {
@@ -1883,8 +1882,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .dash-label {
   border-radius: 4px;
   padding: 4px 12px;
-  color: rgba(255, 255, 255, 0.78);
-  background-color: rgba(87, 87, 87, 0.95);
+  color: rgba(0, 0, 0, 0.78);
+  background-color: rgba(194, 194, 194, 0.95);
   text-align: center;
   -x-offset: 3px;
 }
