@@ -1246,6 +1246,16 @@ toolbar:not(.inline-toolbar) .linked > entry,
   background-color: #4f4f4f;
 }
 
+.primary-toolbar toolitem > grid > button.flat.scale,
+.primary-toolbar toolitem > grid > button.flat {
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+.primary-toolbar toolitem > button.raised.toggle.popup {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
 .inline-toolbar {
   background-color: #d4d4d4;
   border-style: solid;
