@@ -2446,13 +2446,13 @@ notebook > header > tabs > tab:hover {
 notebook > header > tabs > tab:checked {
   background-color: #2e2e2e;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: normal;
   border-color: #2e2e2e;
 }
 notebook > header > tabs > tab:checked:backdrop {
   background-color: rgba(46, 46, 46, 0.5);
   color: rgba(255, 255, 255, 0.5);
-  font-weight: bold;
+  font-weight: normal;
   border-color: rgba(46, 46, 46, 0.5);
 }
 notebook > header > tabs > tab button.flat {
