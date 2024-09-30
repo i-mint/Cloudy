@@ -5308,6 +5308,13 @@ panel-toplevel.background na-tray-applet {
   color: rgba(61, 64, 71, 0.5);
 }
 
+.mousepad .popup menu > menuitem:hover check:checked {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-selected.png"), url("assets/checkbox-checked-selected@2.png"));
+}
+.mousepad .popup menu > menuitem:hover radio:checked {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-selected.png"), url("assets/radio-checked-selected@2.png"));
+}
+
 .nautilus-window .floating-bar {
   padding: 1px;
   background-color: #56648A;
