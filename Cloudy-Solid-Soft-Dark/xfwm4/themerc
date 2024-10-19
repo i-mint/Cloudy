@@ -13,8 +13,8 @@ title_horizontal_offset=3
 active_text_color=#d5d6d9
 active_text_shadow_color=#d5d6d9
 
-inactive_text_color=#9598a1
-inactive_text_shadow_color=#9598a1
+inactive_text_color=#747885
+inactive_text_shadow_color=#747885
 
 shadow_delta_height=2
 shadow_delta_width=0
