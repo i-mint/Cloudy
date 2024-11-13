@@ -3513,6 +3513,13 @@ filechooser .linked.path-bar > button:active, filechooser .linked.path-bar > but
 filechooser .linked.path-bar > button:active:backdrop, filechooser .linked.path-bar > button:checked:backdrop {
   color: rgba(255, 255, 255, 0.6);
 }
+filechooser .linked.path-bar > button:disabled {
+  border-color: rgba(212, 212, 212, 0.55);
+  background-color: rgba(235, 235, 235, 0.55);
+}
+filechooser .linked.path-bar > button:disabled label, filechooser .linked.path-bar > button:disabled {
+  color: rgba(61, 64, 71, 0.55);
+}
 
 filechooserbutton:drop(active) {
   box-shadow: none;
