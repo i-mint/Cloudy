@@ -735,15 +735,6 @@ button.circular.radio.text-button {
   padding: 4px 6px;
 }
 
-viewswitcher > box > button.radio {
-  margin: 0;
-  padding: 0;
-  border-radius: 0;
-}
-viewswitcher > box > button.radio:hover, viewswitcher > box > button.radio:active, viewswitcher > box > button.radio:checked {
-  border-color: #7b88ad;
-}
-
 .inline-toolbar toolbutton > button {
   color: #3d4047;
   border-color: #d5d6d8;
@@ -1402,6 +1393,34 @@ headerbar separator, headerbar separator.sidebar {
 }
 headerbar:backdrop separator, headerbar:backdrop separator.sidebar {
   background-image: image(#5c6b93);
+}
+headerbar.windowhandle viewswitcher > box > button {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+headerbar.windowhandle viewswitcher > box > button > stack > box {
+  padding: 0 18px;
+}
+headerbar.windowhandle viewswitcher > box > button > stack > box.wide {
+  font-size: 1em;
+}
+headerbar.windowhandle viewswitcher > box > button > stack > box.narrow {
+  font-size: 0.75em;
+}
+headerbar.windowhandle viewswitcher > box > button > stack > box.narrow image {
+  margin-top: 2px;
+}
+headerbar.windowhandle viewswitcher > box > button > stack > box.narrow label {
+  margin-bottom: 2px;
+}
+headerbar.windowhandle viewswitcher > box > button, headerbar.windowhandle viewswitcher > box > button:hover, headerbar.windowhandle viewswitcher > box > button:active, headerbar.windowhandle viewswitcher > box > button:checked {
+  border: none;
+}
+headerbar.windowhandle viewswitcher > box > button:checked {
+  font-weight: bold;
 }
 
 window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, window.csd > .titlebar:not(headerbar), window.csd > .titlebar:not(headerbar):backdrop {
