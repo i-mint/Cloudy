@@ -1098,6 +1098,7 @@ spinbutton:not(.vertical):dir(rtl) button.up {
 spinbutton:not(.vertical) > button + button {
   border-left-style: none;
 }
+.night-light-indicator spinbutton:not(.vertical) > button:hover:not(:active),
 spinbutton:not(.vertical) > button:hover:not(:active),
 spinbutton:not(.vertical) > button:hover + button {
   box-shadow: inset 1px 0 #d4d4d4;
@@ -1106,6 +1107,8 @@ spinbutton:not(.vertical) > button:disabled + button:not(:disabled):not(:active)
 spinbutton:not(.vertical) > button:not(:disabled):not(:active):not(:checked):not(:hover) + button:disabled {
   box-shadow: inset 1px 0 rgba(212, 212, 212, 0.5);
 }
+.night-light-indicator spinbutton:not(.vertical) > button:first-child:hover:not(:active),
+.night-light-indicator spinbutton:not(.vertical) > button.up:dir(rtl):hover:not(:active),
 spinbutton:not(.vertical) > button:first-child:hover:not(:active),
 spinbutton:not(.vertical) > button.up:dir(rtl):hover:not(:active),
 spinbutton:not(.vertical) > entry + button:not(:active):hover {
@@ -1117,10 +1120,13 @@ spinbutton:not(.vertical) > entry:focus + button {
 spinbutton:not(.vertical) > entry:drop(active) + button {
   border-left-color: #F08437;
 }
+.osd .night-light-indicator spinbutton:not(.vertical) > button:hover:not(:active),
 .osd spinbutton:not(.vertical) > button:hover:not(:active),
 .osd spinbutton:not(.vertical) > button:hover + button {
   box-shadow: inset 1px 0 #595959;
 }
+.osd .night-light-indicator spinbutton:not(.vertical) > button:first-child:hover:not(:active),
+.osd .night-light-indicator spinbutton:not(.vertical) > button.up:dir(rtl):hover:not(:active),
 .osd spinbutton:not(.vertical) > button:first-child:hover:not(:active),
 .osd spinbutton:not(.vertical) > button.up:dir(rtl):hover:not(:active),
 .osd spinbutton:not(.vertical) > entry + button:not(:active):hover {
@@ -6065,7 +6071,7 @@ GraniteWidgetsPopOver {
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-GraniteWidgetsPopOver .sidebar.view,
+GraniteWidgetsPopOver .sidebar.view, GraniteWidgetsPopOver iconview.sidebar,
 GraniteWidgetsPopOver * {
   background-color: transparent;
 }
