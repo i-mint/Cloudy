@@ -1098,7 +1098,6 @@ spinbutton:not(.vertical):dir(rtl) button.up {
 spinbutton:not(.vertical) > button + button {
   border-left-style: none;
 }
-.night-light-indicator spinbutton:not(.vertical) > button:hover:not(:active),
 spinbutton:not(.vertical) > button:hover:not(:active),
 spinbutton:not(.vertical) > button:hover + button {
   box-shadow: inset 1px 0 #12161c;
@@ -1107,8 +1106,6 @@ spinbutton:not(.vertical) > button:disabled + button:not(:disabled):not(:active)
 spinbutton:not(.vertical) > button:not(:disabled):not(:active):not(:checked):not(:hover) + button:disabled {
   box-shadow: inset 1px 0 rgba(18, 22, 28, 0.5);
 }
-.night-light-indicator spinbutton:not(.vertical) > button:first-child:hover:not(:active),
-.night-light-indicator spinbutton:not(.vertical) > button.up:dir(rtl):hover:not(:active),
 spinbutton:not(.vertical) > button:first-child:hover:not(:active),
 spinbutton:not(.vertical) > button.up:dir(rtl):hover:not(:active),
 spinbutton:not(.vertical) > entry + button:not(:active):hover {
@@ -1120,13 +1117,10 @@ spinbutton:not(.vertical) > entry:focus + button {
 spinbutton:not(.vertical) > entry:drop(active) + button {
   border-left-color: #F08437;
 }
-.osd .night-light-indicator spinbutton:not(.vertical) > button:hover:not(:active),
 .osd spinbutton:not(.vertical) > button:hover:not(:active),
 .osd spinbutton:not(.vertical) > button:hover + button {
   box-shadow: inset 1px 0 rgba(57, 65, 89, 0.95);
 }
-.osd .night-light-indicator spinbutton:not(.vertical) > button:first-child:hover:not(:active),
-.osd .night-light-indicator spinbutton:not(.vertical) > button.up:dir(rtl):hover:not(:active),
 .osd spinbutton:not(.vertical) > button:first-child:hover:not(:active),
 .osd spinbutton:not(.vertical) > button.up:dir(rtl):hover:not(:active),
 .osd spinbutton:not(.vertical) > entry + button:not(:active):hover {
@@ -4151,28 +4145,28 @@ headerbar button.titlebutton.minimize:active,
   background-image: -gtk-scaled(url("assets/titlebutton-minimize-active-dark.png"), url("assets/titlebutton-minimize-active-dark@2.png"));
 }
 
-.nemo-window .nemo-inactive-pane .iconview:selected, .nemo-window .nemo-inactive-pane .view:selected, .nemo-window .nemo-inactive-pane iconview:selected, .thunar notebook .view:selected, .thunar notebook iconview:selected, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected, flowbox flowboxchild:selected, menuitem.button.flat:active, menuitem.button.flat:active arrow, menuitem.button.flat:selected, menuitem.button.flat:selected arrow,
+.nemo-window .nemo-inactive-pane .iconview:selected, .nemo-window .nemo-inactive-pane .view:selected, .nemo-window .nemo-inactive-pane iconview:selected, .thunar notebook .view:selected, .thunar notebook iconview:selected, paned.gedit-side-panel-paned treeview.view:selected, paned.gedit-side-panel-paned treeview.view:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected, flowbox flowboxchild:selected, menuitem.button.flat:active, menuitem.button.flat:active arrow, menuitem.button.flat:selected, menuitem.button.flat:selected arrow,
 modelbutton.flat:active,
 modelbutton.flat:active arrow,
 modelbutton.flat:selected,
 modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:focus, row:selected, calendar:selected {
   background-color: #2B3143;
 }
-row:selected label, label:selected, .nemo-window .nemo-inactive-pane .iconview:selected, .nemo-window .nemo-inactive-pane .view:selected, .nemo-window .nemo-inactive-pane iconview:selected, .thunar notebook .view:selected, .thunar notebook iconview:selected, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected, flowbox flowboxchild:selected, menuitem.button.flat:active, menuitem.button.flat:active arrow, menuitem.button.flat:selected, menuitem.button.flat:selected arrow,
+row:selected label, label:selected, .nemo-window .nemo-inactive-pane .iconview:selected, .nemo-window .nemo-inactive-pane .view:selected, .nemo-window .nemo-inactive-pane iconview:selected, .thunar notebook .view:selected, .thunar notebook iconview:selected, paned.gedit-side-panel-paned treeview.view:selected, paned.gedit-side-panel-paned treeview.view:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected, flowbox flowboxchild:selected, menuitem.button.flat:active, menuitem.button.flat:active arrow, menuitem.button.flat:selected, menuitem.button.flat:selected arrow,
 modelbutton.flat:active,
 modelbutton.flat:active arrow,
 modelbutton.flat:selected,
 modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:focus, row:selected, calendar:selected {
   color: #ffffff;
 }
-row:selected label:backdrop, label:backdrop:selected, .nemo-window .nemo-inactive-pane .iconview:backdrop:selected, .nemo-window .nemo-inactive-pane .view:backdrop:selected, .nemo-window .nemo-inactive-pane iconview:backdrop:selected, .thunar notebook .view:backdrop:selected, .thunar notebook iconview:backdrop:selected, .nemo-window .nemo-window-pane widget.entry:backdrop:selected, flowbox flowboxchild:backdrop:selected, menuitem.button.flat:backdrop:active, menuitem.button.flat:active arrow:backdrop, menuitem.button.flat:backdrop:selected, menuitem.button.flat:selected arrow:backdrop,
+row:selected label:backdrop, label:backdrop:selected, .nemo-window .nemo-inactive-pane .iconview:backdrop:selected, .nemo-window .nemo-inactive-pane .view:backdrop:selected, .nemo-window .nemo-inactive-pane iconview:backdrop:selected, .thunar notebook .view:backdrop:selected, .thunar notebook iconview:backdrop:selected, paned.gedit-side-panel-paned treeview.view:backdrop:selected, .nemo-window .nemo-window-pane widget.entry:backdrop:selected, flowbox flowboxchild:backdrop:selected, menuitem.button.flat:backdrop:active, menuitem.button.flat:active arrow:backdrop, menuitem.button.flat:backdrop:selected, menuitem.button.flat:selected arrow:backdrop,
 modelbutton.flat:backdrop:active,
 modelbutton.flat:active arrow:backdrop,
 modelbutton.flat:backdrop:selected,
 modelbutton.flat:selected arrow:backdrop, treeview.view:backdrop:selected, row:backdrop:selected, calendar:backdrop:selected {
   color: rgba(255, 255, 255, 0.78);
 }
-row:selected label:disabled, label:disabled:selected, .nemo-window .nemo-inactive-pane .iconview:disabled:selected, .nemo-window .nemo-inactive-pane .view:disabled:selected, .nemo-window .nemo-inactive-pane iconview:disabled:selected, .thunar notebook .view:disabled:selected, .thunar notebook iconview:disabled:selected, .nemo-window .nemo-window-pane widget.entry:disabled:selected, flowbox flowboxchild:disabled:selected, menuitem.button.flat:disabled:active, menuitem.button.flat:active arrow:disabled, menuitem.button.flat:disabled:selected, menuitem.button.flat:selected arrow:disabled,
+row:selected label:disabled, label:disabled:selected, .nemo-window .nemo-inactive-pane .iconview:disabled:selected, .nemo-window .nemo-inactive-pane .view:disabled:selected, .nemo-window .nemo-inactive-pane iconview:disabled:selected, .thunar notebook .view:disabled:selected, .thunar notebook iconview:disabled:selected, paned.gedit-side-panel-paned treeview.view:disabled:selected, .nemo-window .nemo-window-pane widget.entry:disabled:selected, flowbox flowboxchild:disabled:selected, menuitem.button.flat:disabled:active, menuitem.button.flat:active arrow:disabled, menuitem.button.flat:disabled:selected, menuitem.button.flat:selected arrow:disabled,
 modelbutton.flat:disabled:active,
 modelbutton.flat:active arrow:disabled,
 modelbutton.flat:disabled:selected,
@@ -4180,7 +4174,7 @@ modelbutton.flat:selected arrow:disabled, treeview.view:disabled:selected, row:d
   color: #9598a1;
 }
 
-.nemo-window .nemo-inactive-pane .iconview:backdrop:selected, .nemo-window .nemo-inactive-pane .view:backdrop:selected, .nemo-window .nemo-inactive-pane iconview:backdrop:selected, .thunar notebook .view:backdrop:selected, .thunar notebook iconview:backdrop:selected, .nemo-window .nemo-window-pane widget.entry:backdrop:selected, flowbox flowboxchild:backdrop:selected, menuitem.button.flat:backdrop:active, menuitem.button.flat:active arrow:backdrop, menuitem.button.flat:backdrop:selected, menuitem.button.flat:selected arrow:backdrop,
+.nemo-window .nemo-inactive-pane .iconview:backdrop:selected, .nemo-window .nemo-inactive-pane .view:backdrop:selected, .nemo-window .nemo-inactive-pane iconview:backdrop:selected, .thunar notebook .view:backdrop:selected, .thunar notebook iconview:backdrop:selected, paned.gedit-side-panel-paned treeview.view:backdrop:selected, .nemo-window .nemo-window-pane widget.entry:backdrop:selected, flowbox flowboxchild:backdrop:selected, menuitem.button.flat:backdrop:active, menuitem.button.flat:active arrow:backdrop, menuitem.button.flat:backdrop:selected, menuitem.button.flat:selected arrow:backdrop,
 modelbutton.flat:backdrop:active,
 modelbutton.flat:active arrow:backdrop,
 modelbutton.flat:backdrop:selected,
@@ -4775,31 +4769,26 @@ entry.caja-location-entry:disabled label, entry.caja-location-entry:disabled ima
   border-right-width: 1px;
 }
 
-paned.gedit-side-panel-paned treeview.view {
-  background-color: rgba(43, 49, 67, 0.95);
-  color: rgba(255, 255, 255, 0.56);
-  border-color: #0e1114;
-}
 paned.gedit-side-panel-paned treeview.view:hover {
-  color: rgba(255, 255, 255, 0.73);
-  background-color: #31384c;
+  color: #b6babf;
+  background-color: #1d2329;
 }
 paned.gedit-side-panel-paned treeview.view:hover:backdrop {
-  color: rgba(255, 255, 255, 0.63);
+  color: rgba(182, 186, 191, 0.85);
 }
-paned.gedit-side-panel-paned treeview.view:selected, paned.gedit-side-panel-paned treeview.view:selected:focus, paned.gedit-side-panel-paned treeview.view:checked, paned.gedit-side-panel-paned treeview.view:checked:focus {
-  background-color: #252a3a;
-  color: rgba(255, 255, 255, 0.89);
-}
-paned.gedit-side-panel-paned treeview.view:selected:backdrop, paned.gedit-side-panel-paned treeview.view:selected:focus:backdrop, paned.gedit-side-panel-paned treeview.view:checked:backdrop, paned.gedit-side-panel-paned treeview.view:checked:focus:backdrop {
+paned.gedit-side-panel-paned treeview.view:selected:backdrop, paned.gedit-side-panel-paned treeview.view:selected:focus:backdrop {
   color: rgba(255, 255, 255, 0.67);
 }
+paned.gedit-side-panel-paned treeview.view:selected:hover {
+  color: #ffffff;
+  background-color: #272c3c;
+}
 paned.gedit-side-panel-paned treeview.view:backdrop {
-  color: rgba(255, 255, 255, 0.28);
+  color: rgba(182, 186, 191, 0.5);
   border-color: #0e1114;
 }
 paned.gedit-side-panel-paned treeview.view.separator, paned.gedit-side-panel-paned treeview.view.separator:backdrop {
-  color: rgba(43, 49, 67, 0.95);
+  color: #14181f;
 }
 
 .pluma-window statusbar frame > border {
@@ -6064,7 +6053,7 @@ GraniteWidgetsPopOver {
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-GraniteWidgetsPopOver .sidebar.view, GraniteWidgetsPopOver iconview.sidebar,
+GraniteWidgetsPopOver .sidebar.view,
 GraniteWidgetsPopOver * {
   background-color: transparent;
 }
