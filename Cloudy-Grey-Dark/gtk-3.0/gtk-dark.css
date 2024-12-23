@@ -1433,6 +1433,10 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
   background-image: image(rgba(51, 51, 51, 0.97));
 }
 
+.csd headerbar headerbar, .csd headerbar headerbar:backdrop {
+  background-color: transparent;
+}
+
 .primary-toolbar:not(.libreoffice-toolbar) separator, headerbar separator.titlebutton,
 .titlebar:not(headerbar) separator.titlebutton {
   min-width: 1px;
