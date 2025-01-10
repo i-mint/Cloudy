@@ -2686,6 +2686,22 @@ switch.restricts:active, switch.restricts:checked {
   background-image: -gtk-scaled(url("assets/switch-restricts-active.png"), url("assets/switch-restricts-active@2.png"));
 }
 
+checkbutton check:hover, popover check:hover {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-selected.png"), url("assets/checkbox-unchecked-selected-selected@2.png"));
+}
+
+checkbutton check:checked:hover, popover check:checked:hover {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-selected.png"), url("assets/checkbox-checked-selected-selected@2.png"));
+}
+
+radiobutton radio:hover, popover radio:hover {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-selected.png"), url("assets/radio-unchecked-selected-selected@2.png"));
+}
+
+radiobutton radio:checked:hover, popover radio:checked:hover {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-selected.png"), url("assets/radio-checked-selected-selected@2.png"));
+}
+
 .check,
 check,
 treeview.check {
