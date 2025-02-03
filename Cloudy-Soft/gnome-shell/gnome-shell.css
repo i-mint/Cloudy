@@ -115,17 +115,25 @@ StScrollBar StBin#trough {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
 }
-StScrollBar StButton#vhandle, StScrollBar StButton#hhandle {
-  border-radius: 4px;
-  background-color: #9d9fa2;
+StScrollBar StButton#vhandle,
+StScrollBar StButton#hhandle {
+  border-radius: 8px;
+  background-color: #40485d;
   border: 0px solid;
   margin: 0px;
 }
-StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
-  background-color: #adafb1;
+StScrollBar StButton#vhandle:hover,
+StScrollBar StButton#hhandle:hover {
+  background-color: #74809e;
 }
-StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
-  background-color: #56648A;
+StScrollBar StButton#vhandle:active, StScrollBar StButton#vhandle:active:hover,
+StScrollBar StButton#hhandle:active,
+StScrollBar StButton#hhandle:active:hover {
+  background-color: #8c96af;
+}
+StScrollBar StButton#vhandle:disabled,
+StScrollBar StButton#hhandle:disabled {
+  background-color: transparent;
 }
 
 .slider {
