@@ -1264,14 +1264,14 @@ StScrollBar StButton#hhandle:disabled {
 }
 .calendar .calendar-week-number {
   background-color: transparent;
+  font-size: 0.6em;
   font-weight: bold !important;
   height: 25px;
   width: 25px;
   border-radius: 6px;
   margin: 4px;
   color: #686d73;
-  padding: 0;
-  text-align: center;
+  padding: 2px 2px 0 0;
   border: 1px solid #12161c;
 }
 
@@ -1804,6 +1804,7 @@ StScrollBar StButton#hhandle:disabled {
 .search-section .search-section-separator {
   height: 0;
   background-color: transparent;
+  -margin-horizontal: 1.5em;
 }
 
 .search-section-content {
@@ -1817,34 +1818,40 @@ StScrollBar StButton#hhandle:disabled {
   color: rgba(255, 255, 255, 0.78);
 }
 
+.grid-search-results {
+  spacing: 36px;
+}
+
 .list-search-results {
-  spacing: 3px;
+  spacing: 6px;
 }
 
-.search-section-separator {
-  background-color: rgba(255, 255, 255, 0.2);
-  -margin-horizontal: 1.5em;
-  height: 1px;
-}
-
-.list-search-result-content {
+.list-search-results .list-search-result-content {
   spacing: 12px;
   padding: 12px;
 }
-
-.list-search-result-title {
+.list-search-results .list-search-result-title {
+  color: #b6babf;
+  spacing: 12px;
   font-size: 1.5em;
 }
-.list-search-result-title label, .list-search-result-title StLabel, .list-search-result-title image, .list-search-result-title StIcon, .list-search-result-title {
+.list-search-results .list-search-result-title label, .list-search-results .list-search-result-title StLabel, .list-search-results .list-search-result-title image, .list-search-results .list-search-result-title StIcon, .list-search-results .list-search-result-title {
   color: rgba(255, 255, 255, 0.78);
 }
-
-.list-search-result-description label, .list-search-result-description StLabel, .list-search-result-description image, .list-search-result-description StIcon, .list-search-result-description {
+.list-search-results .list-search-result-description label, .list-search-results .list-search-result-description StLabel, .list-search-results .list-search-result-description image, .list-search-results .list-search-result-description StIcon, .list-search-results .list-search-result-description {
   color: rgba(255, 255, 255, 0.78);
 }
 
 .search-provider-icon {
   padding: 15px;
+}
+.search-provider-icon .list-search-provider-content {
+  spacing: 12px;
+}
+.search-provider-icon .list-search-provider-content .list-search-provider-details {
+  width: 120px;
+  margin-top: 0;
+  color: rgba(235, 235, 235, 0.78);
 }
 
 .search-provider-icon-more {
