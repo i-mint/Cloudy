@@ -1374,8 +1374,7 @@ headerbar.default-decoration, .csd headerbar.default-decoration, headerbar.defau
 }
 
 headerbar entry,
-headerbar button,
-headerbar separator {
+headerbar button {
   margin-top: 4px;
   margin-bottom: 4px;
 }
@@ -1433,7 +1432,7 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
   box-shadow: none;
 }
 .titlebar:not(headerbar) > separator {
-  background-image: image(rgba(35, 40, 55, 0.97));
+  background-image: linear-gradient(to bottom, rgba(35, 40, 55, 0.97), rgba(35, 40, 55, 0.97));
 }
 
 .csd headerbar headerbar, .csd headerbar headerbar:backdrop {
@@ -3349,18 +3348,19 @@ separator:backdrop {
   background-color: transparent;
 }
 
-separator.sidebar, hdyleaflet > separator {
-  background-color: rgba(33, 38, 51, 0.95);
+separator.sidebar:dir(ltr), separator.sidebar:dir(rtl), separator.sidebar.left, separator.sidebar.left:dir(rtl), separator.sidebar.right {
+  background-image: linear-gradient(to bottom, #0e1114, #0e1114);
+  border: 0;
 }
-separator.sidebar:backdrop, hdyleaflet > separator:backdrop {
-  background-color: rgba(33, 38, 51, 0.95);
-}
-
-headerbar separator, headerbar separator.sidebar {
+.titlebar separator.sidebar:dir(ltr), .titlebar separator.sidebar:dir(rtl), .titlebar separator.sidebar.left, .titlebar separator.sidebar.left:dir(rtl), .titlebar separator.sidebar.right {
   background-image: linear-gradient(to bottom, rgba(35, 40, 55, 0.97), rgba(35, 40, 55, 0.97));
 }
-headerbar separator:backdrop, headerbar separator.sidebar:backdrop {
-  background-image: linear-gradient(to bottom, rgba(43, 49, 67, 0.97), rgba(43, 49, 67, 0.97));
+separator.sidebar.selection-mode, .selection-mode separator.sidebar {
+  background-image: linear-gradient(to bottom, #1f2330, #1f2330);
+}
+
+hdyleaflet:not(.titlebar) > separator {
+  background-image: linear-gradient(to bottom, #0e1114, #0e1114);
 }
 
 list {
@@ -6553,7 +6553,7 @@ filechooser actionbar label, filechooser actionbar combobox {
 }
 
 .gedit-side-panel-paned > separator {
-  background-image: linear-gradient(to bottom, rgba(29, 33, 45, 0.95), rgba(29, 33, 45, 0.95));
+  background-image: linear-gradient(to bottom, rgba(35, 40, 55, 0.97), rgba(35, 40, 55, 0.97));
 }
 
 .gedit-bottom-panel-paned > separator {

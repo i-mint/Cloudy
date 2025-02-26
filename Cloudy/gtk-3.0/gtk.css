@@ -1374,8 +1374,7 @@ headerbar.default-decoration, .csd headerbar.default-decoration, headerbar.defau
 }
 
 headerbar entry,
-headerbar button,
-headerbar separator {
+headerbar button {
   margin-top: 6px;
   margin-bottom: 6px;
 }
@@ -1390,12 +1389,6 @@ headerbar:last-child, headerbar:last-child:backdrop {
 }
 .maximized headerbar:last-child, .tiled headerbar:last-child, .maximized headerbar:last-child:backdrop, .tiled headerbar:last-child:backdrop {
   border-radius: 0;
-}
-headerbar separator, headerbar separator.sidebar {
-  background-image: image(rgba(86, 100, 138, 0.95));
-}
-headerbar:backdrop separator, headerbar:backdrop separator.sidebar {
-  background-image: image(rgba(92, 107, 147, 0.95));
 }
 headerbar.windowhandle viewswitcher > box > button {
   margin-top: 0;
@@ -1433,7 +1426,7 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
   box-shadow: none;
 }
 .titlebar:not(headerbar) > separator {
-  background-image: image(rgba(72, 84, 116, 0.95));
+  background-image: linear-gradient(to bottom, rgba(72, 84, 116, 0.95), rgba(72, 84, 116, 0.95));
 }
 
 .csd headerbar headerbar, .csd headerbar headerbar:backdrop {
@@ -3360,20 +3353,19 @@ separator:backdrop {
   background-color: transparent;
 }
 
-separator.sidebar,
-hdyleaflet > separator {
-  background-color: #d2d4d5;
+separator.sidebar:dir(ltr), separator.sidebar:dir(rtl), separator.sidebar.left, separator.sidebar.left:dir(rtl), separator.sidebar.right {
+  background-image: linear-gradient(to bottom, #c5c7c9, #c5c7c9);
+  border: 0;
 }
-separator.sidebar:backdrop,
-hdyleaflet > separator:backdrop {
-  background-color: #d8d9da;
-}
-
-headerbar separator, headerbar separator.sidebar {
+.titlebar separator.sidebar:dir(ltr), .titlebar separator.sidebar:dir(rtl), .titlebar separator.sidebar.left, .titlebar separator.sidebar.left:dir(rtl), .titlebar separator.sidebar.right {
   background-image: linear-gradient(to bottom, rgba(72, 84, 116, 0.95), rgba(72, 84, 116, 0.95));
 }
-headerbar separator:backdrop, headerbar separator.sidebar:backdrop {
-  background-image: linear-gradient(to bottom, rgba(86, 100, 138, 0.95), rgba(86, 100, 138, 0.95));
+separator.sidebar.selection-mode, .selection-mode separator.sidebar {
+  background-image: linear-gradient(to bottom, #4a5677, #4a5677);
+}
+
+hdyleaflet:not(.titlebar) > separator {
+  background-image: linear-gradient(to bottom, #c5c7c9, #c5c7c9);
 }
 
 list {
@@ -6549,7 +6541,7 @@ filechooser actionbar label, filechooser actionbar combobox {
 }
 
 .gedit-side-panel-paned > separator {
-  background-image: linear-gradient(to bottom, rgba(72, 84, 116, 0.95), rgba(72, 84, 116, 0.95));
+  background-image: linear-gradient(to bottom, #c5c7c9, #c5c7c9);
 }
 
 .gedit-bottom-panel-paned > separator {
