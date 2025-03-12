@@ -3416,6 +3416,7 @@ row.activatable:selected.has-open-popup, row.activatable:selected:hover {
   color: rgba(0, 0, 0, 0.78);
   border-color: #a6a6a6;
   background-color: #949494;
+  border-radius: 4px;
 }
 .app-notification button label,
 .app-notification button image {
@@ -3427,16 +3428,16 @@ row.activatable:selected.has-open-popup, row.activatable:selected:hover {
 .app-notification button:hover {
   color: rgba(0, 0, 0, 0.78);
   border-color: #a6a6a6;
-  background-color: #a6a6a6;
+  background-color: #7b7b7b;
 }
 .app-notification button:hover label,
 .app-notification button:hover image {
   color: inherit;
 }
 .app-notification button:active, .app-notification button:checked {
-  color: black;
+  color: #ffffff;
   border-color: #a6a6a6;
-  background-color: #b8b8b8;
+  background-color: #f13039;
   background-clip: padding-box;
 }
 .app-notification button:active label,
