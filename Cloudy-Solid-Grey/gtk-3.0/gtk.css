@@ -6763,9 +6763,9 @@ window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):
   box-shadow: none;
 }
 .budgie-menu entry {
-  border-color: transparent;
+  border: none;
   border-bottom: 2px solid #474747;
-  border-radius: 0;
+  border-radius: 4px 4px 0 0;
   background: transparent;
   padding: 9px 4px;
   box-shadow: none;
@@ -6833,9 +6833,6 @@ window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):
 .budgie-popover:not(.csd) list button,
 .budgie-popover:not(.csd) row button {
   margin: 1px 0;
-  padding: 4px 6px;
-}
-.budgie-popover:not(.csd).workspace-popover button {
   padding: 4px 6px;
 }
 .budgie-popover:not(.csd) stack.icon-popover-stack {
@@ -7057,48 +7054,6 @@ window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):
 .budgie-panel separator {
   background-color: rgba(255, 255, 255, 0.18);
 }
-.budgie-panel .workspace-switcher .workspace-layout .workspace-item {
-  background-color: #454545;
-  border-radius: 0;
-}
-.budgie-panel .workspace-switcher .workspace-layout .workspace-item label, .budgie-panel .workspace-switcher .workspace-layout .workspace-item image {
-  color: rgba(255, 255, 255, 0.78);
-}
-.top .budgie-panel .workspace-switcher .workspace-layout .workspace-item, .bottom .budgie-panel .workspace-switcher .workspace-layout .workspace-item {
-  border-right: 1px solid rgba(255, 255, 255, 0);
-}
-.left .budgie-panel .workspace-switcher .workspace-layout .workspace-item, .right .budgie-panel .workspace-switcher .workspace-layout .workspace-item {
-  border-bottom: 1px solid rgba(255, 255, 255, 0);
-}
-.budgie-panel .workspace-switcher .workspace-layout .workspace-item.current-workspace {
-  background: image(#5a5a5a);
-}
-.budgie-panel .workspace-switcher .workspace-layout .workspace-item button.workspace-icon-button {
-  padding: 4px;
-}
-.budgie-panel .workspace-switcher .workspace-layout .workspace-item label.workspace-more-label {
-  font-weight: normal;
-  color: cyan;
-  opacity: 1;
-}
-.budgie-panel .workspace-switcher button.image-button.workspace-add-button {
-  background-color: #454545;
-  border-radius: 0;
-}
-.budgie-panel .workspace-switcher button.image-button.workspace-add-button label, .budgie-panel .workspace-switcher button.image-button.workspace-add-button image {
-  color: rgba(255, 255, 255, 0.78);
-}
-.budgie-panel .workspace-switcher button.image-button.workspace-add-button:active {
-  background-color: #5a5a5a;
-  border: none;
-}
-.budgie-panel .workspace-switcher button.image-button.workspace-add-button:active label, .budgie-panel .workspace-switcher button.image-button.workspace-add-button:active image {
-  color: rgba(255, 255, 255, 0.78);
-}
-.budgie-panel.transparent .workspace-layout .workspace-item,
-.budgie-panel.transparent .workspace-layout .workspace-item.current-workspace {
-  background: transparent;
-}
 .budgie-panel.transparent button.flat.running,
 .budgie-panel.transparent button.image-button.workspace-add-button {
   background: image(transparent);
@@ -7108,6 +7063,56 @@ window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):
 }
 .left .budgie-panel button.flat:not(.raven-trigger):not(.budgie-menu-launcher), .right .budgie-panel button.flat:not(.raven-trigger):not(.budgie-menu-launcher) {
   padding: 2px 0;
+}
+
+.workspace-popover frame.container {
+  padding: 0;
+}
+.workspace-popover .workspace-popover-button-box > button {
+  padding: 4px 6px;
+}
+
+.workspace-switcher .workspace-item {
+  background-color: #454545;
+  color: rgba(255, 255, 255, 0.78);
+}
+.workspace-switcher .workspace-item.current-workspace {
+  background-color: #5a5a5a;
+}
+.workspace-switcher .workspace-layout {
+  background-color: transparent;
+}
+.bottom revealer > .workspace-item, .top revealer > .workspace-item {
+  border-right: 2px solid rgba(255, 255, 255, 0.18);
+}
+.bottom revealer:first-child > .workspace-item, .top revealer:first-child > .workspace-item {
+  border-left: 2px solid rgba(255, 255, 255, 0.18);
+}
+
+.left revealer > .workspace-item grid, .right revealer > .workspace-item grid {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.18);
+}
+.left revealer:first-child > .workspace-item, .right revealer:first-child > .workspace-item {
+  border-top: 2px solid rgba(255, 255, 255, 0.18);
+}
+
+.workspace-switcher label.workspace-more-label {
+  padding: 0;
+  margin: 0;
+}
+.workspace-switcher button.workspace-icon-button {
+  padding: 0;
+  border-color: transparent;
+  background: transparent;
+}
+
+.transparent .workspace-switcher .workspace-layout,
+.transparent .workspace-switcher .workspace-item {
+  background-color: transparent;
+  padding: 0;
+}
+.transparent .workspace-switcher .workspace-item.current-workspace {
+  background-color: transparent;
 }
 
 .raven-background,
