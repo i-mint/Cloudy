@@ -6793,9 +6793,9 @@ window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):
 .budgie-popover:not(.csd).background {
   border-radius: 4px;
   background-clip: border-box;
-  border: none;
+  border: 1px solid #c5c7c9;
   color: transparent;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.28), 0 6px 10px 2px rgba(0, 0, 0, 0.08), 0 4px 4px 0 rgba(0, 0, 0, 0.18);
 }
 .budgie-popover:not(.csd) > frame.container,
 .budgie-popover:not(.csd) > frame.container > border {
@@ -6808,7 +6808,6 @@ window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):
 .budgie-popover:not(.csd) list,
 .budgie-popover:not(.csd) row {
   background-color: #FFFFFF;
-  border-radius: 4px;
   margin: 0;
   padding: 0;
 }
