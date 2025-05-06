@@ -7277,8 +7277,26 @@ frame.raven-frame > border {
   border-radius: 4px;
   background-clip: border-box;
 }
-.budgie-notification-window button {
+.budgie-notification-window button.close {
   border-radius: 4px;
+  margin-top: 7px;
+  margin-right: 2px;
+  border-color: transparent;
+  background-color: transparent;
+  background-image: none;
+}
+.budgie-notification-window button.close:hover {
+  color: #2f3137;
+  border-color: #d4d4d4;
+  background-color: #f8f8f8;
+}
+.budgie-notification-window button.close:active {
+  color: #ffffff;
+  border-color: #d4d4d4;
+  background-color: #474747;
+}
+.budgie-notification-window button.close:active:backdrop {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .background headerbar entry.pathbar {
