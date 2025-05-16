@@ -382,30 +382,17 @@ button:backdrop {
 button separator {
   margin: 4px 1px;
 }
-button.flat {
+button.sidebar-button, button.flat {
   border-color: transparent;
   background-color: transparent;
   background-image: none;
   transition: none;
 }
-button.flat:hover {
+button.sidebar-button:hover, button.flat:hover {
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition-duration: 350ms;
 }
-button.flat:hover:active {
-  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-button.sidebar-button {
-  border-color: transparent;
-  background-color: transparent;
-  background-image: none;
-  transition: none;
-}
-button.sidebar-button:hover {
-  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  transition-duration: 350ms;
-}
-button.sidebar-button:hover:active {
+button.sidebar-button:hover:active, button.flat:hover:active {
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
@@ -6538,13 +6525,34 @@ filechooser .nautilus-desktop:backdrop,
 .caja-side-pane treeview:selected {
   background-color: #3f3f3f;
 }
-.caja-side-pane > box button:not(:active):not(:checked) {
+.caja-side-pane > box button.flat:not(:active):not(:checked),
+.caja-side-pane > box button.flat.toggle:not(:active):not(:checked) {
   color: rgba(255, 255, 255, 0.78);
 }
-.caja-side-pane > box button:hover:not(:active) {
-  color: rgba(255, 255, 255, 0.78);
-  border-color: rgba(89, 89, 89, 0.95);
-  background-color: rgba(122, 122, 122, 0.95);
+.caja-side-pane > box button.flat:hover:not(:active),
+.caja-side-pane > box button.flat.toggle:hover:not(:active) {
+  border-color: rgba(56, 56, 56, 0.55);
+  background-color: #616161;
+  color: rgba(255, 255, 255, 0.56);
+}
+.caja-side-pane > box button.flat:hover:not(:active) label,
+.caja-side-pane > box button.flat.toggle:hover:not(:active) label {
+  color: inherit;
+}
+.caja-side-pane > box button.flat:active, .caja-side-pane > box button.flat:checked,
+.caja-side-pane > box button.flat.toggle:active,
+.caja-side-pane > box button.flat.toggle:checked {
+  color: #ffffff;
+  border-color: #6b6b6b;
+  background-color: #6b6b6b;
+}
+.caja-side-pane > box button.flat:active label, .caja-side-pane > box button.flat:checked label,
+.caja-side-pane > box button.flat.toggle:active label,
+.caja-side-pane > box button.flat.toggle:checked label {
+  color: inherit;
+}
+.caja-side-pane .csd.popup > menu > menuitem:not(:hover):not(:active) label {
+  color: #3d4047;
 }
 .caja-side-pane .frame {
   border-color: #3a3a3a;
