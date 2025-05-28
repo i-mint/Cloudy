@@ -923,7 +923,7 @@ button.circular.radio.text-button {
   box-shadow: none;
 }
 
-.linked:not(.vertical) > combobox > box > button.combo:dir(ltr), .linked:not(.vertical) > combobox > box > button.combo:dir(rtl), .panel.xfce4-panel #pulseaudio-button > window.popup.csd .linked button, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:hover, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:active, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:checked, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:disabled, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button,
+.linked:not(.vertical) > combobox > box > button.combo:dir(ltr), .linked:not(.vertical) > combobox > box > button.combo:dir(rtl), .panel.xfce4-panel #pulseaudio-button > window.popup.csd .linked button, .caja-navigation-window toolbar.horizontal.primary-toolbar combobox > .linked > button.combo, .caja-navigation-window .horizontal.primary-toolbar.inline-toolbar combobox > .linked > button.combo, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:hover, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:active, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:checked, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:disabled, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button,
 .primary-toolbar .linked:not(.vertical).path-bar > button,
 headerbar .linked:not(.vertical).path-bar > button, .night-light-indicator spinbutton:not(.vertical) button, .night-light-indicator spinbutton:not(.vertical) entry,
 spinbutton:not(.vertical) button,
@@ -932,7 +932,7 @@ spinbutton:not(.vertical) entry, .linked:not(.vertical) > entry, .linked:not(.ve
   border-right-style: none;
 }
 
-.panel.xfce4-panel #pulseaudio-button > window.popup.csd .linked button:first-child, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:first-child, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:first-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:first-child,
+.panel.xfce4-panel #pulseaudio-button > window.popup.csd .linked button:first-child, .caja-navigation-window toolbar.horizontal.primary-toolbar combobox > .linked > button.combo:first-child, .caja-navigation-window .horizontal.primary-toolbar.inline-toolbar combobox > .linked > button.combo:first-child, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:first-child, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:first-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:first-child,
 .primary-toolbar .linked:not(.vertical).path-bar > button:first-child,
 headerbar .linked:not(.vertical).path-bar > button:first-child,
 spinbutton:not(.vertical) button:first-child,
@@ -940,7 +940,7 @@ spinbutton:not(.vertical) entry:first-child, .linked:not(.vertical) > entry:firs
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
-.panel.xfce4-panel #pulseaudio-button > window.popup.csd .linked button:last-child, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:last-child, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child,
+.panel.xfce4-panel #pulseaudio-button > window.popup.csd .linked button:last-child, .caja-navigation-window toolbar.horizontal.primary-toolbar combobox > .linked > button.combo:last-child, .caja-navigation-window .horizontal.primary-toolbar.inline-toolbar combobox > .linked > button.combo:last-child, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:last-child, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child,
 .primary-toolbar .linked:not(.vertical).path-bar > button:last-child,
 headerbar .linked:not(.vertical).path-bar > button:last-child,
 spinbutton:not(.vertical) button:last-child,
@@ -949,7 +949,7 @@ spinbutton:not(.vertical) entry:last-child, .linked:not(.vertical) > entry:last-
   border-bottom-right-radius: 4px;
   border-right-style: solid;
 }
-.panel.xfce4-panel #pulseaudio-button > window.popup.csd .linked button:only-child, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:only-child, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child,
+.panel.xfce4-panel #pulseaudio-button > window.popup.csd .linked button:only-child, .caja-navigation-window toolbar.horizontal.primary-toolbar combobox > .linked > button.combo:only-child, .caja-navigation-window .horizontal.primary-toolbar.inline-toolbar combobox > .linked > button.combo:only-child, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:only-child, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child,
 .primary-toolbar .linked:not(.vertical).path-bar > button:only-child,
 headerbar .linked:not(.vertical).path-bar > button:only-child,
 spinbutton:not(.vertical) button:only-child,
@@ -1431,6 +1431,40 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
 .primary-toolbar:not(.libreoffice-toolbar) separator:backdrop, headerbar separator.titlebutton:backdrop,
 .titlebar:not(headerbar) separator.titlebutton:backdrop {
   opacity: 0.6;
+}
+
+.caja-navigation-window toolbar.horizontal.primary-toolbar combobox > .linked > button.combo, .caja-navigation-window .horizontal.primary-toolbar.inline-toolbar combobox > .linked > button.combo {
+  color: rgba(255, 255, 255, 0.8);
+  outline-offset: -3px;
+  background-color: rgba(86, 100, 138, 0);
+  border-color: rgba(86, 100, 138, 0);
+}
+.caja-navigation-window toolbar.horizontal.primary-toolbar combobox > .linked > button.combo:backdrop, .caja-navigation-window .horizontal.primary-toolbar.inline-toolbar combobox > .linked > button.combo:backdrop {
+  color: rgba(255, 255, 255, 0.8);
+  opacity: 0.4;
+}
+.caja-navigation-window toolbar.horizontal.primary-toolbar combobox > .linked > button.combo:hover, .caja-navigation-window .horizontal.primary-toolbar.inline-toolbar combobox > .linked > button.combo:hover {
+  border-color: rgba(74, 86, 119, 0.6);
+  background-color: #6e7da5;
+  color: rgba(255, 255, 255, 0.56);
+}
+.caja-navigation-window toolbar.horizontal.primary-toolbar combobox > .linked > button.combo:active, .caja-navigation-window .horizontal.primary-toolbar.inline-toolbar combobox > .linked > button.combo:active, .caja-navigation-window toolbar.horizontal.primary-toolbar combobox > .linked > button.combo:checked, .caja-navigation-window .horizontal.primary-toolbar.inline-toolbar combobox > .linked > button.combo:checked {
+  color: #ffffff;
+  border-color: #7b88ad;
+  background-color: #7b88ad;
+  background-clip: border-box;
+}
+.caja-navigation-window toolbar.horizontal.primary-toolbar combobox > .linked > button.combo:disabled, .caja-navigation-window .horizontal.primary-toolbar.inline-toolbar combobox > .linked > button.combo:disabled {
+  background-color: rgba(86, 100, 138, 0);
+  border-color: rgba(86, 100, 138, 0);
+}
+.caja-navigation-window toolbar.horizontal.primary-toolbar combobox > .linked > button.combo:disabled label, .caja-navigation-window .horizontal.primary-toolbar.inline-toolbar combobox > .linked > button.combo:disabled label, .caja-navigation-window toolbar.horizontal.primary-toolbar combobox > .linked > button.combo:disabled, .caja-navigation-window .horizontal.primary-toolbar.inline-toolbar combobox > .linked > button.combo:disabled {
+  color: rgba(255, 255, 255, 0.35);
+}
+.caja-navigation-window toolbar.horizontal.primary-toolbar combobox > .linked > button.combo:disabled:active, .caja-navigation-window .horizontal.primary-toolbar.inline-toolbar combobox > .linked > button.combo:disabled:active, .caja-navigation-window toolbar.horizontal.primary-toolbar combobox > .linked > button.combo:disabled:checked, .caja-navigation-window .horizontal.primary-toolbar.inline-toolbar combobox > .linked > button.combo:disabled:checked {
+  color: rgba(255, 255, 255, 0.75);
+  border-color: rgba(86, 100, 138, 0.65);
+  background-color: rgba(86, 100, 138, 0.65);
 }
 
 .primary-toolbar entry, headerbar entry {
@@ -4685,7 +4719,6 @@ entry.caja-location-entry:disabled label, entry.caja-location-entry:disabled ima
 .caja-navigation-window paned > separator {
   background: image(#44506e);
 }
-
 .open-document-selector-treeview.view, iconview.open-document-selector-treeview {
   padding: 3px 6px 3px 6px;
   border-color: #FFFFFF;
