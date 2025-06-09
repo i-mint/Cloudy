@@ -4188,40 +4188,40 @@ headerbar button.titlebutton.minimize:active,
   background-image: -gtk-scaled(url("assets/titlebutton-minimize-active.png"), url("assets/titlebutton-minimize-active@2.png"));
 }
 
-.nemo-window .nemo-inactive-pane .iconview:selected, .nemo-window .nemo-inactive-pane .view:selected, .nemo-window .nemo-inactive-pane iconview:selected, .thunar notebook .view:selected, .thunar notebook iconview:selected, paned.gedit-side-panel-paned treeview.view:selected, paned.gedit-side-panel-paned treeview.view:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected, flowbox flowboxchild:selected, menuitem.button.flat:active, menuitem.button.flat:active arrow, menuitem.button.flat:selected, menuitem.button.flat:selected arrow,
+.nemo-window .nemo-inactive-pane .iconview:selected, .nemo-window .nemo-inactive-pane .view:selected, .nemo-window .nemo-inactive-pane iconview:selected, paned.gedit-side-panel-paned treeview.view:selected, paned.gedit-side-panel-paned treeview.view:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected, flowbox flowboxchild:selected, menuitem.button.flat:active, menuitem.button.flat:active arrow, menuitem.button.flat:selected, menuitem.button.flat:selected arrow,
 modelbutton.flat:active,
 modelbutton.flat:active arrow,
 modelbutton.flat:selected,
-modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:focus, row:selected, calendar:selected {
+modelbutton.flat:selected arrow, row:selected, calendar:selected {
   background-color: #56648A;
 }
-row:selected label, label:selected, .nemo-window .nemo-inactive-pane .iconview:selected, .nemo-window .nemo-inactive-pane .view:selected, .nemo-window .nemo-inactive-pane iconview:selected, .thunar notebook .view:selected, .thunar notebook iconview:selected, paned.gedit-side-panel-paned treeview.view:selected, paned.gedit-side-panel-paned treeview.view:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected, flowbox flowboxchild:selected, menuitem.button.flat:active, menuitem.button.flat:active arrow, menuitem.button.flat:selected, menuitem.button.flat:selected arrow,
+row:selected label, label:selected, .nemo-window .nemo-inactive-pane .iconview:selected, .nemo-window .nemo-inactive-pane .view:selected, .nemo-window .nemo-inactive-pane iconview:selected, paned.gedit-side-panel-paned treeview.view:selected, paned.gedit-side-panel-paned treeview.view:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected, flowbox flowboxchild:selected, menuitem.button.flat:active, menuitem.button.flat:active arrow, menuitem.button.flat:selected, menuitem.button.flat:selected arrow,
 modelbutton.flat:active,
 modelbutton.flat:active arrow,
 modelbutton.flat:selected,
-modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:focus, row:selected, calendar:selected {
+modelbutton.flat:selected arrow, row:selected, calendar:selected {
   color: #ffffff;
 }
-row:selected label:backdrop, label:backdrop:selected, .nemo-window .nemo-inactive-pane .iconview:backdrop:selected, .nemo-window .nemo-inactive-pane .view:backdrop:selected, .nemo-window .nemo-inactive-pane iconview:backdrop:selected, .thunar notebook .view:backdrop:selected, .thunar notebook iconview:backdrop:selected, paned.gedit-side-panel-paned treeview.view:backdrop:selected, .nemo-window .nemo-window-pane widget.entry:backdrop:selected, flowbox flowboxchild:backdrop:selected, menuitem.button.flat:backdrop:active, menuitem.button.flat:active arrow:backdrop, menuitem.button.flat:backdrop:selected, menuitem.button.flat:selected arrow:backdrop,
+row:selected label:backdrop, label:backdrop:selected, .nemo-window .nemo-inactive-pane .iconview:backdrop:selected, .nemo-window .nemo-inactive-pane .view:backdrop:selected, .nemo-window .nemo-inactive-pane iconview:backdrop:selected, paned.gedit-side-panel-paned treeview.view:backdrop:selected, .nemo-window .nemo-window-pane widget.entry:backdrop:selected, flowbox flowboxchild:backdrop:selected, menuitem.button.flat:backdrop:active, menuitem.button.flat:active arrow:backdrop, menuitem.button.flat:backdrop:selected, menuitem.button.flat:selected arrow:backdrop,
 modelbutton.flat:backdrop:active,
 modelbutton.flat:active arrow:backdrop,
 modelbutton.flat:backdrop:selected,
-modelbutton.flat:selected arrow:backdrop, treeview.view:backdrop:selected, row:backdrop:selected, calendar:backdrop:selected {
+modelbutton.flat:selected arrow:backdrop, row:backdrop:selected, calendar:backdrop:selected {
   color: rgba(255, 255, 255, 0.78);
 }
-row:selected label:disabled, label:disabled:selected, .nemo-window .nemo-inactive-pane .iconview:disabled:selected, .nemo-window .nemo-inactive-pane .view:disabled:selected, .nemo-window .nemo-inactive-pane iconview:disabled:selected, .thunar notebook .view:disabled:selected, .thunar notebook iconview:disabled:selected, paned.gedit-side-panel-paned treeview.view:disabled:selected, .nemo-window .nemo-window-pane widget.entry:disabled:selected, flowbox flowboxchild:disabled:selected, menuitem.button.flat:disabled:active, menuitem.button.flat:active arrow:disabled, menuitem.button.flat:disabled:selected, menuitem.button.flat:selected arrow:disabled,
+row:selected label:disabled, label:disabled:selected, .nemo-window .nemo-inactive-pane .iconview:disabled:selected, .nemo-window .nemo-inactive-pane .view:disabled:selected, .nemo-window .nemo-inactive-pane iconview:disabled:selected, paned.gedit-side-panel-paned treeview.view:disabled:selected, .nemo-window .nemo-window-pane widget.entry:disabled:selected, flowbox flowboxchild:disabled:selected, menuitem.button.flat:disabled:active, menuitem.button.flat:active arrow:disabled, menuitem.button.flat:disabled:selected, menuitem.button.flat:selected arrow:disabled,
 modelbutton.flat:disabled:active,
 modelbutton.flat:active arrow:disabled,
 modelbutton.flat:disabled:selected,
-modelbutton.flat:selected arrow:disabled, treeview.view:disabled:selected, row:disabled:selected, calendar:disabled:selected {
+modelbutton.flat:selected arrow:disabled, row:disabled:selected, calendar:disabled:selected {
   color: #abb2c5;
 }
 
-.nemo-window .nemo-inactive-pane .iconview:backdrop:selected, .nemo-window .nemo-inactive-pane .view:backdrop:selected, .nemo-window .nemo-inactive-pane iconview:backdrop:selected, .thunar notebook .view:backdrop:selected, .thunar notebook iconview:backdrop:selected, paned.gedit-side-panel-paned treeview.view:backdrop:selected, .nemo-window .nemo-window-pane widget.entry:backdrop:selected, flowbox flowboxchild:backdrop:selected, menuitem.button.flat:backdrop:active, menuitem.button.flat:active arrow:backdrop, menuitem.button.flat:backdrop:selected, menuitem.button.flat:selected arrow:backdrop,
+.nemo-window .nemo-inactive-pane .iconview:backdrop:selected, .nemo-window .nemo-inactive-pane .view:backdrop:selected, .nemo-window .nemo-inactive-pane iconview:backdrop:selected, paned.gedit-side-panel-paned treeview.view:backdrop:selected, .nemo-window .nemo-window-pane widget.entry:backdrop:selected, flowbox flowboxchild:backdrop:selected, menuitem.button.flat:backdrop:active, menuitem.button.flat:active arrow:backdrop, menuitem.button.flat:backdrop:selected, menuitem.button.flat:selected arrow:backdrop,
 modelbutton.flat:backdrop:active,
 modelbutton.flat:active arrow:backdrop,
 modelbutton.flat:backdrop:selected,
-modelbutton.flat:selected arrow:backdrop, treeview.view:backdrop:selected, row:backdrop:selected, calendar:backdrop:selected {
+modelbutton.flat:selected arrow:backdrop, row:backdrop:selected, calendar:backdrop:selected {
   background-color: rgba(86, 100, 138, 0.78);
   color: rgba(255, 255, 255, 0.78);
 }
@@ -4255,7 +4255,7 @@ iconview text:selected,
 iconview text:selected:focus, iconview text selection:focus, iconview text selection {
   background-color: #6e7da5;
 }
-row:selected label, label:selected, .view:selected, .view:selected:focus,
+.view:selected, .view:selected:focus,
 .view text:selected,
 textview text:selected,
 .view text:selected:focus,
@@ -4266,7 +4266,7 @@ iconview text:selected,
 iconview text:selected:focus, iconview text selection:focus, iconview text selection {
   color: #ffffff;
 }
-row:selected label:backdrop, label:backdrop:selected, .view:backdrop:selected,
+.view:backdrop:selected,
 .view text:backdrop:selected,
 textview text:backdrop:selected,
 textview text:backdrop:selected:focus, .view text selection:backdrop,
@@ -4276,7 +4276,7 @@ iconview text:backdrop:selected,
 iconview text:backdrop:selected:focus, iconview text selection:backdrop:focus, iconview text selection:backdrop {
   color: rgba(255, 255, 255, 0.78);
 }
-row:selected label:disabled, label:disabled:selected, .view:disabled:selected,
+.view:disabled:selected,
 .view text:disabled:selected,
 textview text:disabled:selected,
 textview text:disabled:selected:focus, .view text selection:disabled,
@@ -5620,16 +5620,6 @@ popover .sidebar row:active:backdrop, popover .sidebar row:checked:backdrop, pop
 }
 .thunar .sidebar .view:backdrop, .thunar .sidebar iconview:backdrop, .thunar .sidebar .view.cell:backdrop {
   color: rgba(255, 255, 255, 0.45);
-}
-.thunar notebook .view, .thunar notebook iconview {
-  background-color: #FFFFFF;
-  color: #3d4047;
-}
-.thunar notebook .view .rubberband, .thunar notebook iconview .rubberband {
-  background-color: rgba(86, 100, 138, 0.23);
-}
-.thunar notebook .view:backdrop, .thunar notebook iconview:backdrop {
-  color: rgba(61, 64, 71, 0.67);
 }
 .thunar notebook tabs > tab.reorderable-page button.flat image {
   margin: 2px 0;
