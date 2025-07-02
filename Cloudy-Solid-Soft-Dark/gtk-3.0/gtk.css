@@ -2109,8 +2109,15 @@ menubar > menuitem,
 }
 menubar > menuitem:hover,
 .menubar > menuitem:hover {
-  background-color: #2B3143;
   color: #ffffff;
+  background-color: #1f2330;
+  border-color: #1f2330;
+  border-radius: 4px;
+}
+menubar > menuitem:hover label, menubar > menuitem:hover image,
+.menubar > menuitem:hover label,
+.menubar > menuitem:hover image {
+  color: inherit;
 }
 menubar > menuitem:disabled,
 .menubar > menuitem:disabled {
@@ -5640,18 +5647,6 @@ popover .sidebar row:active:backdrop, popover .sidebar row:checked:backdrop, pop
 }
 .thunar notebook tabs > tab.reorderable-page button.flat:active image {
   background-color: #be3841;
-}
-.thunar menubar > menuitem {
-  border-radius: 4px;
-}
-.thunar menubar > menuitem:hover {
-  color: #ffffff;
-  background-color: #1f2330;
-  border-color: #1f2330;
-  border-radius: 4px;
-}
-.thunar menubar > menuitem:hover label, .thunar menubar > menuitem:hover image {
-  color: inherit;
 }
 .thunar toolbar, .thunar .inline-toolbar {
   box-shadow: inset 0 -1px #232837;
