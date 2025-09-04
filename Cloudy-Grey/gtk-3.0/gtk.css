@@ -41,7 +41,7 @@
   background-color: #f6f6f6;
   color: #3d4047;
 }
-.gtkstyle-fallback:active {
+.gtkstyle-fallback:active, .gtkstyle-fallback:active:hover {
   background-color: #c3c3c3;
   color: #3d4047;
 }
@@ -3479,7 +3479,6 @@ row:not(:hover) {
 }
 row.activatable.has-open-popup, row.activatable:hover {
   background-color: rgba(0, 0, 0, 0.05);
-  color: #2f3137;
 }
 row.activatable:active {
   color: #3d4047;
