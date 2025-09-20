@@ -372,7 +372,7 @@ StScrollBar StButton#hhandle:active {
 .menu .popup-menu-item:insensitive,
 .popup-menu .popup-menu-item:insensitive,
 .popup-combo-menu .popup-menu-item:insensitive {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(182, 186, 191, 0.5);
   background: none;
 }
 .menu .popup-inactive-menu-item,
