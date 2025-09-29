@@ -560,7 +560,7 @@ StScrollBar StButton#hhandle:active {
   background-color: rgba(61, 61, 61, 0.95);
   border: 1px solid rgba(61, 61, 61, 0.95);
   color: rgba(255, 255, 255, 0.78);
-  spacing: 25px;
+  spacing: 5px;
   border-radius: 2px;
   font-size: 9pt;
   padding: 5px 8px;
@@ -570,7 +570,10 @@ StScrollBar StButton#hhandle:active {
   background-color: #3d3d3d;
   color: #ffffff;
   border: 1px solid #3d3d3d;
-  spacing: 25px;
+  spacing: 5px;
+}
+.window-caption:focus {
+  background-color: rgba(87, 87, 87, 0.95);
 }
 
 .expo-workspaces-name-entry,
