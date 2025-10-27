@@ -394,13 +394,13 @@ button:backdrop {
 button separator {
   margin: 4px 1px;
 }
-button.sidebar-button, button.flat {
+button.sidebar-button, toolbar.primary-toolbar button.flat, .primary-toolbar.inline-toolbar button.flat, toolbar button.flat, .inline-toolbar button.flat, button.flat {
   border-color: transparent;
   background-color: transparent;
   background-image: none;
   transition: none;
 }
-button.sidebar-button:hover, button.flat:hover {
+button.sidebar-button:hover, toolbar button.flat:hover, .inline-toolbar button.flat:hover, button.flat:hover {
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition-duration: 350ms;
 }
@@ -1234,6 +1234,50 @@ toolbar:not(.inline-toolbar) .linked > button, .inline-toolbar:not(.inline-toolb
 toolbar:not(.inline-toolbar) .linked > entry,
 .inline-toolbar:not(.inline-toolbar) .linked > entry {
   margin-right: 0;
+}
+toolbar.primary-toolbar button.flat label, toolbar.primary-toolbar button.flat image, toolbar.primary-toolbar button.flat, .primary-toolbar.inline-toolbar button.flat, toolbar button.flat label, .inline-toolbar button.flat label, toolbar button.flat image, .inline-toolbar button.flat image, toolbar button.flat, .inline-toolbar button.flat {
+  color: rgba(255, 255, 255, 0.8);
+}
+toolbar.primary-toolbar button.flat:hover, toolbar button.flat:hover, .inline-toolbar button.flat:hover {
+  border-color: rgba(74, 86, 119, 0.55);
+  background-color: #6e7da5;
+  color: rgba(255, 255, 255, 0.56);
+}
+toolbar.primary-toolbar button.flat:hover label, toolbar.primary-toolbar button.flat:hover image, toolbar button.flat:hover label, .inline-toolbar button.flat:hover label, toolbar button.flat:hover image, .inline-toolbar button.flat:hover image {
+  color: inherit;
+}
+toolbar.primary-toolbar button.flat:active, toolbar.primary-toolbar button.flat:checked, toolbar button.flat:active, .inline-toolbar button.flat:active, toolbar button.flat:checked, .inline-toolbar button.flat:checked {
+  color: #ffffff;
+  border-color: #7b88ad;
+  background-color: #7b88ad;
+  background-clip: border-box;
+}
+toolbar.primary-toolbar button.flat:active label, toolbar.primary-toolbar button.flat:active image, toolbar.primary-toolbar button.flat:checked label, toolbar.primary-toolbar button.flat:checked image, toolbar button.flat:active label, .inline-toolbar button.flat:active label, toolbar button.flat:active image, .inline-toolbar button.flat:active image, toolbar button.flat:checked label, .inline-toolbar button.flat:checked label, toolbar button.flat:checked image, .inline-toolbar button.flat:checked image {
+  color: inherit;
+}
+toolbar.primary-toolbar button.flat:disabled, toolbar button.flat:disabled, .inline-toolbar button.flat:disabled {
+  background-color: rgba(86, 100, 138, 0);
+  border-color: rgba(86, 100, 138, 0);
+}
+toolbar.primary-toolbar button.flat:disabled label, toolbar.primary-toolbar button.flat:disabled, toolbar button.flat:disabled label, .inline-toolbar button.flat:disabled label, toolbar button.flat:disabled, .inline-toolbar button.flat:disabled {
+  color: rgba(255, 255, 255, 0.35);
+}
+toolbar.primary-toolbar button.flat:disabled label, toolbar.primary-toolbar button.flat:disabled image, toolbar.primary-toolbar button.flat:disabled, toolbar button.flat:disabled label, .inline-toolbar button.flat:disabled label, toolbar button.flat:disabled image, .inline-toolbar button.flat:disabled image, toolbar button.flat:disabled, .inline-toolbar button.flat:disabled {
+  color: rgba(255, 255, 255, 0.35);
+}
+toolbar.primary-toolbar button.flat:disabled:backdrop label, toolbar.primary-toolbar button.flat:disabled:backdrop image, toolbar.primary-toolbar button.flat:disabled:backdrop, toolbar button.flat:disabled:backdrop label, .inline-toolbar button.flat:disabled:backdrop label, toolbar button.flat:disabled:backdrop image, .inline-toolbar button.flat:disabled:backdrop image, toolbar button.flat:disabled:backdrop, .inline-toolbar button.flat:disabled:backdrop {
+  color: rgba(182, 165, 165, 0.8);
+}
+toolbar.primary-toolbar button.flat:disabled:active, toolbar.primary-toolbar button.flat:disabled:checked, toolbar button.flat:disabled:active, .inline-toolbar button.flat:disabled:active, toolbar button.flat:disabled:checked, .inline-toolbar button.flat:disabled:checked {
+  color: rgba(255, 255, 255, 0.75);
+  border-color: rgba(86, 100, 138, 0.65);
+  background-color: rgba(86, 100, 138, 0.65);
+}
+toolbar.primary-toolbar button.flat:disabled:active label, toolbar.primary-toolbar button.flat:disabled:active image, toolbar.primary-toolbar button.flat:disabled:checked label, toolbar.primary-toolbar button.flat:disabled:checked image, toolbar button.flat:disabled:active label, .inline-toolbar button.flat:disabled:active label, toolbar button.flat:disabled:active image, .inline-toolbar button.flat:disabled:active image, toolbar button.flat:disabled:checked label, .inline-toolbar button.flat:disabled:checked label, toolbar button.flat:disabled:checked image, .inline-toolbar button.flat:disabled:checked image {
+  color: inherit;
+}
+toolbar.primary-toolbar button.flat:backdrop, toolbar button.flat:backdrop, .inline-toolbar button.flat:backdrop {
+  opacity: 0.4;
 }
 
 .primary-toolbar:not(.libreoffice-toolbar) {
@@ -5814,41 +5858,6 @@ popover .sidebar row:active:backdrop, popover .sidebar row:checked:backdrop, pop
 }
 .thunar toolbar .linked.path-bar > button.path-bar-button.toggle:checked:backdrop label, .thunar .inline-toolbar .linked.path-bar > button.path-bar-button.toggle:checked:backdrop label, .thunar toolbar .linked.path-bar > button.path-bar-button.toggle:checked:backdrop image, .thunar .inline-toolbar .linked.path-bar > button.path-bar-button.toggle:checked:backdrop image, .thunar toolbar .linked.path-bar > button.path-bar-button.toggle:checked:backdrop, .thunar .inline-toolbar .linked.path-bar > button.path-bar-button.toggle:checked:backdrop {
   color: rgba(255, 255, 255, 0.4);
-}
-.thunar toolbar button.flat, .thunar .inline-toolbar button.flat {
-  color: rgba(255, 255, 255, 0.8);
-  outline-offset: -3px;
-  background-color: rgba(86, 100, 138, 0);
-  border-color: rgba(86, 100, 138, 0);
-}
-.thunar toolbar button.flat image, .thunar .inline-toolbar button.flat image {
-  color: inherit;
-}
-.thunar toolbar button.flat:hover, .thunar .inline-toolbar button.flat:hover {
-  border-color: rgba(74, 86, 119, 0.55);
-  background-color: #6e7da5;
-  color: rgba(255, 255, 255, 0.56);
-}
-.thunar toolbar button.flat:hover image, .thunar .inline-toolbar button.flat:hover image {
-  color: inherit;
-}
-.thunar toolbar button.flat:active, .thunar .inline-toolbar button.flat:active, .thunar toolbar button.flat:checked, .thunar .inline-toolbar button.flat:checked {
-  color: #ffffff;
-  border-color: #7b88ad;
-  background-color: #7b88ad;
-}
-.thunar toolbar button.flat:active image, .thunar .inline-toolbar button.flat:active image, .thunar toolbar button.flat:checked image, .thunar .inline-toolbar button.flat:checked image {
-  color: inherit;
-}
-.thunar toolbar button.flat:disabled image, .thunar .inline-toolbar button.flat:disabled image, .thunar toolbar button.flat:disabled, .thunar .inline-toolbar button.flat:disabled {
-  color: rgba(163, 143, 143, 0.35);
-}
-.thunar toolbar button.flat:disabled:backdrop image, .thunar .inline-toolbar button.flat:disabled:backdrop image, .thunar toolbar button.flat:disabled:backdrop, .thunar .inline-toolbar button.flat:disabled:backdrop {
-  color: rgba(163, 143, 143, 0.2);
-}
-.thunar toolbar button.flat:not(:checked):not(:disabled):backdrop image, .thunar .inline-toolbar button.flat:not(:checked):not(:disabled):backdrop image, .thunar toolbar button.flat:not(:checked):not(:disabled):backdrop label, .thunar .inline-toolbar button.flat:not(:checked):not(:disabled):backdrop label, .thunar toolbar button.flat:not(:checked):not(:disabled):backdrop, .thunar .inline-toolbar button.flat:not(:checked):not(:disabled):backdrop {
-  color: rgba(255, 255, 255, 0.8);
-  opacity: 0.52;
 }
 .thunar toolbar box.horizontal > entry, .thunar .inline-toolbar box.horizontal > entry {
   color: rgba(255, 255, 255, 0.34);
