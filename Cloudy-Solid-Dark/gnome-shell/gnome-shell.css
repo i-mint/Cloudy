@@ -1205,6 +1205,11 @@ StScrollBar StButton#hhandle:disabled {
 .calendar .calendar-day-base:active:backdrop, .calendar .calendar-day-base:selected:backdrop {
   color: rgba(255, 255, 255, 0.6);
 }
+.calendar .calendar-day-base:selected:hover {
+  color: #ffffff;
+  background-color: #404963;
+  border-color: #12161c;
+}
 .calendar .calendar-day-base.calendar-day-heading {
   color: rgba(182, 186, 191, 0.89);
   background-color: transparent;
@@ -1237,13 +1242,18 @@ StScrollBar StButton#hhandle:disabled {
   border-radius: 999px;
   font-weight: bold !important;
 }
-.calendar .calendar-today:hover, .calendar .calendar-today:focus, .calendar .calendar-today:active, .calendar .calendar-today:selected, .calendar .calendar-today {
+.calendar .calendar-today, .calendar .calendar-today:focus, .calendar .calendar-today:active, .calendar .calendar-today:selected {
   color: #ffffff;
   border-color: #12161c;
   background-color: #47516e;
 }
-.calendar .calendar-today:hover:backdrop, .calendar .calendar-today:focus:backdrop, .calendar .calendar-today:active:backdrop, .calendar .calendar-today:selected:backdrop, .calendar .calendar-today:backdrop {
+.calendar .calendar-today:backdrop, .calendar .calendar-today:focus:backdrop, .calendar .calendar-today:active:backdrop, .calendar .calendar-today:selected:backdrop {
   color: rgba(255, 255, 255, 0.6);
+}
+.calendar .calendar-today:hover {
+  color: #ffffff;
+  background-color: #404963;
+  border-color: #12161c;
 }
 .calendar .calendar-day-with-events {
   background-image: url("common-assets/misc/calendar-today.svg");
