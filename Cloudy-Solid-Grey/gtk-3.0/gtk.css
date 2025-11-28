@@ -198,7 +198,7 @@ entry image.left {
   padding-left: 0;
   padding-right: 5px;
 }
-h entry image.right {
+entry image.right {
   padding-right: 0;
   padding-left: 5px;
 }
@@ -543,6 +543,7 @@ button.osd:disabled {
   background-color: transparent;
   background-image: none;
   box-shadow: none;
+  color: rgba(255, 255, 255, 0.78);
 }
 .osd button.flat:hover {
   color: rgba(255, 255, 255, 0.78);
@@ -550,10 +551,11 @@ button.osd:disabled {
   background-color: #7a7a7a;
 }
 .osd button.flat:disabled {
-  color: rgba(111, 111, 111, 0.934);
-  border-color: #595959;
-  background-color: rgba(107, 107, 107, 0.85);
+  border-color: transparent;
+  background-color: transparent;
   background-image: none;
+  background-image: none;
+  color: rgba(111, 111, 111, 0.934);
 }
 .osd button.flat:active, .osd button.flat:checked {
   color: #ffffff;

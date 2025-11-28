@@ -543,6 +543,7 @@ button.osd:disabled {
   background-color: transparent;
   background-image: none;
   box-shadow: none;
+  color: rgba(255, 255, 255, 0.78);
 }
 .osd button.flat:hover {
   color: rgba(255, 255, 255, 0.78);
@@ -550,10 +551,11 @@ button.osd:disabled {
   background-color: rgba(142, 153, 184, 0.95);
 }
 .osd button.flat:disabled {
-  color: rgba(122, 133, 163, 0.934);
-  border-color: rgba(101, 116, 159, 0.95);
-  background-color: rgba(123, 136, 173, 0.8);
+  border-color: transparent;
+  background-color: transparent;
   background-image: none;
+  background-image: none;
+  color: rgba(122, 133, 163, 0.934);
 }
 .osd button.flat:active, .osd button.flat:checked {
   color: #ffffff;
