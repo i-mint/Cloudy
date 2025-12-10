@@ -1447,34 +1447,6 @@ headerbar:last-child, headerbar:last-child:backdrop {
 .maximized headerbar:last-child, .tiled headerbar:last-child, .maximized headerbar:last-child:backdrop, .tiled headerbar:last-child:backdrop {
   border-radius: 0;
 }
-headerbar.windowhandle viewswitcher > box > button {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0;
-  border-radius: 0;
-  box-shadow: none;
-}
-headerbar.windowhandle viewswitcher > box > button > stack > box {
-  padding: 0 18px;
-}
-headerbar.windowhandle viewswitcher > box > button > stack > box.wide {
-  font-size: 1em;
-}
-headerbar.windowhandle viewswitcher > box > button > stack > box.narrow {
-  font-size: 0.75em;
-}
-headerbar.windowhandle viewswitcher > box > button > stack > box.narrow image {
-  margin-top: 2px;
-}
-headerbar.windowhandle viewswitcher > box > button > stack > box.narrow label {
-  margin-bottom: 2px;
-}
-headerbar.windowhandle viewswitcher > box > button, headerbar.windowhandle viewswitcher > box > button:hover, headerbar.windowhandle viewswitcher > box > button:active, headerbar.windowhandle viewswitcher > box > button:checked {
-  border: none;
-}
-headerbar.windowhandle viewswitcher > box > button:checked {
-  font-weight: bold;
-}
 
 window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, window.csd > .titlebar:not(headerbar), window.csd > .titlebar:not(headerbar):backdrop {
   padding: 0;
@@ -6909,6 +6881,112 @@ window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):
 window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):not(.tiled-bottom):not(.tiled-left):not(.tiled-right):not(.maximized) > decoration,
 window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):not(.tiled-bottom):not(.tiled-left):not(.tiled-right):not(.maximized) > decoration-overlay {
   border-radius: 4px;
+}
+
+viewswitcher, viewswitcher button {
+  margin: 0;
+  padding: 0;
+}
+viewswitcher button {
+  border-radius: 0;
+  border-top: 0;
+  border-bottom: 0;
+  box-shadow: none;
+  font-size: 1rem;
+}
+viewswitcher button:not(:checked):not(:hover) {
+  background: transparent;
+}
+viewswitcher button:active, viewswitcher button:checked {
+  border-color: shade(#d4d4d4, 1.15);
+}
+viewswitcher button:not(:only-child):not(:last-child) {
+  border-right-width: 0px;
+}
+viewswitcher button:not(only-child):first-child:not(:checked):not(:hover), viewswitcher button:not(:checked):not(:hover) + button:not(:checked):not(:hover) {
+  border-left-color: transparent;
+}
+viewswitcher button:not(only-child):last-child:not(:checked):not(:hover) {
+  border-right-color: transparent;
+}
+viewswitcher button:not(only-child):first-child:not(:checked):hover, viewswitcher button:not(:checked):hover + button:not(:checked):not(:hover), viewswitcher button:not(:checked):not(:hover) + button:not(:checked):hover {
+  border-left-color: shade(#d4d4d4, 1.15);
+}
+viewswitcher button:not(only-child):last-child:not(:checked):hover {
+  border-right-color: shade(#c5c5c5, 1.15);
+}
+headerbar viewswitcher button:not(:checked):not(only-child):first-child:hover, headerbar viewswitcher button:not(:checked):hover + button:not(:checked):not(:hover), headerbar viewswitcher button:not(:checked):not(:hover) + button:not(:checked):hover {
+  border-left-color: rgba(56, 56, 56, 0.6);
+}
+headerbar viewswitcher button:not(:checked):not(only-child):last-child:hover {
+  border-right-color: rgba(56, 56, 56, 0.6);
+}
+headerbar viewswitcher button:not(:checked):not(:hover) {
+  background: transparent;
+}
+headerbar viewswitcher button:active, headerbar viewswitcher button:checked {
+  border-color: shade(rgba(56, 56, 56, 0.6), 1.15);
+}
+headerbar viewswitcher button:not(:only-child):not(:last-child) {
+  border-right-width: 0px;
+}
+headerbar viewswitcher button:not(only-child):first-child:not(:checked):not(:hover), headerbar viewswitcher button:not(:checked):not(:hover) + button:not(:checked):not(:hover) {
+  border-left-color: transparent;
+}
+headerbar viewswitcher button:not(only-child):last-child:not(:checked):not(:hover) {
+  border-right-color: transparent;
+}
+headerbar viewswitcher button:not(only-child):first-child:not(:checked):hover, headerbar viewswitcher button:not(:checked):hover + button:not(:checked):not(:hover), headerbar viewswitcher button:not(:checked):not(:hover) + button:not(:checked):hover {
+  border-left-color: shade(rgba(56, 56, 56, 0.6), 1.15);
+}
+headerbar viewswitcher button:not(only-child):last-child:not(:checked):hover {
+  border-right-color: shade(rgba(56, 56, 56, 0.6), 1.15);
+}
+viewswitcher button > stack > box.narrow {
+  font-size: 0.75rem;
+  padding-top: 4px;
+  padding-bottom: 2px;
+}
+viewswitcher button > stack > box.narrow image,
+viewswitcher button > stack > box.narrow label {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+viewswitcher button > stack > box.wide {
+  padding: 8px 12px;
+}
+viewswitcher button > stack > box.wide image:dir(ltr) {
+  padding-left: 7px;
+}
+viewswitcher button > stack > box.wide image:dir(rtl) {
+  padding-right: 7px;
+}
+viewswitcher button > stack > box.wide label:dir(ltr) {
+  padding-right: 7px;
+}
+viewswitcher button > stack > box.wide label:dir(rtl) {
+  padding-left: 7px;
+}
+viewswitcher button.needs-attention:active > stack > box label, viewswitcher button.needs-attention:checked > stack > box label {
+  animation: none;
+  background-image: none;
+}
+viewswitcher button.needs-attention > stack > box label {
+  animation: needs_attention 150ms ease-in;
+  background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(#474747), to(transparent)), -gtk-gradient(radial, center center, 0, center center, 0.5, to(#ffffff), to(transparent));
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+  background-position: right 0px, right 1px;
+}
+viewswitcher button.needs-attention > stack > box label:backdrop {
+  background-size: 6px 6px, 0 0;
+}
+viewswitcher button.needs-attention > stack > box label:dir(rtl) {
+  background-position: left 0px, left 1px;
+}
+
+viewswitcherbar actionbar > revealer > box {
+  padding: 0;
 }
 
 @define-color theme_fg_color #3d4047;
